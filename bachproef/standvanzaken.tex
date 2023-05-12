@@ -213,129 +213,319 @@ Foto \ref{fig:NativeWebHybride} Toont een mooi overzicht van hoe dat de verschil
 soorten applicaties werken. Elke soort applicatie heeft een andere manier waarop dat ze 
 op een platform geïmplementeerd worden.
 
-% \section{Native ontwikkeling}
-% \subsection{Wat is native ontwikkeling?}\label{subsec:wat-is-native-ontwikkeling}
-% Native ontwikkeling is het proces om native \ref{ch:native-applicaties} applicaties te maken voor een specifiek besturingssysteem, zoals Android of IOS. Hierbij maak je gebruik van de bijhorende programmeertalen en ontwikkelingsomgevingen die door de platformen worden aangeboden \autocite{Meirelles2019}. Ook kunnen ontwikkelaars zoals eerder gezegd gebruik maken van platform specifieke APIs die toegang verlenen tot de camera, gps, versnellingsmeter, kompas, lijst van contacten, enz.
+\section{Native ontwikkeling}
+\subsection{Wat is native ontwikkeling?}\label{subsec:wat-is-native-ontwikkeling}
+Native ontwikkeling is het proces om native \ref{ch:native-applicaties} applicaties te maken 
+voor een specifiek besturingssysteem, zoals Android of IOS. Hierbij maak je gebruik van de 
+bijhorende programmeertalen en ontwikkelingsomgevingen die door de platformen worden aangeboden 
+\autocite{Meirelles2019}. Ook kunnen ontwikkelaars zoals eerder gezegd gebruik maken van 
+platform specifieke APIs die toegang verlenen tot de camera, gps, versnellingsmeter, kompas, 
+lijst van contacten, enz.
 
-% \subsection{Voordelen van native ontwikkeling}
-% \paragraph{Schaalbaarheid}
-% Dankzij de flexibiliteit bij het ontwikkelen van native applicaties en het scheiden van de ontwikkeling er van, zijn native applicaties zeer schaalbaar \autocite{Koffer2023}. Ook hebben ontwikkelaars de mogelijkheid om elk platform individueel te schalen \autocite{Sakovich2023}. 
+\subsection{Voordelen van native ontwikkeling}
+\paragraph{Schaalbaarheid}
+Dankzij de flexibiliteit bij het ontwikkelen van native applicaties en het scheiden van 
+de ontwikkeling er van, zijn native applicaties zeer schaalbaar \autocite{Koffer2023}. 
+Ook hebben ontwikkelaars de mogelijkheid om elk platform individueel te schalen \autocite{Sakovich2023}. 
 
-% \subsection{Nadelen van native ontwikkeling}
-% \paragraph{Ontwikkelingsteams}
-% Nog een andere reden van de hoge kost of onderhoudsprijs bij native mobiele applicaties zullen de ontwikkelingsteams zijn. Bij het ontwikkeling van een applicatie voor beide platformen, zal er gewerkt moeten worden met ofwel één team met de kennis om voor beide platformen te ontwikkelen. Of er zal met twee teams gewerkt worden die elk een applicatie voor één platform maken \autocite{Kotlin2023}.
+\subsection{Nadelen van native ontwikkeling}
+\paragraph{Ontwikkelingsteams}
+Nog een andere reden van de hoge kost of onderhoudsprijs bij native mobiele applicaties 
+zullen de ontwikkelingsteams zijn. Bij het ontwikkeling van een applicatie voor beide 
+platformen, zal er gewerkt moeten worden met ofwel één team met de kennis om voor beide 
+platformen te ontwikkelen. Of er zal met twee teams gewerkt worden die elk een applicatie 
+voor één platform maken \autocite{Kotlin2023}.
 
-% \paragraph{Onderhoudstijd}
-% Na het ontwikkelen van een native applicatie kan het zijn dat er wijzigingen komen of dat er updates moeten gebeuren. Aangezien we niet met een centrale codebase werken, maar met twee onafhankelijke projecten, zullen de wijzigingen of updates op beide projecten uitgevoerd moeten worden \autocite{Kotlin2023}.
+\paragraph{Onderhoudstijd}
+Na het ontwikkelen van een native applicatie kan het zijn dat er wijzigingen komen of 
+dat er updates moeten gebeuren. Aangezien we niet met een centrale codebase werken, maar 
+met twee onafhankelijke projecten, zullen de wijzigingen of updates op beide projecten 
+uitgevoerd moeten worden \autocite{Kotlin2023}.
 
-% \subsection{Programmeertalen en frameworks voor native ontwikkeling}
-% Zoals we reeds hebben besproken, gaat native ontwikkeling een applicatie ontwikkelen specifiek voor één besturingssysteem \ref{subsec:wat-is-native-ontwikkeling}. Om die applicatie te maken kunnen gebruik maken van verscheidene programmeertalen, frameworks en \Gls{IDE}. Deze zijn allemaal specifiek voor ofwel Android of IOS. In de volgende secties gaan we enkele programmeertalen overlopen waarvan we gebruik kunnen maken doorheen de paper om het onderzoek uit te voeren.
+\subsection{Programmeertalen en frameworks voor native ontwikkeling}
+Zoals we reeds hebben besproken, gaat native ontwikkeling een applicatie ontwikkelen 
+specifiek voor één besturingssysteem \ref{subsec:wat-is-native-ontwikkeling}. Om die 
+applicatie te maken kunnen gebruik maken van verscheidene programmeertalen, frameworks 
+en \Gls{IDE}. Deze zijn allemaal specifiek voor ofwel Android of IOS. In de volgende 
+secties gaan we enkele programmeertalen overlopen waarvan we gebruik kunnen maken doorheen 
+de paper om het onderzoek uit te voeren.
 
-% \subsubsection{Android programmeertalen}
-% \paragraph{Java}
-% Java is een all-round programmeertaal met meerdere doeleinden. Eén van die doeleinden onder andere is Android applicatie ontwikkeling. Het was de eerste officiële programmeertaal voor Android applicatie ontwikkeling. Maar het blijft vandaag de dag nog steeds de meestgebruikte \autocite{harkiran2022}. Aangezien het de meestgebruikte programmeertaal is, is het soms gemakkelijker om mee te werken aangezien eventuele bugs meestal al zijn opgelost door de community \autocite{Thorndyke2021}. Dat wil wel niet zeggen dat het een gemakkelijke programmeertaal is om mee te werken. Java kan soms zeer complex zijn waardoor onervaren ontwikkelaars het lastig kunnen krijgen \autocite{Kesavan2021}. Daarnaast is Java mede door zijn complexiteit een zeer robuust programma dat een heleboel voordelen met zich meebrengt zoals: flexibiliteit, portabiliteit en herbruikbaarheid \autocite{Kesavan2021}.
+\subsubsection{Android programmeertalen}
+\paragraph{Java}
+Java is een all-round programmeertaal met meerdere doeleinden. Eén van die doeleinden 
+onder andere is Android applicatie ontwikkeling. Het was de eerste officiële programmeertaal 
+voor Android applicatie ontwikkeling. Maar het blijft vandaag de dag nog steeds de 
+meestgebruikte \autocite{harkiran2022}. Aangezien het de meestgebruikte programmeertaal 
+is, is het soms gemakkelijker om mee te werken aangezien eventuele bugs meestal al zijn 
+opgelost door de community \autocite{Thorndyke2021}. Dat wil wel niet zeggen dat het een 
+gemakkelijke programmeertaal is om mee te werken. Java kan soms zeer complex zijn waardoor 
+onervaren ontwikkelaars het lastig kunnen krijgen \autocite{Kesavan2021}. Daarnaast is Java 
+mede door zijn complexiteit een zeer robuust programma dat een heleboel voordelen met zich 
+meebrengt zoals: flexibiliteit, portabiliteit en herbruikbaarheid \autocite{Kesavan2021}.
 
-% \paragraph{Kotlin}
-% Momenteel is Kotlin de eerste officiële programmeertaal voor Android applicatie ontwikkeling. Het is ontwikkeld door Google en \Gls{JetBrains} als lichtere en gebruiksvriendelijker manier om Android applicaties te maken \autocite{Thorndyke2021}. In vergelijking met Java is er geen nood aan puntkomma's, minder code nodig om dezelfde applicatie te maken en Kotlin laat toe om variabelen te maken zonder ze voorhand te moeten definiëren \autocite{Thorndyke2021}. Het wordt door vele bedrijven gebruikt omwille van de herbruikbaarheid van code alsook het gebruik van externe \Gls{library} \autocite{Kesavan2021}.
+\paragraph{Kotlin}
+Momenteel is Kotlin de eerste officiële programmeertaal voor Android applicatie ontwikkeling. 
+Het is ontwikkeld door Google en \Gls{JetBrains} als lichtere en gebruiksvriendelijker 
+manier om Android applicaties te maken \autocite{Thorndyke2021}. In vergelijking met Java 
+is er geen nood aan puntkomma's, minder code nodig om dezelfde applicatie te maken en Kotlin 
+laat toe om variabelen te maken zonder ze voorhand te moeten definiëren \autocite{Thorndyke2021}. 
+Het wordt door vele bedrijven gebruikt omwille van de herbruikbaarheid van code alsook het 
+gebruik van externe \Gls{library} \autocite{Kesavan2021}.
 
-% \paragraph{C++}
-% C++ is een alternatieve methode voor Android applicatie ontwikkeling. Om C++ te gebruiken moet er gebruik worden gemaakt van de \Gls{ANDK} (NDK). De applicatie kan wel niet compleet met C++ worden gemaakt, maar C++ en de NDK kunnen gebruikt worden om libraries te ontwikkelen die een applicatie gebruikt \autocite{harkiran2022}. Het gebruik van C++ voor libraries wordt vaak gedaan voor de performantie die C++ met zich meebrengt. Er moet wel rekening worden gehouden dat het een moeilijke programmeertaal is om te leren en dus niet voor iedereen is \autocite{Designveloper2022}.
+\paragraph{C++}
+C++ is een alternatieve methode voor Android applicatie ontwikkeling. Om C++ te gebruiken 
+moet er gebruik worden gemaakt van de \Gls{ANDK} (NDK). De applicatie kan wel niet compleet 
+met C++ worden gemaakt, maar C++ en de NDK kunnen gebruikt worden om libraries te ontwikkelen 
+die een applicatie gebruikt \autocite{harkiran2022}. Het gebruik van C++ voor libraries wordt 
+vaak gedaan voor de performantie die C++ met zich meebrengt. Er moet wel rekening worden 
+gehouden dat het een moeilijke programmeertaal is om te leren en dus niet voor iedereen is 
+\autocite{Designveloper2022}.
 
-% \paragraph{C\#}\label{pa:csharp}
-% Origineel is C\# ontwikkeld als object-georiënteerde programmeertaal, dat gebruikt zou worden voor desktop, mobiele en web applicaties te maken. Het was een taal die voortkwam vanuit C en werd ontwikkeld door Microsoft \autocite{Designveloper2022}. Het is niet alleen omdat het al 20 jaar bestaat, dat het daarom een populaire keuze is voor ontwikkelaars maar C\# heeft toegang tot het .NET framework \autocite{Kesavan2021}. Het .NET framework bied heel wat tools en libraries aan die helpen bij het ontwikkelen van Android applicaties. Daarnaast heeft C\# nog een aantal andere voordelen. C\# heeft wat cross-platform capaciteiten, waardoor er code overheen platformen gedeeld kan worden en er is een \Gls{GarbageCollector}, die ervoor zorgt dat er geen geheugen lekken zijn \autocite{Patel2023}.
+\paragraph{C\#}\label{pa:csharp}
+Origineel is C\# ontwikkeld als object-georiënteerde programmeertaal, dat gebruikt zou 
+worden voor desktop, mobiele en web applicaties te maken. Het was een taal die voortkwam 
+vanuit C en werd ontwikkeld door Microsoft \autocite{Designveloper2022}. Het is niet alleen 
+omdat het al 20 jaar bestaat, dat het daarom een populaire keuze is voor ontwikkelaars 
+maar C\# heeft toegang tot het .NET framework \autocite{Kesavan2021}. Het .NET framework 
+bied heel wat tools en libraries aan die helpen bij het ontwikkelen van Android applicaties. 
+Daarnaast heeft C\# nog een aantal andere voordelen. C\# heeft wat cross-platform 
+capaciteiten, waardoor er code overheen platformen gedeeld kan worden en er is een 
+\Gls{GarbageCollector}, die ervoor zorgt dat er geen geheugen lekken zijn \autocite{Patel2023}.
 
-% \paragraph{Dart}
-% Dart is een open-source programmeertaal, gemaakt door Google dat werd ontworpen om op Android platformen te runnen \autocite{Kesavan2021} met de bedoeling van klanten een geoptimaliseerde manier te geven om snel applicaties op het android platform te krijgen \autocite{harkiran2022}. Dit wordt gedaan door te focussen op UI development. De wijzigingen worden snel aan de ontwikkelaar getoond dankzij de hot-reload. Tot slot is Dart ook gekend voor hun performantie en de mogelijkheid om te compilen tot ARM en x64 code \autocite{harkiran2022}.
+\paragraph{Dart}
+Dart is een open-source programmeertaal, gemaakt door Google dat werd ontworpen om op 
+Android platformen te runnen \autocite{Kesavan2021} met de bedoeling van klanten een 
+geoptimaliseerde manier te geven om snel applicaties op het android platform te krijgen 
+\autocite{harkiran2022}. Dit wordt gedaan door te focussen op UI development. De wijzigingen 
+worden snel aan de ontwikkelaar getoond dankzij de hot-reload. Tot slot is Dart ook gekend 
+voor hun performantie en de mogelijkheid om te compilen tot ARM en x64 code \autocite{harkiran2022}.
 
-% \paragraph{Corona}
-% Ondanks dat het minder populair is, is Corona zeker geen slechte alternatief. Het is snel en makkelijk om te gebruiken met de capaciteiten om de meeste Android applicaties te runnen \autocite{Kesavan2021}. Corona is ook geen programmeertaal op zich, maar een development kit dat gebruikt kan worden om Android applicaties te maken door gebruik te maken van Lua. Lua is een lichte, efficiënte en open-source programmeertaal dat object-georiënteerd, functioneel, data-driven, enz. programmeren ondersteund \autocite{Lua2021}. Om met Corona te werken, worden er twee operationele modes gebruikt namelijk de Corona Simulator en Corona Native. De Corona Simulator wordt gebruikt om applicaties te maken en Corona Native wordt gebruikt om de Lua code te integreren met een Android Studio project om applicaties te maken die native functionaliteiten gebruiken \autocite{harkiran2022}.
+\paragraph{Corona}
+Ondanks dat het minder populair is, is Corona zeker geen slechte alternatief. Het is snel 
+en makkelijk om te gebruiken met de capaciteiten om de meeste Android applicaties te runnen 
+\autocite{Kesavan2021}. Corona is ook geen programmeertaal op zich, maar een development kit 
+dat gebruikt kan worden om Android applicaties te maken door gebruik te maken van Lua. Lua is 
+een lichte, efficiënte en open-source programmeertaal dat object-georiënteerd, functioneel, 
+data-driven, enz. programmeren ondersteund \autocite{Lua2021}. Om met Corona te werken, worden 
+er twee operationele modes gebruikt namelijk de Corona Simulator en Corona Native. De Corona 
+Simulator wordt gebruikt om applicaties te maken en Corona Native wordt gebruikt om de Lua 
+code te integreren met een Android Studio project om applicaties te maken die native 
+functionaliteiten gebruiken \autocite{harkiran2022}.
 
-% \paragraph{Samenvatting Android programmeertalen}
-% Doorheen deze bachelorproef zullen we om de functionaliteiten van native Android applicaties te testen gebruik maken van de officiële programmeertaal van Android applicaties, namelijk Kotlin. Dit zullen we doen omdat Kotlin ontworpen is om veiliger te zijn dan sommige andere programmeertalen \autocite{Kesavan2021}, waardoor de kans op bugs en fouten kleiner is. Daarnaast is Kotlin makkelijk te integreren in bestaande Java-projecten \autocite{Kesavan2021}. Dit bespaart tijd en verhoogt de efficiëntie van de ontwikkeling. Tot slot heeft Kotlin een actieve gemeenschap van ontwikkelaars die regelmatig updates en nieuwe functies uitbrengen, waardoor de taal zich snel blijft ontwikkelen en verbeteren \autocite{Patel2023}.
+\paragraph{Samenvatting Android programmeertalen}
+Doorheen deze bachelorproef zullen we om de functionaliteiten van native Android applicaties 
+te testen gebruik maken van de officiële programmeertaal van Android applicaties, 
+namelijk Kotlin. Dit zullen we doen omdat Kotlin ontworpen is om veiliger te zijn dan 
+sommige andere programmeertalen \autocite{Kesavan2021}, waardoor de kans op bugs en 
+fouten kleiner is. Daarnaast is Kotlin makkelijk te integreren in bestaande 
+Java-projecten \autocite{Kesavan2021}. Dit bespaart tijd en verhoogt de efficiëntie 
+van de ontwikkeling. Tot slot heeft Kotlin een actieve gemeenschap van ontwikkelaars 
+die regelmatig updates en nieuwe functies uitbrengen, waardoor de taal zich snel blijft 
+ontwikkelen en verbeteren \autocite{Patel2023}.
 
-% \subsubsection{IOS programmeertalen}
-% \paragraph{Swift}
-% Swift wordt niet enkel en alleen meer gebruikt om mobiele applicaties te ontwikkelen. Swift wordt ook gebruikt voor besturingssystemen zoals Windows en Linux. Het werd ontwikkeld door Apple als een open-source opvolger van alle C gebaseerde programmeertalen zoals Objective-C, C++ en C \autocite{Coursera2022}. Er zijn 3 hoofdzakelijke voordelen waardoor Swift zeer populair is geworden bij ontwikkelaars: snelheid, veiligheid en introductie niveau \autocite{yuvraj2022}. Als opvolger van alle C gebaseerde programmeertalen, heeft het ook een betere performantie bij het uitvoeren van de meeste taken. Daarnaast kunnen variabelen ook aangemaakt worden zonder op voorhand een type te definiëren en puntkomma's zijn niet verplicht \autocite{Thorndyke2021}.
+\subsubsection{IOS programmeertalen}
+\paragraph{Swift}
+Swift wordt niet enkel en alleen meer gebruikt om mobiele applicaties te ontwikkelen. 
+Swift wordt ook gebruikt voor besturingssystemen zoals Windows en Linux. Het werd 
+ontwikkeld door Apple als een open-source opvolger van alle C gebaseerde programmeertalen 
+zoals Objective-C, C++ en C \autocite{Coursera2022}. Er zijn 3 hoofdzakelijke voordelen 
+waardoor Swift zeer populair is geworden bij ontwikkelaars: snelheid, veiligheid en 
+introductie niveau \autocite{yuvraj2022}. Als opvolger van alle C gebaseerde programmeertalen, 
+heeft het ook een betere performantie bij het uitvoeren van de meeste taken. Daarnaast kunnen 
+variabelen ook aangemaakt worden zonder op voorhand een type te definiëren en puntkomma's 
+zijn niet verplicht \autocite{Thorndyke2021}.
 
-% \paragraph{C\#}
-% Net zoals bij Android kan C\# ook gebruikt worden om IOS applicaties te ontwikkelen. En zoals eerder gezegd, is C\# een object-georiënteerde programmeertaal dat geïntegreerd is met het .NET framework \ref{pa:csharp} \autocite{yuvraj2022}. Doorheen de jaren sinds 2000 wanneer C\# beschikbaar was heeft het heel wat populariteit gewonnen dankzij de eenvoudige en hoogwaardige architectuur \autocite{yuvraj2022}. Momenteel is C\# gerankt als de 7 populairste programmeertaal \autocite{Johns2023}. C\# gebruikt niet alleen de tools en libraries dat .NET te bieden heeft, maar het maakt ook gebruik van de .NET runtime omgeving \autocite{Pruciak2022}.
+\paragraph{C\#}
+Net zoals bij Android kan C\# ook gebruikt worden om IOS applicaties te ontwikkelen. 
+En zoals eerder gezegd, is C\# een object-georiënteerde programmeertaal dat geïntegreerd 
+is met het .NET framework \ref{pa:csharp} \autocite{yuvraj2022}. Doorheen de jaren sinds 
+2000 wanneer C\# beschikbaar was heeft het heel wat populariteit gewonnen dankzij de 
+eenvoudige en hoogwaardige architectuur \autocite{yuvraj2022}. Momenteel is C\# gerankt 
+als de 7 populairste programmeertaal \autocite{Johns2023}. C\# gebruikt niet alleen de 
+tools en libraries dat .NET te bieden heeft, maar het maakt ook gebruik van de .NET runtime 
+omgeving \autocite{Pruciak2022}.
 
-% \paragraph{Objective-C}
-% Objective-C was de originele programmeertaal voor Apple en de fundering van MacOS en IOS \autocite{Johns2023}. Het is een \Gls{superset} van C, het breid C dus uit en het voegt nieuwe functionaliteiten eraan toe \autocite{Johns2023}. Net zoals C\# is Objective-C een object-georiënteerde programmeertaal \autocite{Pruciak2022}. Daarnaast bestaat het wel al langer dan C\#, Objective-C is ontwikkeld in de vroege 1980's \autocite{Pruciak2022}. Aangezien het van C komt, is het ook mogelijk om C code in een Objective-C klasse toe te voegen. Daardoor worden Objective-C klassen simpeler, flexibeler en meer schaalbaar voor mobiele applicaties \autocite{yuvraj2022}. Dankzij de eenvoud en betere runtijd is Objective-C een van de meest gekozen programmeertalen, vooral dankzij de krachtige \Gls{SDK} die gebruikt kunnen worden.
+\paragraph{Objective-C}
+Objective-C was de originele programmeertaal voor Apple en de fundering van MacOS en 
+IOS \autocite{Johns2023}. Het is een \Gls{superset} van C, het breid C dus uit en het 
+voegt nieuwe functionaliteiten eraan toe \autocite{Johns2023}. Net zoals C\# is Objective-C 
+een object-georiënteerde programmeertaal \autocite{Pruciak2022}. Daarnaast bestaat 
+het wel al langer dan C\#, Objective-C is ontwikkeld in de vroege 1980's \autocite{Pruciak2022}. 
+Aangezien het van C komt, is het ook mogelijk om C code in een Objective-C klasse toe 
+te voegen. Daardoor worden Objective-C klassen simpeler, flexibeler en meer schaalbaar 
+voor mobiele applicaties \autocite{yuvraj2022}. Dankzij de eenvoud en betere runtijd is 
+Objective-C een van de meest gekozen programmeertalen, vooral dankzij de krachtige \Gls{SDK} 
+die gebruikt kunnen worden.
 
-% \paragraph{Samenvatting IOS programmeertalen}
-% Er zijn verschillende programmeertalen beschikbaar voor het ontwikkelen van IOS mobiele applicaties, waaronder Swift, C\# en Objective-C. Swift is de nieuwste en meestgebruikte programmeertaal voor IOS ontwikkeling \autocite{yuvraj2022}. Ook wordt Swift vaak aangeraden om mee te ontwikkelen, aangezien het mogelijk maakt om applicaties snel te ontwikkelen die later makkelijk uitgebreid kunnen worden \autocite{Pruciak2022}. 
-% \\\\
-% Daarom zou Swift als programmeertaal gekozen worden om te gebruiken bij het vergelijken van native IOS applicaties indien IOS ook in deze bachelorproef onderzocht werd. \ref{disclaimer:ios}
+\paragraph{Samenvatting IOS programmeertalen}
+Er zijn verschillende programmeertalen beschikbaar voor het ontwikkelen van IOS 
+mobiele applicaties, waaronder Swift, C\# en Objective-C. Swift is de nieuwste en 
+meestgebruikte programmeertaal voor IOS ontwikkeling \autocite{yuvraj2022}. Ook 
+wordt Swift vaak aangeraden om mee te ontwikkelen, aangezien het mogelijk maakt om 
+applicaties snel te ontwikkelen die later makkelijk uitgebreid kunnen 
+worden \autocite{Pruciak2022}. 
+\\\\
+Daarom zou Swift als programmeertaal gekozen worden om te gebruiken bij het vergelijken van 
+native IOS applicaties indien IOS ook in deze bachelorproef onderzocht werd. \ref{disclaimer:ios}
 
-% \subsection{Tools en IDEs voor native ontwikkeling}
+\subsection{Tools en IDEs voor native ontwikkeling}
 
-% \paragraph{Android Studio}
-% Android Studio is een populaire IDE die vaak wordt gebruikt in combinatie met Kotlin om native Android applicaties te ontwikkelen. Het wordt vaak door ontwikkelaars gebruikt omwille van de ingebouwde \Gls{emulator} die Android Studio bevat. Hiermee kunnen ontwikkelaars verschillende apparaten met verschillende Android versies uit testen \autocite{Medewar2022}. Daarnaast ondersteund de emulator ook verschillende features die normaal enkel toegankelijk zijn bij fysieke apparaten, zoals toegang tot de camera, locatie, batterij instellingen, enz. \autocite{Okeke2022}. Tot slot biedt Android Studio ook een krachtige manier om layouts te maken. Ontwikkelaars kunnen met een visuele design editor schermen opbouwen in plaats van code te schrijven, die schermen worden dan automatisch door Android Studio omgezet naar xml bestanden \autocite{Medewar2022}. Het ondersteund ook GitHub integratie om makkelijk aand grote projecten te werken \autocite{Studio2023}.
+\paragraph{Android Studio}
+Android Studio is een populaire IDE die vaak wordt gebruikt in combinatie met 
+Kotlin om native Android applicaties te ontwikkelen. Het wordt vaak door ontwikkelaars 
+gebruikt omwille van de ingebouwde \Gls{emulator} die Android Studio bevat. Hiermee 
+kunnen ontwikkelaars verschillende apparaten met verschillende Android versies uit 
+testen \autocite{Medewar2022}. Daarnaast ondersteund de emulator ook verschillende 
+features die normaal enkel toegankelijk zijn bij fysieke apparaten, zoals toegang tot 
+de camera, locatie, batterij instellingen, enz. \autocite{Okeke2022}. Tot slot biedt 
+Android Studio ook een krachtige manier om layouts te maken. Ontwikkelaars kunnen met 
+een visuele design editor schermen opbouwen in plaats van code te schrijven, die schermen 
+worden dan automatisch door Android Studio omgezet naar xml bestanden \autocite{Medewar2022}. 
+Het ondersteund ook GitHub integratie om makkelijk aand grote projecten te werken \autocite{Studio2023}.
 
-% \paragraph{Eclipse}
-% Eclipse is ontwikkeld in 2001 als een Java IDE. Maar over de jaren is het uitgegroeid tot een IDE dat meerdere programmeertalen ondersteund \autocite{Medewar2022}. Ondanks de ondersteuning van meerdere programmeertalen wordt het nog altijd vaak gebruikt om native Android applicaties te ontwikkelen. Het laat ook net zoals Android Studio ontwikkelaars toe om makkelijk te werken aan projecten dankzij de GitHub integratie \autocite{Okeke2022}, maar het ondersteund ook andere integratiemethoden zoals Maven \autocite{Medewar2022}. Tot slot bestaat er dankzij de populariteit een grootte community rondom Eclipse dat meewerkt aan de verbetring van Eclipse \autocite{Medewar2022}.
+\paragraph{Eclipse}
+Eclipse is ontwikkeld in 2001 als een Java IDE. Maar over de jaren is het uitgegroeid 
+tot een IDE dat meerdere programmeertalen ondersteund \autocite{Medewar2022}. Ondanks 
+de ondersteuning van meerdere programmeertalen wordt het nog altijd vaak gebruikt om native 
+Android applicaties te ontwikkelen. Het laat ook net zoals Android Studio ontwikkelaars toe 
+om makkelijk te werken aan projecten dankzij de GitHub integratie \autocite{Okeke2022}, maar 
+het ondersteund ook andere integratiemethoden zoals Maven \autocite{Medewar2022}. Tot slot 
+bestaat er dankzij de populariteit een grootte community rondom Eclipse dat meewerkt aan de 
+verbetring van Eclipse \autocite{Medewar2022}.
 
-% \paragraph{Xcode}
-% Xcode is een IDE dat wordt gebruikt om software en applicaties te maken voor IOS, macOS, iPadOS, watchOS en tvOS \autocite{jahnavisarora2020}. Net zoals bij Android Studio en Eclipse bevat ook Xcode een Source Control menu waarmee ontwikkelaars makkelijk met GitHub kunnen werken \autocite{Medewar2022}. Om software voor alle Apple gerelateerde besturingssystemen te schrijven wordt er gebruik gemaakt van Swift, C, C++ en Objective C compilers \autocite{jahnavisarora2020}. Wat Xcode zo populair maakt is de geïntegreerde workflow voor coderen, testen, debuggen en ontwerpen van gebruikersinterfaces \autocite{jahnavisarora2020}.
+\paragraph{Xcode}
+Xcode is een IDE dat wordt gebruikt om software en applicaties te maken voor IOS, macOS, 
+iPadOS, watchOS en tvOS \autocite{jahnavisarora2020}. Net zoals bij Android Studio en 
+Eclipse bevat ook Xcode een Source Control menu waarmee ontwikkelaars makkelijk met GitHub 
+kunnen werken \autocite{Medewar2022}. Om software voor alle Apple gerelateerde besturingssystemen 
+te schrijven wordt er gebruik gemaakt van Swift, C, C++ en Objective C compilers 
+\autocite{jahnavisarora2020}. Wat Xcode zo populair maakt is de geïntegreerde workflow 
+voor coderen, testen, debuggen en ontwerpen van gebruikersinterfaces \autocite{jahnavisarora2020}.
 
-% \paragraph{Samenvatting Tools en IDEs}
-% Voor Android hebben we keuze tussen 2 populaire en krachtige IDE. Maar omdate we bij Android gebruik maken van Kotlin als programmeertaal zullen we ook gebruik maken van Android Studio. Ook kiezen we voor Android Studio omdat het door Google aan ontwikkelaars wordt aangeraden \autocite{Medewar2022}.
-% \\\\
-% Bij IOS zijn er nog een heleboel IDE die ontwikkelaars kunnen gebruiken die hier niet benoemd worden. Desondanks zouden we indien IOS onderzocht werd in deze bachelorproef Xcode gebruiken in combinatie met Swift. \ref{disclaimer:ios}
+\paragraph{Samenvatting Tools en IDEs}
+Voor Android hebben we keuze tussen 2 populaire en krachtige IDE. Maar omdate we bij Android 
+gebruik maken van Kotlin als programmeertaal zullen we ook gebruik maken van Android Studio. 
+Ook kiezen we voor Android Studio omdat het door Google aan ontwikkelaars wordt aangeraden 
+\autocite{Medewar2022}.
+\\\\
+Bij IOS zijn er nog een heleboel IDE die ontwikkelaars kunnen gebruiken die hier niet benoemd 
+worden. Desondanks zouden we indien IOS onderzocht werd in deze bachelorproef Xcode gebruiken 
+in combinatie met Swift. \ref{disclaimer:ios}
 
-% \section{Cross-platform ontwikkeling}
+\section{Cross-platform ontwikkeling}
 
-% \subsection{Wat is cross-platform ontwikkeling?}
-% Cross-platform ontwikkeling is het proces om native applicaties \ref{ch:native-applicaties} te maken voor een specifiek besturingssysteem, zoals Android en IOS. Cross-platform wordt gebruikt om het platform specifiek probleem van native applicaties op te lossen door beide applicaties te ontwikkelen vanuit één codebase \autocite{Khan2021}.
+\subsection{Wat is cross-platform ontwikkeling?}
+Cross-platform ontwikkeling is het proces om native applicaties \ref{ch:native-applicaties} 
+te maken voor een specifiek besturingssysteem, zoals Android en IOS. Cross-platform wordt 
+gebruikt om het platform specifiek probleem van native applicaties op te lossen door beide 
+applicaties te ontwikkelen vanuit één codebase \autocite{Khan2021}.
 
-% \subsection{Nadelen van cross-platform ontwikkeling}
-% Bij cross-platform ontwikkeling is het niet mogelijk om gebruik te maken van sommige functionaliteiten van een apparaat \autocite{Terekhov2022}. Daarnaast kan native ontwikkeling indien een apparaat een nieuwe functionaliteit aanbied hier onmiddellijk gebruik van maken in vergelijking met cross-platform dat moet wachten op updates voor cross-platform ontwikkeling \autocite{Sakovich22023}.
+\subsection{Nadelen van cross-platform ontwikkeling}
+Bij cross-platform ontwikkeling is het niet mogelijk om gebruik te maken van sommige 
+functionaliteiten van een apparaat \autocite{Terekhov2022}. Daarnaast kan native 
+ontwikkeling indien een apparaat een nieuwe functionaliteit aanbied hier onmiddellijk gebruik 
+van maken in vergelijking met cross-platform dat moet wachten op updates voor cross-platform 
+ontwikkeling \autocite{Sakovich22023}.
 
-% \subsection{Voordelen van cross-platform ontwikkeling}
-% Net zoals bij web applicaties \ref{ch:VoordelenWebApplicaties}, zal ook bij cross-platform ontwikkeling de kostprijs van een applicaties lager liggen dan bij native ontwikkeling. Dit omdat er maar één applicatie ontwikkeld moet worden in plaats van twee. Ook zullen de onderhoudskosten lager liggen voor dezelfde reden \autocite{Terekhov2022}. Nog een ander groot voordeel van de gedeelde codebase voor twee applicaties is de gedeelde logica ervan. Aangezien er maar één codebase is zal de logica voor beide applicaties overeenkomen, waarbij dat bij native ontwikkeling soms niet het geval is \autocite{Kotlin2023}.
+\subsection{Voordelen van cross-platform ontwikkeling}
+Net zoals bij web applicaties \ref{ch:VoordelenWebApplicaties}, zal ook bij cross-platform 
+ontwikkeling de kostprijs van een applicaties lager liggen dan bij native ontwikkeling. 
+Dit omdat er maar één applicatie ontwikkeld moet worden in plaats van twee. Ook zullen de 
+onderhoudskosten lager liggen voor dezelfde reden \autocite{Terekhov2022}. Nog een ander 
+groot voordeel van de gedeelde codebase voor twee applicaties is de gedeelde logica ervan. 
+Aangezien er maar één codebase is zal de logica voor beide applicaties overeenkomen, waarbij 
+dat bij native ontwikkeling soms niet het geval is \autocite{Kotlin2023}.
 
-% \subsubsection{Verschil met native ontwikkeling}
-% Het grootste verschil met native ontwikkeling is dat er bij cross-platform maar één programmeertaal en IDE nodig is om mobiele applicaties voor zowel Android als IOS te ontwikkelen \autocite{Hu2021}. Bij native ontwikkeling is er voor elk platform een programmeertaal en IDE nodig. 
+\subsubsection{Verschil met native ontwikkeling}
+Het grootste verschil met native ontwikkeling is dat er bij cross-platform maar één 
+programmeertaal en IDE nodig is om mobiele applicaties voor zowel Android als IOS te 
+ontwikkelen \autocite{Hu2021}. Bij native ontwikkeling is er voor elk platform een 
+programmeertaal en IDE nodig. 
 
-% \subsection{Frameworks voor cross-platform ontwikkeling}
-% Om cross-platform te ontwikkelen kunnen we gebruik maken van verscheidene frameworks en IDEs. In de volgende secties gaan we enkele overlopen waarvan we gebruik kunnen maken doorheen de bachelorproef om het onderzoek uit te voeren.
+\subsection{Frameworks voor cross-platform ontwikkeling}
+Om cross-platform te ontwikkelen kunnen we gebruik maken van verscheidene frameworks en 
+IDEs. In de volgende secties gaan we enkele overlopen waarvan we gebruik kunnen maken 
+doorheen de bachelorproef om het onderzoek uit te voeren.
 
-% \paragraph{Flutter}
-% Flutter is een open-source framework ontwikkeld door Google dat de ontwikkeling toelaat van niet alleen Android en IOS applicaties, maar ook Linux, macOS, Fuchsia en Windows vanuit één codebase \autocite{Okeke2022a}. Het is vooral populair bij ontwikkelaars dankzij de simpelheid om te gebruiken en de performantie \autocite{Sakovich22023}. De hoge performantie komt door het gebruik van C en C++ \autocite{Terekhov2022}. Daarnaast heeft het ook een \Gls{Hotreload} waardoor ontwikkelaars snel resultaten kunnen zien bij veranderingen in de code \autocite{Sakovich22023}.
+\paragraph{Flutter}
+Flutter is een open-source framework ontwikkeld door Google dat de ontwikkeling toelaat 
+van niet alleen Android en IOS applicaties, maar ook Linux, macOS, Fuchsia en Windows 
+vanuit één codebase \autocite{Okeke2022a}. Het is vooral populair bij ontwikkelaars 
+dankzij de simpelheid om te gebruiken en de performantie \autocite{Sakovich22023}. De 
+hoge performantie komt door het gebruik van C en C++ \autocite{Terekhov2022}. Daarnaast 
+heeft het ook een \Gls{Hotreload} waardoor ontwikkelaars snel resultaten kunnen zien bij 
+veranderingen in de code \autocite{Sakovich22023}.
 
-% \paragraph{React native}
-% React native is net zoals Flutter een open-source framework ontwikkeld door Facebook. Het laat toe om IOS en Android applicaties te ontwikkelen \autocite{Terekhov2022}. Het grootste voordeel van React native is de ontwikkeltijd waarmee applicaties ontwikkeld kunnen worden \autocite{Terekhov2022}, de grote community die meehelpt aan het ontwikkelen van externe libraries \autocite{Okeke2022a}. Dankzij die externe libraries hebben ontwikkelaars toegang tot native features die normaal voor cross-platform ontwikkeling niet toegankelijk is. Deze externe libraries kunnen geschreven zijn in Objective-C, Swift of Java \autocite{Okeke2022a}. Tot slot heeft React native ook een hot reload functie net zoals flutter waardoor ontwikkelaars snel resultaten kunnen zien bij veranderingen in de code \autocite{Terekhov2022}.
+\paragraph{React native}
+React native is net zoals Flutter een open-source framework ontwikkeld door Facebook. 
+Het laat toe om IOS en Android applicaties te ontwikkelen \autocite{Terekhov2022}. 
+Het grootste voordeel van React native is de ontwikkeltijd waarmee applicaties ontwikkeld 
+kunnen worden \autocite{Terekhov2022}, de grote community die meehelpt aan het ontwikkelen 
+van externe libraries \autocite{Okeke2022a}. Dankzij die externe libraries hebben ontwikkelaars 
+toegang tot native features die normaal voor cross-platform ontwikkeling niet toegankelijk is. 
+Deze externe libraries kunnen geschreven zijn in Objective-C, Swift of Java \autocite{Okeke2022a}. 
+Tot slot heeft React native ook een hot reload functie net zoals flutter waardoor ontwikkelaars 
+snel resultaten kunnen zien bij veranderingen in de code \autocite{Terekhov2022}.
 
-% \paragraph{.NET MAUI (vroeger Xamarin)}
-% .NET MAUI is net zoals Flutter en React native een open-source framework ontwikkeld door Microsoft. Het maakt gebruik van C\# als programmeertaal en het .NET framework voor native libraries \autocite{Sakovich22023}. Net zoals bij Flutter en React native bezit ook .NET MAUI over een hot reload functie om snel te kunnen ontwikkelen en debuggen. Dankzij het gebruik van C\# bezit ook .NET MAUI net zoals Flutter en React native over een hoge performantie \autocite{Okeke2022a}. Wel een groot nadeel is dat applicaties niet altijd compatibel zijn met de laatste versies van Android of IOS \autocite{Terekhov2022}.
+\paragraph{.NET MAUI (vroeger Xamarin)}
+.NET MAUI is net zoals Flutter en React native een open-source framework ontwikkeld door 
+Microsoft. Het maakt gebruik van C\# als programmeertaal en het .NET framework voor 
+native libraries \autocite{Sakovich22023}. Net zoals bij Flutter en React native bezit 
+ook .NET MAUI over een hot reload functie om snel te kunnen ontwikkelen en debuggen. 
+Dankzij het gebruik van C\# bezit ook .NET MAUI net zoals Flutter en React native over 
+een hoge performantie \autocite{Okeke2022a}. Wel een groot nadeel is dat applicaties 
+niet altijd compatibel zijn met de laatste versies van Android of IOS \autocite{Terekhov2022}.
 
-% \paragraph{Samenvatting frameworks}
-% Ze staan hier niet allemaal beschreven maar er zijn nog een heel wat frameworks die gebruikt kunnen worden voor cross-platform ontwikkeling. Maar de drie frameworks die hier beschreven zijn hebben allemaal een gelijkaardige performantie. React native en .NET MAUI hebben ook makkelijk toegang tot native features dankzij de native libraries. Uit deze drie frameworks gaan we React native kiezen om cross-platform te ontwikkelen dankzij de performantie, native libraries en grote community er rond. React native bevat voor deze bachelorproef de beste eigenschappen om het onderzoek uit te voeren.
+\paragraph{Samenvatting frameworks}
+Ze staan hier niet allemaal beschreven maar er zijn nog een heel wat frameworks die 
+gebruikt kunnen worden voor cross-platform ontwikkeling. Maar de drie frameworks die 
+hier beschreven zijn hebben allemaal een gelijkaardige performantie. React native en 
+.NET MAUI hebben ook makkelijk toegang tot native features dankzij de native libraries. 
+Uit deze drie frameworks gaan we React native kiezen om cross-platform te ontwikkelen 
+dankzij de performantie, native libraries en grote community er rond. React native 
+bevat voor deze bachelorproef de beste eigenschappen om het onderzoek uit te voeren.
 
-% \subsection{IDEs voor cross-platform ontwikkeling}
+\subsection{IDEs voor cross-platform ontwikkeling}
 
-% \paragraph{Visual Studio Code}
-% Er is maar één IDE die eruit springt en dat is Visual Studio Code. Het is een universele IDE die gebruikt kan worden voor alle programmeertalen. Daarnaast is er een groot aanbod van extensies die het mogelijk maken om de IDE aan te passen aan de specifieke behoefte van de ontwikkelaar \autocite{Heller2022}. Daarom zullen we Visual Studio Code gebruiken als IDE om cross-platform te ontwikkelen.
+\paragraph{Visual Studio Code}
+Er is maar één IDE die eruit springt en dat is Visual Studio Code. Het is een 
+universele IDE die gebruikt kan worden voor alle programmeertalen. Daarnaast is er een 
+groot aanbod van extensies die het mogelijk maken om de IDE aan te passen aan de 
+specifieke behoefte van de ontwikkelaar \autocite{Heller2022}. Daarom zullen we Visual 
+Studio Code gebruiken als IDE om cross-platform te ontwikkelen.
 
-% \section{Functionaliteiten}
-% \subsection{Keuze te onderzoeken functionaliteiten}
-% Om een vergelijking te kunnen maken tussen native en cross-platform ontwikkeling, hebben we een aantal functionaliteiten nodig om te onderzoeken. 
+\section{Functionaliteiten}
+\subsection{Keuze te onderzoeken functionaliteiten}
+Om een vergelijking te kunnen maken tussen native en cross-platform ontwikkeling, 
+hebben we een aantal functionaliteiten nodig om te onderzoeken. 
 
-% \paragraph{Basisfunctionaliteiten}
-% Dit omvat functionaliteiten die elke mobiele applicatie zou moeten hebben. Zoals het openen van de app met ondertussen een laadscherm tonen. Daarnaast het navigeren tussen verschillende schermen binnen de applicatie. Deze functionaliteiten zijn bij elke applicatie aanwezig en vormen dus een belangrijk onderdeel van de gebruikerservaring en daarom ook een belangrijk onderdeel van de vergelijking tussen native en cross-platform.
+\paragraph{Basisfunctionaliteiten}
+Dit omvat functionaliteiten die elke mobiele applicatie zou moeten hebben. Zoals 
+het openen van de app met ondertussen een laadscherm tonen. Daarnaast het navigeren 
+tussen verschillende schermen binnen de applicatie. Deze functionaliteiten zijn bij 
+elke applicatie aanwezig en vormen dus een belangrijk onderdeel van de gebruikerservaring 
+en daarom ook een belangrijk onderdeel van de vergelijking tussen native en cross-platform.
 
-% \paragraph{Audio- en videospelers}
-% Een mobiele app kan verschillende soorten media afspelen, zoals video's en muziek. Hierbij zullen we kijken naar de implementatie van deze functionaliteit in zowel native als cross-platform ontwikkeling. We zullen de integratie van externe bibliotheken voor het afspelen van media en video's onderzoeken.
+\paragraph{Audio- en videospelers}
+Een mobiele app kan verschillende soorten media afspelen, zoals video's en muziek. 
+Hierbij zullen we kijken naar de implementatie van deze functionaliteit in zowel native 
+als cross-platform ontwikkeling. We zullen de integratie van externe bibliotheken voor 
+het afspelen van media en video's onderzoeken.
 
-% \paragraph{Camera-integratie}
-% Bij de camera-integratie kijken we naar hoe deze functionaliteit geïmplementeerd kan worden om in de mobiele applicatie foto's te nemen door gebruik te maken van de camera.
+\paragraph{Camera-integratie}
+Bij de camera-integratie kijken we naar hoe deze functionaliteit geïmplementeerd kan 
+worden om in de mobiele applicatie foto's te nemen door gebruik te maken van de camera.
 
-% \paragraph{Gebruik van sensoren}
-% Mobiele apparaten bevatten verschillende sensoren, zoals de accelerometer en gyroscoop. Ze kunnen worden gebruikt in mobiele applicaties om bijvoorbeeld beweging te detecteren of de oriëntatie van het apparaat. Bij het gebruik van sensoren kijken we naar hoe deze sensoren geïmplementeerd kunnen worden in zowel native als cross-platform ontwikkeling.
+\paragraph{Gebruik van sensoren}
+Mobiele apparaten bevatten verschillende sensoren, zoals de accelerometer en gyroscoop. 
+Ze kunnen worden gebruikt in mobiele applicaties om bijvoorbeeld beweging te detecteren 
+of de oriëntatie van het apparaat. Bij het gebruik van sensoren kijken we naar hoe deze 
+sensoren geïmplementeerd kunnen worden in zowel native als cross-platform ontwikkeling.
 
-% \paragraph{Push-notificaties}
-% Push-notificaties (meldingen) zijn berichten die worden weergegeven op het scherm van een apparaat. Ze kunnen komen via het internet of door een applicatie zelf. We zullen hierbij dus kijken naar de implementatie van push-notificaties van zowel online als lokale notificaties.
+\paragraph{Push-notificaties}
+Push-notificaties (meldingen) zijn berichten die worden weergegeven op het scherm van een 
+apparaat. Ze kunnen komen via het internet of door een applicatie zelf. We zullen hierbij 
+dus kijken naar de implementatie van push-notificaties van zowel online als lokale notificaties.
 
 
 % %\paragraph{Locatie}
@@ -344,8 +534,13 @@ op een platform geïmplementeerd worden.
 % %\paragraph{func9}
 % %\paragraph{func10}
 
-% \section{Samenvatting stand van zaken}
-% Nu dat er een inzicht verkregen is in mobiele applicaties en de ontwikkeling ervan, kunnen we van start gaan met het onderzoek. We zullen alle opgelijste functionaliteiten voor zowel native als cross-platform ontwikkelen. Bij native ontwikkeling zullen we Kotlin en Android Studio gebruiken om native applicaties voor Android te maken. Bij cross-platform zullen we React-native en Visual Studio Code gebruiken om de native applicaties te maken.
+\section{Samenvatting stand van zaken}
+Nu dat er een inzicht verkregen is in mobiele applicaties en de ontwikkeling ervan, 
+kunnen we van start gaan met het onderzoek. We zullen alle opgelijste functionaliteiten 
+voor zowel native als cross-platform ontwikkelen. Bij native ontwikkeling zullen we 
+Kotlin en Android Studio gebruiken om native applicaties voor Android te maken. 
+Bij cross-platform zullen we React-native en Visual Studio Code gebruiken om de 
+native applicaties te maken.
 
 
 

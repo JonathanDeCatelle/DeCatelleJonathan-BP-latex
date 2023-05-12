@@ -84,9 +84,9 @@ Als eerste moeten we \gls{Node} en \gls{JDK} installeren. Dit kunnen we makkelij
 doen met \gls{Chocolatey}. Chocolatey indien niet geïnstalleerd kan worden gedownload 
 vanop de website \url{https://chocolatey.org/install}. Eerst openen we een 
 opdrachtprompt (powershell) als administrator waaraan we volgende commando meegeven.
-% \begin{minted}{bash}
-%     choco install -y nodejs-lts microsoft-openjdk11
-% \end{minted}
+\begin{minted}{bash}
+    choco install -y nodejs-lts microsoft-openjdk11
+\end{minted}
 Voor Node gebruiken we de laatste versie. De minimale versie waarmee React native kan werken is 14. 
 Voor de JDK gebruiken we versie 11 aangezien hogere versies voor problemen kunnen zorgen.
 
@@ -113,9 +113,9 @@ De locatie van de Android SDK is ook te vinden via Android Studio via
 \\\\
 Om te controleren dat de omgevingsvariabel correct is toegevoegd openen we een nieuwe 
 opdrachtprompt (powershell) en geven we volgend commando in.
-% \begin{minted}{bash}
-%     Get-ChildItem -Path Env:\
-% \end{minted}
+\begin{minted}{bash}
+    Get-ChildItem -Path Env:\
+\end{minted}
 In de teruggegeven lijst controleren we dan of dat ANDROID\_HOME effectief is toegevoegd.
 \\\\
 Tot slot moeten we de \textbf{Path} omgevingsvariabel aanpassen. 
@@ -129,9 +129,9 @@ toe aan de lijst. Het path van de platform-tool is standaard
 \paragraph{6. React native Command Lin Interface (CLI)}
 React native heeft een ingebouwde command line interface (CLI) om te werken met React native. 
 Deze kan gebruikt worden dankzij Node.js dat we daarnet installeerden.
-% \begin{minted}{bash}
-%     npx react native [commando]
-% \end{minted}
+\begin{minted}{bash}
+    npx react native [commando]
+\end{minted}
 
 \paragraph{7. Emulator gebruiken}
 Om nu effectief applicaties te laten runnen maken we gebruik van de emulator die Android Studio aanbied. 
@@ -139,49 +139,49 @@ Aangezien deze al opgesteld is bij het opzetten van Android Studio \ref{se:nativ
 moeten we dit niet meer doen voor React native. Om de applicatie starten hebben we twee terminals nodig 
 binnen Visual Studio code, deze kunnen we openen via \textit{Terminal > New Terminal}. 
 In de eerste terminal starten we \gls{Metro} met het volgende commando.
-% \begin{minted}{bash}
-%     npx react-native start
-% \end{minted}
-% In de tweede terminal geven we het volgende commando dat de applicatie zal opbouwen en 
-% deployen naar de emulator.
-% \begin{minted}{bash}
-%     npx react-native run-android
-% \end{minted}
+\begin{minted}{bash}
+    npx react-native start
+\end{minted}
+In de tweede terminal geven we het volgende commando dat de applicatie zal opbouwen en 
+deployen naar de emulator.
+\begin{minted}{bash}
+    npx react-native run-android
+\end{minted}
 
 \section{Gebruikte Hardware tijdens onderzoek}
 Doorheen het onderzoek zullen alle projecten starten vanuit een blanco project en op dezelfde emulator 
 getest worden. Deze emulator zal altijd runnen op hetzelfde apparaat. Dankzij volgend commando 
 kunnen we de informatie verkrijgen van over een apparaat.
-% \begin{minted}{bash}
-%     npx react-native info
-% \end{minted}
+\begin{minted}{bash}
+    npx react-native info
+\end{minted}
 Deze geeft bij het gebruikte apparaat voor dit onderzoek volgende output.
-% \begin{minted}{bash}
-%     System:
-%     OS: Windows 10 10.0.19044
-%     CPU: (12) x64 AMD Ryzen 5 5600H with Radeon Graphics
-%     Memory: 2.90 GB / 15.86 GB
-%     Binaries:
-%     Node: 18.16.0 - C:\Program Files\nodejs\node.EXE
-%     Yarn: Not Found
-%     npm: 9.5.1 - C:\Program Files\nodejs\npm.CMD
-%     Watchman: Not Found
-%     SDKs:
-%     Android SDK: Not Found
-%     Windows SDK: Not Found
-%     IDEs:
-%     Android Studio: AI-222.4459.24.2221.9971841
-%     Visual Studio: Not Found
-%     Languages:
-%     Java: 11.0.18
-%     npmPackages:
-%     @react-native-community/cli: Not Found
-%     react: 18.2.0 => 18.2.0 
-%     react-native: 0.71.7 => 0.71.7 
-%     react-native-windows: Not Found
-%     npmGlobalPackages:
-%     *react-native*: Not Found
-% \end{minted}
+\begin{minted}{bash}
+    System:
+        OS: Windows 10 10.0.19044
+        CPU: (12) x64 AMD Ryzen 5 5600H with Radeon Graphics
+        Memory: 2.90 GB / 15.86 GB
+    Binaries:
+        Node: 18.16.0 - C:\Program Files\nodejs\node.EXE
+        Yarn: Not Found
+        npm: 9.5.1 - C:\Program Files\nodejs\npm.CMD
+        Watchman: Not Found
+    SDKs:
+        Android SDK: Not Found
+        Windows SDK: Not Found
+    IDEs:
+        Android Studio: AI-222.4459.24.2221.9971841
+        Visual Studio: Not Found
+    Languages:
+        Java: 11.0.18
+    npmPackages:
+        @react-native-community/cli: Not Found
+        react: 18.2.0 => 18.2.0 
+        react-native: 0.71.7 => 0.71.7 
+        react-native-windows: Not Found
+        npmGlobalPackages:
+        *react-native*: Not Found
+\end{minted}
 We werken dus met Windows 10 en maken gebruik van een apparaat met een AMD Ryzen 5 5600H processor 
 met 12 cores, geïntegreerde Radeon Graphics en 16GB RAM geheugen, wat sterk en snel 
 genoeg is om het onderzoek uit te voeren.
