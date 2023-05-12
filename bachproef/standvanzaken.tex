@@ -15,135 +15,203 @@ algemeen uitgelegd alsook de verschillende soorten mobiele applicaties.
 Daarna worden de ontwikkelingsmethodes en hun verschillen uitgelegd die gebruikt worden tijdens het 
 onderzoek. Tot slot worden de verschillende functionaliteiten die we gaan onderzoeken kort uitgelegd.
 
-% \section{Inleiding mobiele applicatie-ontwikkeling}
+\section{Inleiding mobiele applicatie-ontwikkeling}
 
-% De ontwikkeling van mobiele applicaties is het proces waarbij er software wordt 
-% gemaakt voor smartphones, tablets, televisies en digitale assistenten \autocite{Palko2021}. 
-% Deze applicaties worden ontwikkeld voor de besturingssystemen Android en IOS. 
-% De software kan op verschillende manieren op een apparaat komen. Het kan gedownload 
-% worden uit een app store, vooraf op het apparaat worden geïnstalleerd of het kan worden 
-% geopend via een mobiele webbrowser \autocite{IBM2023}. 
-% \\\\
-% Mobiele applicaties worden in veel sectoren gebruikt zoals: telecommunicatie, 
-% e-commerce, verzekeringen, gezondheidszorg, overheid, enz. Ze worden in deze sectoren 
-% veel gebruikt omdat het een makkelijke en populaire manier is om mensen met bedrijven te 
-% verbinden met elkaar en met het internet. Op deze manier kunnen bedrijven relevant, responsief 
-% en succesvol blijven. 
-% \\\\
+De ontwikkeling van mobiele applicaties is het proces waarbij er software wordt 
+gemaakt voor smartphones, tablets, televisies en digitale assistenten \autocite{Palko2021}. 
+Deze applicaties worden ontwikkeld voor de besturingssystemen Android en IOS. 
+De software kan op verschillende manieren op een apparaat komen. Het kan gedownload 
+worden uit een app store, vooraf op het apparaat worden geïnstalleerd of het kan worden 
+geopend via een mobiele webbrowser \autocite{IBM2023}. 
+\\\\
+Mobiele applicaties worden in veel sectoren gebruikt zoals: telecommunicatie, 
+e-commerce, verzekeringen, gezondheidszorg, overheid, enz. Ze worden in deze sectoren 
+veel gebruikt omdat het een makkelijke en populaire manier is om mensen met bedrijven te 
+verbinden met elkaar en met het internet. Op deze manier kunnen bedrijven relevant, responsief 
+en succesvol blijven. 
+\\\\
 Er bestaan verschillende soorten mobiele applicaties. Zo hebben we native, web en hybride 
 applicaties \autocite{AWS2023}. Elke soort mobiele applicatie is een manier waarop dat 
 applicaties op onze smartphone of computer staan of werken.
 
-% \subsection{Native applicaties}\label{ch:native-applicaties}
-% Dit is de meest gekende en gebruikte soort mobiele applicaties. Hierbij gaan we een applicatie 
-% downloaden en installeren op ons apparaat. Het is een applicatie dat specifiek wordt ontwikkeld 
-% voor één besturingssysteem, zoals Android of IOS \autocite{Laarhoven2021}. Native applicatie 
-% zijn vaak sneller en gebruiksvriendelijker dan een web of hybride applicatie. Dit komt omdat 
-% ze platformspecifieke software gebruiken. 
+\subsection{Native applicaties}\label{ch:native-applicaties}
+Dit is de meest gekende en gebruikte soort mobiele applicaties. Hierbij gaan we een applicatie 
+downloaden en installeren op ons apparaat. Het is een applicatie dat specifiek wordt ontwikkeld 
+voor één besturingssysteem, zoals Android of IOS \autocite{Laarhoven2021}. Native applicatie 
+zijn vaak sneller en gebruiksvriendelijker dan een web of hybride applicatie. Dit komt omdat 
+ze platformspecifieke software gebruiken. 
 
-% \subsubsection{Nadelen van native applicaties}
-% \paragraph{Kost en onderhoudsprijs}
-% Aangezien dat er een applicatie ontwikkeld wordt voor twee platformen, zal de kostprijs en 
-% ontwikkelingstijd van een applicatie hoger liggen dan als er één applicatie ontwikkeld moet 
-% worden. Daarnaast zullen er ook twee applicaties moeten worden onderhouden na dat de applicatie ontwikkeld is. Het is dus niet enkel de kostprijs die hoger zal zijn. Ook de onderhoudsprijs zal hoger liggen \autocite{AWS2023}. 
+\subsubsection{Nadelen van native applicaties}
+\paragraph{Kost en onderhoudsprijs}
+Aangezien dat er een applicatie ontwikkeld wordt voor twee platformen, zal de kostprijs en 
+ontwikkelingstijd van een applicatie hoger liggen dan als er één applicatie ontwikkeld moet 
+worden. Daarnaast zullen er ook twee applicaties moeten worden onderhouden na dat de applicatie 
+ontwikkeld is. Het is dus niet enkel de kostprijs die hoger zal zijn. Ook de onderhoudsprijs zal 
+hoger liggen \autocite{AWS2023}. 
 
-% \paragraph{Verschillende logica}
-% Door dat de applicatie twee keer ontwikkeld wordt, is het altijd mogelijk dat de business logica op bepaalde plaatsen in de applicatie verschillend kan zijn van elkaar. Er moet dus altijd aandachtig getest worden zodat dit niet het geval is \autocite{Kotlin2023}.
+\paragraph{Verschillende logica}
+Door dat de applicatie twee keer ontwikkeld wordt, is het altijd mogelijk dat de business 
+logica op bepaalde plaatsen in de applicatie verschillend kan zijn van elkaar. 
+Er moet dus altijd aandachtig getest worden zodat dit niet het geval is \autocite{Kotlin2023}.
 
-% \paragraph{Downloaden}
-% Zoals eerder gezegd, wordt de applicatie gedownload van op een app store \ref{ch:native-applicaties}. Om die download te doen zal er natuurlijk een internetverbinding nodig zijn, pas daarna kan de applicatie indien mogelijk offline werken.
+\paragraph{Downloaden}
+Zoals eerder gezegd, wordt de applicatie gedownload van op een app store \ref{ch:native-applicaties}. 
+Om die download te doen zal er natuurlijk een internetverbinding nodig zijn, 
+pas daarna kan de applicatie indien mogelijk offline werken.
 
-% \subsubsection{Voordelen van native applicaties}\label{ch:voordelen-native-applicaties}
-% \paragraph{Platformspecifieke code}
-% Omdat er platformspecifieke code wordt gebruikt, heeft de applicatie direct toegang tot de interne APIs van een apparaat \autocite{AWS2023}. Hierdoor zal ook de performantie hoger liggen dan bij web of hybride applicaties. Ook hebben ze daardoor direct toegang tot bepaalde functionaliteiten zoals: camera, gps, versnellingsmeter, kompas, lijst van contacten, enz. Ze kunnen ook platform zijn notificatiesysteem gebruiken en ze werken offline in tegenstelling tot web applicaties \autocite{Budiu2016}. 
+\subsubsection{Voordelen van native applicaties}
+\label{ch:voordelen-native-applicaties}
+\paragraph{Platformspecifieke code}
+Omdat er platformspecifieke code wordt gebruikt, heeft de applicatie direct toegang tot 
+de interne APIs van een apparaat \autocite{AWS2023}. Hierdoor zal ook de performantie hoger 
+liggen dan bij web of hybride applicaties. Ook hebben ze daardoor direct toegang tot bepaalde 
+functionaliteiten zoals: camera, gps, versnellingsmeter, kompas, lijst van contacten, enz. 
+Ze kunnen ook platform zijn notificatiesysteem gebruiken en ze werken offline in tegenstelling 
+tot web applicaties \autocite{Budiu2016}. 
 
-% \paragraph{Flexibeler}
-% Ook, aangezien dat we platformspecifieke code gebruiken, hebben we de mogelijkheid om meer flexibel te zijn. We kunnen van alle functionaliteiten gebruik maken dat een apparaat aanbied \autocite{Sakovich2023}.
+\paragraph{Flexibeler}
+Ook, aangezien dat we platformspecifieke code gebruiken, hebben we de mogelijkheid om meer flexibel te zijn. 
+We kunnen van alle functionaliteiten gebruik maken dat een apparaat aanbied \autocite{Sakovich2023}.
 
-% \paragraph{Fouten vermijden of oplossen}
-% Omdat het niet nodig is om twee applicaties te onderhouden vanuit één \Gls{codebase}, kan het makkelijker zijn om fouten bij een bepaald platform op de sporen of compleet te vermijden \autocite{Koffer2023}. 
+\paragraph{Fouten vermijden of oplossen}
+Omdat het niet nodig is om twee applicaties te onderhouden vanuit één \Gls{codebase}, kan 
+het makkelijker zijn om fouten bij een bepaald platform op de sporen of compleet te 
+vermijden \autocite{Koffer2023}. 
 
-% \paragraph{User interface}
-% Nog een ander voordeel van platformspecifieke code en het gebruik van interne APIs is de UI. Omdat de applicatie gebruik maakt van de interne APIs zal de UI consistenter zijn. Dit zal voor een betere gebruikerservaring zorgen aangezien dat de applicatie gebruiksvriendelijker aanvoelt \autocite{Kotlin2023}. 
+\paragraph{User interface}
+Nog een ander voordeel van platformspecifieke code en het gebruik van interne APIs is de UI. 
+Omdat de applicatie gebruik maakt van de interne APIs zal de UI consistenter zijn. 
+Dit zal voor een betere gebruikerservaring zorgen aangezien dat de applicatie gebruiksvriendelijker 
+aanvoelt \autocite{Kotlin2023}. 
 
-% \paragraph{App store ondersteuning}
-% Ook zullen native applicaties met hun betere performantie en snelheid populairder zijn in de app store. Ze zullen ook makkelijker zijn om te publiceren in de app store \autocite{Koffer2023}.
+\paragraph{App store ondersteuning}
+Ook zullen native applicaties met hun betere performantie en snelheid populairder zijn in de app store. 
+Ze zullen ook makkelijker zijn om te publiceren in de app store \autocite{Koffer2023}.
 
-% \subsection{Web applicaties}
-% Web applicaties zijn niet echt applicaties maar het zijn mobiele versies van responsive websites. Een web applicatie simuleert als een native applicatie op een apparaat en moet je ook niet installeren op uw apparaat \autocite{Beeproger2023}. Ze zullen dus net zoals bij websites een HTTP request naar een server sturen die op zijn beurt dan een HTTP response zal terugsturen.
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[height=0.4\textheight]{httpprotocol.png}
-%     \caption{Request-response cycle van HyperText Transfer Protocol \parencite{Hartl2019}.}
-% \end{figure}
+\subsection{Web applicaties}
+Web applicaties zijn niet echt applicaties maar het zijn mobiele versies van responsive websites. 
+Een web applicatie simuleert als een native applicatie op een apparaat en moet je ook niet installeren 
+op uw apparaat \autocite{Beeproger2023}. Ze zullen dus net zoals bij websites een HTTP request naar 
+een server sturen die op zijn beurt dan een HTTP response zal terugsturen.
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.4\textheight]{httpprotocol.png}
+    \caption{Request-response cycle van HyperText Transfer Protocol \parencite{Hartl2019}.}
+\end{figure}
 
-% Aangezien dat ze niet geïnstalleerd moeten worden is het dus wel nodig om een internetverbinding te hebben bij het gebruik er van. Ze worden vaak gebruikt door bedrijven om informatie en diensten aan hun klanten op een veilige manier aan te bieden \autocite{Nehra2023}. 
-% \\\\
-% Een web applicatie is Bereik en bruikbaar door een unieke URL in te voeren in een browser \autocite{Beeproger2023}. Microsoft Word is een voorbeeld van een native applicatie die gebruikers moeten installeren op hun apparaat, in vergelijking met Google Docs dat een web applicatie is en dat niet geïnstalleerd moet worden \autocite{Nehra2023}.
-% \\\\
-% Web applicaties worden op dezelfde manier gemaakt als websites. Ze maken gebruik van HTML, CSS en JavaScript. De meeste web applicaties hebben een web server nodig voor het verwerken en beheren van requests en een applicatieserver om de gevraagde taken te voltooien. Daarnaast ook een database om de gevraagde taken uit te voeren \autocite{Varsha2023}.
+Aangezien dat ze niet geïnstalleerd moeten worden is het dus wel nodig om een internetverbinding 
+te hebben bij het gebruik er van. Ze worden vaak gebruikt door bedrijven om informatie en diensten 
+aan hun klanten op een veilige manier aan te bieden \autocite{Nehra2023}. 
+\\\\
+Een web applicatie is Bereik en bruikbaar door een unieke URL in te voeren in een browser 
+\autocite{Beeproger2023}. Microsoft Word is een voorbeeld van een native applicatie die 
+gebruikers moeten installeren op hun apparaat, in vergelijking met Google Docs dat een web applicatie 
+is en dat niet geïnstalleerd moet worden \autocite{Nehra2023}.
+\\\\
+Web applicaties worden op dezelfde manier gemaakt als websites. Ze maken gebruik van HTML, CSS en JavaScript. 
+De meeste web applicaties hebben een web server nodig voor het verwerken en beheren van requests en een 
+applicatieserver om de gevraagde taken te voltooien. Daarnaast ook een database om de gevraagde taken uit 
+te voeren \autocite{Varsha2023}.
 
-% \subsubsection{Nadelen van web applicaties}
-% \paragraph{Internetverbinding}
-% Het grootste nadeel bij web applicaties is dat er ten alle tijde een internetverbinding nodig is om met de applicatie te kunnen werken \autocite{Varsha2023}. Indien er geen actieve internetverbinding aanwezig is, zal het niet mogelijk zijn om de applicatie te runnen.
+\subsubsection{Nadelen van web applicaties}
+\paragraph{Internetverbinding}
+Het grootste nadeel bij web applicaties is dat er ten alle tijde een internetverbinding nodig is om met 
+de applicatie te kunnen werken \autocite{Varsha2023}. Indien er geen actieve internetverbinding aanwezig is, 
+zal het niet mogelijk zijn om de applicatie te runnen.
 
-% \paragraph{Functionaliteiten}
-% In vergelijking met native applicaties, die gebruik kunnen maken van alle functionaliteiten van een apparaat is het voor web applicaties niet mogelijk om alle functionaliteiten van een apparaat te gebruiken \autocite{Laarhoven2021}.
+\paragraph{Functionaliteiten}
+In vergelijking met native applicaties, die gebruik kunnen maken van alle functionaliteiten van een 
+apparaat is het voor web applicaties niet mogelijk om alle functionaliteiten van een apparaat te gebruiken 
+\autocite{Laarhoven2021}.
 
-% \subsubsection{Voordelen van web applicaties}\label{ch:VoordelenWebApplicaties}
-% \paragraph{Kostprijs}
-% Aangezien dat één web applicatie op alle platformen draait zal dit veel goedkoper uitkomen dan bij native applicaties \autocite{Laarhoven2021}. Er moet namelijk maar één applicatie ontwikkeld worden die op alle platformen zal draaien
+\subsubsection{Voordelen van web applicaties}\label{ch:VoordelenWebApplicaties}
+\paragraph{Kostprijs}
+Aangezien dat één web applicatie op alle platformen draait zal dit veel goedkoper uitkomen dan bij native 
+applicaties \autocite{Laarhoven2021}. Er moet namelijk maar één applicatie ontwikkeld worden die op alle 
+platformen zal draaien
 
-% \paragraph{Updates}
-% Omdat web applicaties aan een URL gelinkt zijn, is het makelijk om updates uit te voeren op de applicatie. De URL wordt vanzelf periodiek geüpdatet. Hierdoor wordt de applicatie automatisch ook up to date gehouden ongeacht van het platform dat een gebruiker gebruikt \autocite{Varsha2023}.
+\paragraph{Updates}
+Omdat web applicaties aan een URL gelinkt zijn, is het makelijk om updates uit te voeren op de applicatie. 
+De URL wordt vanzelf periodiek geüpdatet. Hierdoor wordt de applicatie automatisch ook up to date gehouden 
+ongeacht van het platform dat een gebruiker gebruikt \autocite{Varsha2023}.
 
-% \paragraph{Installatie \& Compatibiliteit}
-% Daarnaast zoals gezegd, moet een web applicatie niet geïnstalleerd worden. Ze is beschikbaar op alle platformen en browsers. Waardoor ze zeer toegankelijk zijn voor gebruikers. Er is enkel een actieve internetverbinding nodig.
+\paragraph{Installatie \& Compatibiliteit}
+Daarnaast zoals gezegd, moet een web applicatie niet geïnstalleerd worden. Ze is beschikbaar op alle 
+platformen en browsers. Waardoor ze zeer toegankelijk zijn voor gebruikers. Er is enkel een actieve 
+internetverbinding nodig.
 
-% \paragraph{Integratie}
-% Web applicaties hebben daarnaast ook nog de mogelijkheid om makkelijk met andere web applicaties te integreren. Ze kunnen bijvoorbeeld met \Gls{CMSofCRM} systemen werken om data te beheren \autocite{Nehra2023}.
+\paragraph{Integratie}
+Web applicaties hebben daarnaast ook nog de mogelijkheid om makkelijk met andere web applicaties te integreren. 
+Ze kunnen bijvoorbeeld met \Gls{CMSofCRM} systemen werken om data te beheren \autocite{Nehra2023}.
 
-% \paragraph{App store}
-% Er is geen goedkeuring nodig van een app store om de app te gebruiken of te updaten. Omdat een web applicatie via een browser wordt geopend is er geen nood voor een app store \autocite{Varsha2023}.
+\paragraph{App store}
+Er is geen goedkeuring nodig van een app store om de app te gebruiken of te updaten. Omdat een web applicatie 
+via een browser wordt geopend is er geen nood voor een app store \autocite{Varsha2023}.
 
-% \paragraph{Data veiligheid}
-% Tot slot heeft de nood van een internetverbinding nog een voordeel. Aangezien dat er altijd een internetverbinding nodig is, zullen er als een gebruiker zijn apparaat vastloopt of crasht geen gegevens verloren gaan. Omdat de gegevens op de server bewaard worden \autocite{Nehra2023}. 
+\paragraph{Data veiligheid}
+Tot slot heeft de nood van een internetverbinding nog een voordeel. Aangezien dat er altijd een 
+internetverbinding nodig is, zullen er als een gebruiker zijn apparaat vastloopt of crasht geen gegevens 
+verloren gaan. Omdat de gegevens op de server bewaard worden \autocite{Nehra2023}. 
 
-% \subsubsection{Verschil met een website}
-% Het verschil tussen een web applicatie en een website is niet altijd duidelijk. Zoals eerder gezegd is een web applicatie software dat toegankelijk is door er naar te surfen via een browser. Enkele voorbeelden van web applicaties zijn: Google apps, Amazon en Youtube. Het verschil met een website is dat een website een collectie is van gerelateerde web applicaties. Het bevat statische data zoals: foto's, tekst, audio, video's, enz. Het kan ook bestaan uit meerdere pagina's \autocite{sugandha2022}. Een voorbeeld is de website van een bank waarop dat je de diensten en openingsuren kan zien.
+\subsubsection{Verschil met een website}
+Het verschil tussen een web applicatie en een website is niet altijd duidelijk. Zoals eerder gezegd 
+is een web applicatie software dat toegankelijk is door er naar te surfen via een browser. 
+Enkele voorbeelden van web applicaties zijn: Google apps, Amazon en Youtube. Het verschil met 
+een website is dat een website een collectie is van gerelateerde web applicaties. Het bevat statische 
+data zoals: foto's, tekst, audio, video's, enz. Het kan ook bestaan uit meerdere pagina's 
+\autocite{sugandha2022}. Een voorbeeld is de website van een bank waarop dat je de diensten en 
+openingsuren kan zien.
 
-% \subsection{Hybride applicaties}
-% Het spreekt voor zich, maar een hybride applicatie is een combinatie van native en web applicaties \autocite{Denko2021}. Een hybride applicatie kan er identiek uitzien als een native applicatie echter is de manier waarop een hybride applicatie wordt gebouwd verschillend \autocite{Beeproger2023}. Het heeft als basis een web applicatie die in een soort van container wordt gestoken. Deze container zorgt er dan voor dat er in de applicatie een browser aanwezig is die de applicatie kan runnen. Hierdoor kan de applicatie ook in de app store komen waardoor het mogelijk is om hem te installeren. 
-% \\\\
-% Bedrijven maken vaak hybride applicaties als omhulsel voor een bestaande web applicatie. Op die manier proberen ze hun gebruikersaantal te vergroten door een aanwezigheid te hebben in de app store zonder te veel moeite \autocite{Budiu2016}. 
+\subsection{Hybride applicaties}
+Het spreekt voor zich, maar een hybride applicatie is een combinatie van native en web 
+applicaties \autocite{Denko2021}. Een hybride applicatie kan er identiek uitzien als een 
+native applicatie echter is de manier waarop een hybride applicatie wordt gebouwd 
+verschillend \autocite{Beeproger2023}. Het heeft als basis een web applicatie die in 
+een soort van container wordt gestoken. Deze container zorgt er dan voor dat er in de 
+applicatie een browser aanwezig is die de applicatie kan runnen. Hierdoor kan de applicatie 
+ook in de app store komen waardoor het mogelijk is om hem te installeren. 
+\\\\
+Bedrijven maken vaak hybride applicaties als omhulsel voor een bestaande web applicatie. 
+Op die manier proberen ze hun gebruikersaantal te vergroten door een aanwezigheid te hebben 
+in de app store zonder te veel moeite \autocite{Budiu2016}. 
 
-% \subsubsection{Nadelen van hybride applicaties}
-% \paragraph{UI verschil}
-% Aangezien dat hybride applicaties op verschillende platformen kunnen werken, is het mogelijk dat de GUI er verschillend uitziet \autocite{sgshradha2019}. 
+\subsubsection{Nadelen van hybride applicaties}
+\paragraph{UI verschil}
+Aangezien dat hybride applicaties op verschillende platformen kunnen werken, is het 
+mogelijk dat de GUI er verschillend uitziet \autocite{sgshradha2019}. 
 
-% \paragraph{Testing}
-% De mogelijkheid dat hybride applicaties met zich meebrengt om te werken op alle platformen, zorgt ervoor dat een applicatie op al deze platformen getest moet worden \autocite{sgshradha2019}.
+\paragraph{Testing}
+De mogelijkheid dat hybride applicaties met zich meebrengt om te werken op alle platformen, 
+zorgt ervoor dat een applicatie op al deze platformen getest moet worden \autocite{sgshradha2019}.
 
-% \paragraph{Offline gebruik}
-% Dankzij de combinatie van native en web applicaties, kunnen hybride applicaties ook offline en online werken \autocite{Khan2021}. De applicaties kunnen wel enkel offline werken als de applicatie niet afhankelijk is van data op een database \autocite{sgshradha2019}. Indien dit het geval is, kan het zijn dat de applicatie niet naar behoren werkt als er geen internetverbinding aanwezig is.
+\paragraph{Offline gebruik}
+Dankzij de combinatie van native en web applicaties, kunnen hybride applicaties ook offline 
+en online werken \autocite{Khan2021}. De applicaties kunnen wel enkel offline werken als de 
+applicatie niet afhankelijk is van data op een database \autocite{sgshradha2019}. Indien 
+dit het geval is, kan het zijn dat de applicatie niet naar behoren werkt als er geen 
+internetverbinding aanwezig is.
 
-% \subsubsection{Voordelen van hybride applicaties}
-% \paragraph{Ontwikkelingskosten}
-% Omdat hybride applicaties platform onafhankelijke ontwikkeling mogelijk maakt, kunnen bedrijven op die manier de ontwikkelingskosten laag houden \autocite{Budiu2016}. 
+\subsubsection{Voordelen van hybride applicaties}
+\paragraph{Ontwikkelingskosten}
+Omdat hybride applicaties platform onafhankelijke ontwikkeling mogelijk maakt, kunnen 
+bedrijven op die manier de ontwikkelingskosten laag houden \autocite{Budiu2016}. 
 
-% \paragraph{Offline gebruik \& installatie}
-% Eigenlijk hebben hybride applicaties alle voordelen van web applicaties alleen krijgen ze nu nog eens de extra mogelijkheid om applicaties offline te gebruiken en om ze te installeren op een apparaat.
+\paragraph{Offline gebruik \& installatie}
+Eigenlijk hebben hybride applicaties alle voordelen van web applicaties alleen krijgen ze 
+nu nog eens de extra mogelijkheid om applicaties offline te gebruiken en om ze te 
+installeren op een apparaat.
 
-% \subsection{Samenvatting soorten mobiele applicaties}
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[height=0.4\textheight]{NativeWebHybrid2.png}
-%     %\caption{Native vs Web vs Hybride applicaties \parencite{Beeproger2023}.}
-%     \caption{Native vs Web vs Hybride applicaties \parencite{Merenych2021}.}
-%     \label{fig:NativeWebHybride}
-% \end{figure}
+\subsection{Samenvatting soorten mobiele applicaties}
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.4\textheight]{NativeWebHybrid2.png}
+    \caption{Native vs Web vs Hybride applicaties \parencite{Merenych2021}.}
+    \label{fig:NativeWebHybride}
+\end{figure}
 
-% Foto \ref{fig:NativeWebHybride} Toont een mooi overzicht van hoe dat de verschillende soorten applicaties werken. Elke soort applicatie heeft een andere manier waarop dat ze op een platform geïmplementeerd worden.
+Foto \ref{fig:NativeWebHybride} Toont een mooi overzicht van hoe dat de verschillende 
+soorten applicaties werken. Elke soort applicatie heeft een andere manier waarop dat ze 
+op een platform geïmplementeerd worden.
 
 % \section{Native ontwikkeling}
 % \subsection{Wat is native ontwikkeling?}\label{subsec:wat-is-native-ontwikkeling}
