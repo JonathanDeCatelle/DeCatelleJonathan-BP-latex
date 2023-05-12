@@ -1,0 +1,286 @@
+%===============================================================================
+% LaTeX sjabloon voor de bachelorproef toegepaste informatica aan HOGENT
+% Meer info op https://github.com/HoGentTIN/latex-hogent-report
+%===============================================================================
+
+\documentclass[dutch,dit,thesis]{hogentreport}
+
+% TODO:
+% - If necessary, replace the option `dit`' with your own department!
+%   Valid entries are dbo, dbt, dgz, dit, dlo, dog, dsa, soa
+% - If you write your thesis in English (remark: only possible after getting
+%   explicit approval!), remove the option "dutch," or replace with "english".
+
+%% Pictures to include in the text can be put in the graphics/ folder
+\graphicspath{{graphics/}}
+
+%% For source code highlighting, requires pygments to be installed
+%% Compile with the -shell-escape flag!
+\usepackage{glossaries}
+\makenoidxglossaries 
+
+\newglossaryentry{codebase}
+{
+    name=codebase,
+    description={Een codebase (of codebase) is een verzameling broncode die wordt gebruikt om een bepaald softwaresysteem, toepassing of softwarecomponent te bouwen.}
+}
+
+\newglossaryentry{CMSofCRM}
+{
+    name=CMS of CRM ,
+    description={Een content management systeem (CMS) helpt bedrijven bij het beheren van digitale inhoud. Hele teams kunnen deze systemen gebruiken om inhoud te creëren, te bewerken, te organiseren en te publiceren. Customer Relationship Management (CRM) is een technologie voor het beheer van alle relaties en interacties van uw bedrijf met klanten en potentiële klanten. Het CRM-systeem helpt bedrijven in contact te blijven met klanten, processen te stroomlijnen en de winstgevendheid te verbeteren.}
+}
+
+\newglossaryentry{IDE}
+{
+    name=IDEs,
+    description={Een geïntegreerde ontwikkelingsomgeving (IDE) is software voor het bouwen van toepassingen die gemeenschappelijke developer tools combineert in een enkele grafische gebruikersinterface (GUI).}
+}
+
+\newglossaryentry{library}
+{
+    name=libraries,
+    description={Een library is een verzameling van vooraf geschreven code die programmeurs kunnen gebruiken om taken te optimaliseren. Deze verzameling herbruikbare code is meestal gericht op specifieke veel voorkomende problemen. Een bibliotheek bevat meestal een aantal verschillende voorgecodeerde componenten.}
+}
+
+\newglossaryentry{ANDK}
+{
+    name=Android Native Development Kit,
+    description={De Android NDK is een toolset waarmee u delen van uw app in native code kunt implementeren, met behulp van talen als C en C++. Voor bepaalde soorten apps kan dit u helpen om codebibliotheken te hergebruiken die in deze talen zijn geschreven.}
+}
+
+\newglossaryentry{JetBrains}
+{
+    name=JetBrains,
+    description={JetBrains is een bedrijf dat geïntegreerde ontwikkelingsomgevingen (IDEs) aanbiedt voor verschillende programmeertalen.}
+}
+
+\newglossaryentry{GarbageCollector}
+{
+    name=garbage collector,
+    description={Garbage collection (GC) is een geheugenherstelfunctie ingebouwd in programmeertalen}
+}
+
+\newglossaryentry{superset}
+{
+    name=superset,
+    description={Een superset is een programmeertaal die alle kenmerken/functionaliteiten van een andere taal bevat, plus extra kenmerken. De term "superset" wilt zeggen dat de taal een grotere of uitgebreidere versie is van de andere taal.}
+}
+
+\newglossaryentry{SDK}
+{
+    name=SDK's,
+    description={SDK is een verzameling van hulpmiddelen voor softwareontwikkeling, bibliotheken, documentatie en codevoorbeelden die ontwikkelaars gebruiken om toepassingen te maken voor een bepaald softwareplatform, zoals een specifiek besturingssysteem of een specifieke programmeertaal.}
+}
+
+\newglossaryentry{emulator}
+{
+    name=emulator,
+    description={Een emulator is een softwareprogramma waarmee een computersysteem zich kan gedragen als een ander systeem. Hiermee kunnen ontwikkelaars een virtuele omgeving op hun computer creëren die zich gedraagt als een ander hardware- of softwaresysteem, zodat zij hun toepassingen op verschillende platforms kunnen testen en debuggen zonder fysieke toegang tot dat platform nodig te hebben.}
+}
+
+\newglossaryentry{Hotreload}
+{
+    name=hot reload,
+    description={Hot reload is een functie in sommige softwareontwikkelingsomgevingen waarmee ontwikkelaars snel de wijzigingen kunnen zien die zij aanbrengen in de code van een lopende applicatie of programma. Wanneer een ontwikkelaar de code wijzigt, worden de wijzigingen automatisch gecompileerd en vervolgens in het lopende programma geïnjecteerd, zonder dat het programma gestopt en opnieuw gestart hoeft te worden.}
+}
+
+\newglossaryentry{Node}
+{
+    name=Node,
+    description={Node.js is een runtime-omgeving waarmee u JavaScript-code buiten een webbrowser kunt uitvoeren. In het geval van React Native wordt Node.js gebruikt als onderliggende runtime-omgeving voor het uitvoeren van JavaScript-code op de server en het bouwen van de React Native-applicatie. Het biedt de nodige tools en bibliotheken om JavaScript-code uit te voeren en te communiceren met de native API's van het apparaat via het React Native-framework.}
+}
+
+\newglossaryentry{JDK}
+{
+    name=Java SE Development Kit (JDK),
+    description={De JDK is een softwareontwikkelingskit van Oracle met tools en bibliotheken voor de ontwikkeling van Java-toepassingen. React Native gebruikt Java voor het bouwen en uitvoeren van Android-toepassingen. De JDK is nodig omdat het de Java-compiler (javac) bevat voor het compileren van Java-broncode naar bytecode, de Java Virtual Machine (JVM) voor het uitvoeren van de gecompileerde bytecode, en diverse andere hulpmiddelen en bibliotheken voor Java-ontwikkeling.}
+}
+
+\newglossaryentry{Chocolatey}
+{
+    name=Chocolatey,
+    description={Chocolatey is een pakketbeheerder voor het Windows besturingssysteem. Het biedt een opdrachtregelinterface (CLI) waarmee u verschillende softwarepakketten op uw Windows-machine kunt installeren, bijwerken en beheren. Choco vereenvoudigt het installatieproces van software door de download-, installatie- en configuratietaken te automatiseren.}
+}
+
+\newglossaryentry{Metro}
+{
+    name=Metro,
+    description={Metro is de standaard JavaScript-bundler die wordt gebruikt tijdens de ontwikkeling. Het is verantwoordelijk voor het transformeren en bundelen van uw JavaScript-code en andere data (zoals afbeeldingen, lettertypen, enz.) in een formaat dat kan worden begrepen en uitgevoerd door het mobiele apparaat of de simulator.}
+}
+
+\newglossaryentry{AndroidSDK}
+{
+    name=Android SDK,
+    description={Android SDK (Software Development Kit) is een set ontwikkeltools, bibliotheken en systeembronnen waarmee ontwikkelaars Android-toepassingen kunnen bouwen en uitvoeren. Het biedt de nodige componenten en API's (Application Programming Interfaces) voor het ontwikkelen van Android-apps (met React Native).}
+}
+
+\newglossaryentry{overhead}
+{
+    name=overhead,
+    description={Overhead verwijst naar de extra bronnen die nodig zijn om een bepaalde taak uit te voeren, maar die niet direct bijdragen aan de hoofdfunctie of het gewenste resultaat. Overhead kan verschillende vormen aannemen, zoals extra code, berekeningen, geheugen, verwerkingskracht of netwerkverkeer.}
+}
+
+\usepackage[section]{minted}
+\usemintedstyle{solarized-light}
+\definecolor{bg}{RGB}{253,246,227} %% Set the background color of the codeframe
+
+%% Change this line to edit the line numbering style:
+\renewcommand{\theFancyVerbLine}{\ttfamily\scriptsize\arabic{FancyVerbLine}}
+
+%% Macro definition to load external java source files with \javacode{filename}:
+\newmintedfile[javacode]{java}{
+    bgcolor=bg,
+    fontfamily=tt,
+    linenos=true,
+    numberblanklines=true,
+    numbersep=5pt,
+    gobble=0,
+    framesep=2mm,
+    funcnamehighlighting=true,
+    tabsize=4,
+    obeytabs=false,
+    breaklines=true,
+    mathescape=false
+    samepage=false,
+    showspaces=false,
+    showtabs =false,
+    texcl=false,
+}
+
+% Other packages not already included can be imported here
+
+%%---------- Document metadata -------------------------------------------------
+\author{De Catelle Jonathan}
+\supervisor{Dhr. G. Blondeel}
+\cosupervisor{Dhr. A. Boel}
+\title{Criteria waarop native applicaties ontwikkelen interessanter wordt dan het ontwikkelen van cross-platform applicaties}
+%\title[Optionele ondertitel]%
+%    {Criteria waarop native applicaties ontwikkelen interessanter wordt dan het ontwikkelen van cross-platform applicaties}
+\academicyear{\advance\year by -1 \the\year--\advance\year by 1 \the\year}
+\examperiod{1}
+\degreesought{\IfLanguageName{dutch}{Professionele bachelor in de toegepaste informatica}{Bachelor of applied computer science}}
+\partialthesis{false} %% To display 'in partial fulfilment'
+%\institution{Internshipcompany BVBA.}
+
+%% Add global exceptions to the hyphenation here
+\hyphenation{back-slash}
+
+%% The bibliography (style and settings are  found in hogentthesis.cls)
+\addbibresource{bachproef.bib}            %% Bibliography file
+\addbibresource{../voorstel/voorstel.bib} %% Bibliography research proposal
+\defbibheading{bibempty}{}
+
+%% Prevent empty pages for right-handed chapter starts in twoside mode
+\renewcommand{\cleardoublepage}{\clearpage}
+
+\renewcommand{\arraystretch}{1.2}
+
+%% Content starts here.
+\begin{document}
+
+%---------- Front matter -------------------------------------------------------
+
+\frontmatter
+
+\hypersetup{pageanchor=false} %% Disable page numbering references
+%% Render a Dutch outer title page if the main language is English
+\IfLanguageName{english}{%
+    %% If necessary, information can be changed here
+    \degreesought{Professionele Bachelor toegepaste informatica}%
+    \begin{otherlanguage}{dutch}%
+       \maketitle%
+    \end{otherlanguage}%
+}{}
+
+%% Generates title page content
+\maketitle
+\hypersetup{pageanchor=true}
+
+\input{voorwoord}
+\input{samenvatting}
+
+%---------- Inhoud, lijst figuren, ... -----------------------------------------
+
+\tableofcontents
+
+% In a list of figures, the complete caption will be included. To prevent this,
+% ALWAYS add a short description in the caption!
+%
+%  \caption[short description]{elaborate description}
+%
+% If you do, only the short description will be used in the list of figures
+
+\listoffigures
+
+% If you included tables and/or source code listings, uncomment the appropriate
+% lines.
+%\listoftables
+%\listoflistings
+
+% Als je een lijst van afkortingen of termen wil toevoegen, dan hoort die
+% hier thuis. Gebruik bijvoorbeeld de ``glossaries'' package.
+% https://www.overleaf.com/learn/latex/Glossaries
+
+\printnoidxglossaries 
+
+%\printglossary
+%\printglossaries
+
+%---------- Kern ---------------------------------------------------------------
+
+\mainmatter{}
+
+% De eerste hoofdstukken van een bachelorproef zijn meestal een inleiding op
+% het onderwerp, literatuurstudie en verantwoording methodologie.
+% Aarzel niet om een meer beschrijvende titel aan deze hoofdstukken te geven of
+% om bijvoorbeeld de inleiding en/of stand van zaken over meerdere hoofdstukken
+% te verspreiden!
+
+\input{inleiding}
+\input{standvanzaken}
+\input{methodologie}
+
+% Voeg hier je eigen hoofdstukken toe die de ``corpus'' van je bachelorproef
+% vormen. De structuur en titels hangen af van je eigen onderzoek. Je kan bv.
+% elke fase in je onderzoek in een apart hoofdstuk bespreken.
+
+\input{ontwikkelomgeving}
+\input{projectenopstellen}
+\input{basisfunctionaliteiten}
+\input{camera}
+\input{sensoren}
+\input{notificaties}
+\input{audioenvideo}
+
+\input{conclusie}
+
+%---------- Bijlagen -----------------------------------------------------------
+
+\appendix
+
+\chapter{Onderzoeksvoorstel}
+
+Het onderwerp van deze bachelorproef is gebaseerd op een onderzoeksvoorstel dat vooraf werd beoordeeld door de promotor. Dat voorstel is opgenomen in deze bijlage.
+
+%% TODO: 
+\section*{Samenvatting}
+
+In deze paper gaan we de performantie, schaalbaarheid en functionaliteit van mobiele applicaties onderzoeken om te bepalen of het interessanter is om native te ontwikkelen in vergelijking met cross-platform. Langs de native kant gaan we Kotlin in Android Studio en Swift in Xcode gebruiken. Voor cross-platform zullen we Javascript in React native gebruiken. Zo kunnen we ook een eventueel verschil tussen Android en IOS ontdekken. Op deze manier zullen we kleine tot middelgrote organisaties of bedrijven helpen met het kiezen van een gebruikte ontwikkelingsmethode. We zullen in het onderzoek met kleine en grote applicaties rekening houden om te bepalen vanaf wanneer het interessanter wordt.
+
+% Verwijzing naar het bestand met de inhoud van het onderzoeksvoorstel
+\input{../voorstel/voorstel-inhoud}
+
+%%---------- Andere bijlagen --------------------------------------------------
+% TODO: Voeg hier eventuele andere bijlagen toe. Bv. als je deze BP voor de
+% tweede keer indient, een overzicht van de verbeteringen t.o.v. het origineel.
+%\input{...}
+
+%%---------- Backmatter, referentielijst ---------------------------------------
+
+\backmatter{}
+
+\setlength\bibitemsep{2pt} %% Add Some space between the bibliograpy entries
+\printbibliography[heading=bibintoc]
+
+\end{document}

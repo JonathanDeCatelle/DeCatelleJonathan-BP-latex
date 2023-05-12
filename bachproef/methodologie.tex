@@ -1,0 +1,85 @@
+%%=============================================================================
+%% Methodologie
+%%=============================================================================
+
+\chapter{Methodologie}
+\label{ch:methodologie}
+
+%% TODO: Hoe ben je te werk gegaan? Verdeel je onderzoek in grote fasen, en
+%% licht in elke fase toe welke stappen je gevolgd hebt. Verantwoord waarom je
+%% op deze manier te werk gegaan bent. Je moet kunnen aantonen dat je de best
+%% mogelijke manier toegepast hebt om een antwoord te vinden op de
+%% onderzoeksvraag.
+
+Zoals elk onderzoek start ook dit onderzoek met een uitgebreide literatuurstudie van wat mobiele applicaties zijn, 
+hoe dat ze worden ontwikkeld en welke functionaliteiten onderzocht gaan worden. Deze literatuurstudie is te vinden in Hoofdstuk \ref{ch:stand-van-zaken}.
+\\\\
+Vervolgens wordt er in hoofdstuk \ref{ch:ontwikkelomgeving} gekeken hoe dat we de ontwikkelomgeving opstellen om met Kotlin in Android Studio 
+te werken en met React native in Visual Studio Code.
+\\\\
+Na het opstellen van de ontwikkelomgeving wordt er in hoofdstuk \ref{ch:projecten} uitgelegd hoe dat we de blanco projecten aanmaken. 
+Deze blanco projecten worden dan doorheen de bachelorproef gebruikt om functionaliteiten uit te werken.
+\\\\
+Daarna zullen alle functionaliteiten uitgewerkt worden tot een project, hier wordt dan ook de ontwikkeltijd van een functionaliteit 
+gedocumenteerd met daarbij eventuele bugs of problemen. Ook wordt hier de performantie van de functionaliteiten gemeten. 
+En de eventuele mogelijkheid om op te schalen zal hier ook bekeken worden. Elke functionaliteit wordt opgedeeld in zijn eigen hoofdstuk. 
+Op die manier kunnen de resultaten per functionaliteit duidelijk teruggevonden worden.
+\begin{itemize}
+    \item Hoofdstuk \ref{ch:basisfunctionaliteiten} voor de basisfunctionaliteiten
+    \item Hoofdstuk \ref{ch:camera} voor de camera-integratie
+    \item Hoofdstuk \ref{ch:sensoren} voor het gebruik van sensoren
+    \item Hoofdstuk \ref{ch:notificaties} voor de push-notificaties
+    \item Hoofdstuk \ref{ch:audioenvideo} voor de audio- en videospelers
+\end{itemize}
+Tot slot worden de resultaten en individuele conclusies van alle functionaliteiten uit de vorige hoofdstukken opgelijst en samengevat 
+in hoofdstuk \ref{ch:conclusie} om een antwoord te geven op de onderzoeksvragen uit hoofdstuk \ref{ch:inleiding}.
+
+\section{Volgorde onderzoek}
+Voor de functionaliteiten te onderzoeken zullen we hetzelfde stappenplan volgen per functionaliteit. 
+\begin{enumerate}
+    \item Blanco project aanmaken.
+    \item Ontwikkeltijd meten.
+    \begin{enumerate}
+        \item Duurtijd van functionaliteit implementeren.
+        \item Duurtijd van eventuele bugs of problemen.
+    \end{enumerate}
+    \item Performantie van functionaliteit meten.
+    \item Mogelijkheid om op te schalen onderzoeken.
+    \item resultaten formuleren.
+\end{enumerate}
+We zullen beginnen door een blanco project aan te maken. Daarna zullen we op dit blanco project de functionaliteit in kwestie implementeren. 
+Hierbij gaan we dan de tijd nodig om de functionaliteit te implementeren meten en ook eventuele bugs of problemen. 
+Na het implementeren van de functionaliteit zullen we bij beide applicaties de performantie meten. 
+Daarna gaan we kijken of dat de functionaliteit opgeschaald kan worden, hoe moeilijk of makkelijk dit kan gebeuren en hoe dat dit moet gebeuren. 
+Tot slot zullen we dan per functionaliteit een conclusie formuleren op basis van de verkregen resultaten.
+
+\section{Hoe word er getest}
+\subsection{Performantie}
+\paragraph{Android Studio}
+Om de performantie van de native applicaties te meten maken we gebruik van Android Studio. 
+Android Studio bied de tool Android profiler aan die het mogelijk maken om de performantie in kaart te brengen. 
+Deze tool kunnen we openen met \textit{View > Tool Windows > Profiler}. %TODO foto invoegen
+Deze tool stelt ons in staat om de performantie van applicaties tijdens het uitvoeren op een emulator te analyseren en meten. 
+Het geeft ons gedetailleerde inzichten in verschillende prestatieaspecten, zoals CPU-gebruik, geheugengebruik, netwerkactiviteit en energieverbruik. 
+Met de Android Profiler kunnen we ook realtime grafieken genereren en de gegevens bekijken. 
+\\\\
+Doorheen dit onderzoek zullen we gebruik maken van de CPU-profiler en geheugenprofiler om de performantie te meten.
+
+\subparagraph{CPU-profiler}
+Hiermee kunnen we de CPU-activiteiten van de applicaties meten. Op die manier kunnen we zien welke threads en methoden de CPU gebruiken en ook hoelang dat ze deze gebruiken.
+
+\subparagraph{Geheugenprofiler}
+Hiermee kunnen we het geheugengebruik van de applicaties meten. We kunnen de geheugenallocatie en deallocatie volgen en de geheugenprofielen analyseren. 
+Op deze manier kunnen we de impact van de applicatie op het geheugengebruik begrijpen.
+
+\paragraph{React native}
+Om de performantie van de cross-platform applicaties te meten maken we gebruik van de Performance Monitor tool. 
+Deze is beschikbaar via de React native Developer Tools. Naast de Performance Monitor bieden de React native Developer Tools ook nog andere tools aan zoals: 
+Element Inspector, Network Inspector, Console Logging en Redux Debugger. Binnen dit onderzoek gaan we enkel gebruik maken van de Performance Monitor. 
+Deze zullen we net zoals bij Android Studio gebruiken om het CPU- en geheugengebruik van cross-platform applicaties te meten en analyseren.
+
+\subsection{Schaalbaarheid}
+TODO
+
+\subsection{Ontwikkeltijd}
+TODO

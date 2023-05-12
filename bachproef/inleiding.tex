@@ -1,0 +1,122 @@
+%%=============================================================================
+%% Inleiding
+%%=============================================================================
+
+\chapter{Inleiding}
+\label{ch:inleiding}
+
+Bij het ontwikkelen van een mobiele applicatie is de keuze tussen native of cross-platform ontwikkeling altijd een belangrijke. 
+Aangezien de gekozen ontwikkelingsmethode veel invloed heeft op het ontwikkelingsproces. 
+Als ze native ontwikkelen zouden ze twee teams nodig hebben, één voor elk platform of één team dat de vaardigheden en tijd beschikt voor beide platformen. 
+Daarnaast moet de klant over een groot genoeg budget beschikken om eventueel native te kiezen als ontwikkelingsmethode, 
+aangezien native een hogere kostprijs met zich meebrengt in tegenstelling tot cross-platform.
+\\\\
+Beide ontwikkelingsmethodes hebben hun voor- en nadelen, en de gekozen ontwikkelingsmethode hangt af van deze voor- en nadelen. 
+Native ontwikkeling wordt vaak gebruikt wanneer performantie cruciaal is, 
+omdat het platform-specifieke code en speciaal ontworpen frameworks gebruikt om de applicatie te runnen. 
+In vergelijking met cross-platform ontwikkeling dat gebruik maakt van een "write once, run anywhere" principe. 
+Ontwikkelaars schrijven één applicatie die op IOS en Android werkt. 
+Daarnaast wordt cross-platform vaak gebruikt voor simpele, niet-grafisch intensieve applicaties of bij applicaties met een hoge tijdsdruk.
+\\\\
+Om native met cross-platform ontwikkeling te vergelijken, gaan we in deze bachelorproef meer bepaald kijken naar de functionaliteiten 
+die mobiele applicaties kunnen bevatten en de performantie, schaalbaarheid en ontwikkelingstijd ervan. 
+Op die manier kunnen we een conclusie trekken uit de resultaten om daarna op basis van de gewenste functionaliteiten een ontwikkelingsmethode te kiezen.
+
+\section{Probleemstelling}%
+\label{sec:probleemstelling}
+
+Voor veel bedrijven en ontwikkelaars is de beslissing tussen native of cross-platform om mobiele applicaties te ontwikkelen een moeilijke keuze. 
+Er moeten verschillende factoren in overweging worden genomen, zoals de tijd \& budget, performantie, schaalbaarheid en de functionaliteiten. 
+Indien de verkeerde keuze wordt gemaakt, kan dit een project maken of kraken. Bij native ontwikkelen kan een project snel veel tijd en geld kosten. 
+Cross-platform daarentegen is een snellere en goedkopere oplossing en kan daardoor een betere keuze zijn.
+
+\section{Onderzoeksvragen}%
+\label{sec:onderzoeksvraag}
+
+\subsection{Hoofdonderzoeksvraag}
+\begin{itemize}
+    \item Hoe verschillen de prestaties, schaalbaarheid en ontwikkeltijd van functionaliteiten tussen native en cross-platform ontwikkeling van mobiele applicaties?
+\end{itemize}
+
+\label{disclaimer:ios}
+\textbf{\textit{Disclaimer: Bij deze bachelorproef wordt alleen gebruikgemaakt van Android langs de native kant om te vergelijken met cross-platform ontwikkeling. 
+Het onderzoeken van IOS is niet mogelijk omdat dit een Apple laptop of desktop vereist, waarover ik niet beschik. 
+Graag wil ik benadrukken dat het onderzoek hierdoor beperkt is tot Android en dat er geen resultaten voor IOS zijn.}}
+\\\\
+Om deze vraag te beantwoorden zullen we alle te onderzoeken functionaliteiten vergelijken op basis van hun performantie, 
+schaalbaarheid en ontwikkeltijd gebruikmakend van native en cross-platform ontwikkelingsmethodes. 
+Voor de performantie zullen we kijken naar de resources dat een functionaliteit in beslag neemt en de frames per second. 
+Voor de schaalbaarheid zullen we eerst kijken of dat de functionaliteiten wel schaalbaar zijn. 
+Indien ze schaalbaar zijn zullen we kijken hoe dit precies zou gebeuren om een functionaliteit op te schalen. 
+Voor de ontwikkeltijd zullen we in het groot kijken naar hoeveel uren werk nodig is om een functionaliteit te implementeren. 
+Daarnaast zullen we ook eventuele problemen of bugs documenteren en kijken hoelang het duurt om deze op te lossen. 
+Tot slot zullen we ook kijken naar de compiletijd dat de applicaties met de geïmplementeerde functionaliteiten hebben. 
+Met andere woorden, hoe lang duurt het om tijdens ontwikkeling een app te bouwen en/of veranderingen te zien.
+
+\subsection{Deelonderzoeksvragen}
+
+Daarnaast zijn er een aantal ondersteunende deelonderzoeksvragen die bij het onderzoek horen.
+
+\begin{itemize}
+    \item Zijn er functionaliteiten die cross-platform niet ondersteunen?
+    \item Zijn er functionaliteiten waarvan de performantie bij cross-platform het onbruikbaar maakt?
+    \item Kan je doorheen een project wisselen van ontwikkelingsmethode?
+\end{itemize}
+
+Dankzij dit onderzoek zullen we kijken naar de bruikbaarheid van functionaliteiten. 
+Of dat cross-platform alle functionaliteiten ondersteund en of dat er bepaalde functionaliteiten zijn die een applicatie kan bevatten 
+die cross-platform niet ondersteund of waarbij het verschil in performantie de functionaliteit onbruikbaar maakt. 
+Tot slot zullen we ook kijken naar de mogelijkheid om tijdens het ontwikkelingsproces te wisselen van ontwikkelingsmethode. 
+Van native naar cross-platform of omgekeerd, van cross-platform naar native.
+
+\section{Onderzoeksdoelstelling}%
+\label{sec:onderzoeksdoelstelling}
+
+Dit onderzoek zal applicatie-ontwikkelaars, ondernemingen en andere geïnteresseerden een beter inzicht geven in de verschillen van functionaliteiten 
+bij native en cross-platform ontwikkeling. Hierdoor zullen ze beter in staat zijn om een beslissing te maken voor hun te gebruiken ontwikkelingsmethode. 
+Daarnaast zal het ook meer inzicht geven in de performantie, schaalbaarheid en ontwikkeltijd van functionaliteiten. 
+Het onderzoek zal ook helpen om te bepalen of een bepaalde functionaliteit bruikbaar is bij cross-platform ontwikkeling of dat de 
+performantie van de functionaliteit onbruikbaar is bij cross-platform ontwikkeling of dat de functionaliteit niet bruikbaar is bij cross-platform ontwikkeling. 
+Tot slot zal het ook inzicht geven in de mogelijkheid om van ontwikkelingsmethode te wisselen doorheen een project.
+
+\section{Opzet van deze bachelorproef}%
+\label{sec:opzet-bachelorproef}
+
+% Het is gebruikelijk aan het einde van de inleiding een overzicht te
+% geven van de opbouw van de rest van de tekst. Deze sectie bevat al een aanzet
+% die je kan aanvullen/aanpassen in functie van je eigen tekst.
+
+De rest van deze bachelorproef is als volgt opgebouwd:
+
+In Hoofdstuk~\ref{ch:stand-van-zaken} wordt een overzicht gegeven van de stand van zaken binnen het onderzoeksdomein, op basis van een literatuurstudie.
+
+In Hoofdstuk~\ref{ch:methodologie} wordt de methodologie toegelicht en worden de gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op de onderzoeksvragen.
+
+In Hoofdstuk~\ref{ch:ontwikkelomgeving} wordt uitgelegd hoe de ontwikkelomgevingen van de gebruikte IDEs en frameworks werd opgesteld.
+
+In Hoofdstuk~\ref{ch:projecten} wordt uitgelegd hoe dat nieuwe projecten worden aangemaakt om de functionaliteiten te implementeren.
+
+In Hoofdstuk~\ref{ch:basisfunctionaliteiten} wordt het onderzoek naar basisfunctionaliteiten uitgevoerd.
+
+In Hoofdstuk~\ref{ch:camera} wordt het onderzoek naar camera-integratie uitgevoerd.
+
+In Hoofdstuk~\ref{ch:sensoren} wordt het onderzoek naar gebruik van sensoren uitgevoerd.
+
+In Hoofdstuk~\ref{ch:notificaties} wordt het onderzoek naar push-notificaties uitgevoerd.
+
+In Hoofdstuk~\ref{ch:audioenvideo} wordt het onderzoek naar audio- en videospelers uitgevoerd.
+
+In Hoofdstuk~\ref{ch:conclusie}, tenslotte, wordt de conclusie gegeven en een antwoord geformuleerd op de onderzoeksvragen.
+
+
+
+
+
+
+
+
+
+
+
+
+
