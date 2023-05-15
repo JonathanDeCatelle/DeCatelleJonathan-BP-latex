@@ -17,7 +17,7 @@ Mijn bachelorproef richt zich op het vergelijken van de performantie, schaalbaar
 1. Eerst wordt er een literatuurstudie uitgevoerd om iedereen met een basis te voorzien vooraleer het onderzoek wordt uitgevoerd.
 2. Daarna wordt uitgelegd hoe de ontwikkelmethodes worden opgesteld om projecten en applicaties aan te maken.
 3. Daarna wordt er voor zowel native als cross-platform een blanco project opgesteld met daarin de externe tool om de performantie te meten geïmplementeerd. Dit project wordt dan als basis gebruikt om de functionaliteiten te implementeren.
-4. Daarna worden de functionaliteiten geïmplementeerd, de performantie gemeten, schaalbaarheid onderzocht en ontwikkeltijd gedocumenteerd.
+4. Daarna worden de functionaliteiten geïmplementeerd, de performantie gemeten, schaalbaarheid onderzocht en ontwikkeltijd gedocumenteerd. Alle applicaties kunnen worden teruggevonden in volgende repository https://github.com/JonathanDeCatelle/BP-projecten/tree/main.
 5. Tot slot worden er met de verkregen resultaten van het onderzoek een conclusie geformuleerd om de onderzoeksvragen te beantwoorden.
 
 ### Contact
