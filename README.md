@@ -2,13 +2,13 @@
 Welkom bij de repository van mijn bachelorproef, opgesteld door mijzelf, De Catelle Jonathan, als onderdeel van mijn opleiding Toegepaste Informatica. In deze repository vind je het voorstel, de bachelorproef en de poster die zijn gemaakt in het kader van mijn bachelorproef.
 
 ## Voorstel
-Het voorstel van mijn bachelorproef kan gevonden worden in de folder **voorstel**.
+Het voorstel van mijn bachelorproef kan gevonden worden in de folder **/voorstel**.
 
 ## Bachelorproef
-De bachelorproef kan gevonden worden in de folder **bachproef**.
+De bachelorproef kan gevonden worden in de folder **/bachproef**.
 
 ## Poster
-De poster van mijn bachelorproef kan gevonden worden in de folder **poster**.
+De poster van mijn bachelorproef kan gevonden worden in de folder **/poster**.
 
 ### Onderwerp en Doelstelling
 Mijn bachelorproef richt zich op het vergelijken van de performantie, schaalbaarheid en ontwikkeltijd bij functionaliteiten ontwikkeld met native en cross-platform onwtikkelmethodes. Het doel van dit onderzoek is applicatie-ontwikkelaars, ondernemingen en andere geïnteresseerden een beter inzicht geven in de verschillen van functionaliteiten bij native en cross-platform ontwikkeling.
