@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{   }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{builder}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{NotificationCompat}\PYG{p}{.}\PYG{n+na}{Builder}\PYG{p}{(}\PYG{k}{this}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{CHANNEL\PYGZus{}ID}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{.}\PYG{n+na}{setSmallIcon}\PYG{p}{(}\PYG{n}{DRAWABLE\PYGZus{}ICON}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{.}\PYG{n+na}{setContentTitle}\PYG{p}{(}\PYG{n}{TITLE}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{.}\PYG{n+na}{setContentText}\PYG{p}{(}\PYG{n}{DESCRIPTION}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{.}\PYG{n+na}{setPriority}\PYG{p}{(}\PYG{n}{NotificationCompat}\PYG{p}{.}\PYG{n+na}{PRIORITY\PYGZus{}DEFAULT}\PYG{p}{)}
+\end{Verbatim}

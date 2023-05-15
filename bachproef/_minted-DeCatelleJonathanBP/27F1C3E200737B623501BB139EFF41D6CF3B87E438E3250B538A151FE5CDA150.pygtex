@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{  }\PYG{k}{await}\PYG{+w}{ }\PYG{n+nx}{notifee}\PYG{p}{.}\PYG{n+nx}{displayNotification}\PYG{p}{(\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nx}{title}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}TITLE\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nx}{body}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}DESCRIPTION\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nx}{android}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{      }\PYG{n+nx}{CHANNEL\PYGZus{}ID}\PYG{p}{,}
+\PYG{+w}{      }\PYG{n+nx}{smallIcon}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{ICON\PYGZus{}NAME}\PYG{p}{,}
+\PYG{+w}{      }\PYG{n+nx}{pressAction}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n+nx}{id}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}default\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{},}\PYG{+w}{ }\PYG{c+c1}{// Zorgt ervoor dat de applicatie opent}
+\PYG{+w}{         }\PYG{c+c1}{// bij het drukken op de notificatie}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{},}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{});}
+\end{Verbatim}

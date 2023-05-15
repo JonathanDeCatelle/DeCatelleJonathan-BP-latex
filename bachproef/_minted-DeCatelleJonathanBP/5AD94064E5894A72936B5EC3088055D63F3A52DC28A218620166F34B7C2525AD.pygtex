@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+npx\PYG{+w}{ }react\PYGZhy{}native\PYG{+w}{ }init\PYG{+w}{ }\PYGZlt{}projectnaam\PYGZgt{}
+//\PYG{+w}{ }Of
+npx\PYG{+w}{ }react\PYGZhy{}native@X.XX.X\PYG{+w}{ }init\PYG{+w}{ }\PYGZlt{}projectnaam\PYGZgt{}\PYG{+w}{ }\PYGZhy{}\PYGZhy{}version\PYG{+w}{ }X.XX.X
+\end{Verbatim}

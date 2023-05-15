@@ -1,0 +1,28 @@
+\subparagraph{1. Performance Monitoring SDK aan applicatie toevoegen}
+Als eerst voegen we de Performance Monitor SDK toe aan ons project in het build.gradle(module) bestand.
+\begin{minted}{java}
+dependencies {
+    // ... andere dependancies
+    implementation 'com.google.firebase:firebase-perf-ktx'
+}
+\end{minted}
+
+\subparagraph{2. Performance Monitoring Gradle plugin toevoegen}
+Na het toevoegen van de SDK moeten we de Perormance Monitoring Gradle plugin toevoegen. 
+Dit doen we door de dependancies hiervan toe te voegen aan het build.gradle(project) bestand.
+\begin{minted}{java}
+dependencies {
+    // ... andere dependancies
+    classpath 'com.google.firebase:perf-plugin:1.4.2'
+}
+\end{minted}
+Tot slot voegen we de plugin toe. Dit doen we door deze in het build.gradle(module) bestand toe te voegen.
+\begin{minted}{java}
+plugins {
+    // ... andere plugins
+    id 'com.google.firebase.firebase-perf'
+}
+\end{minted}
+Nu is het blanco project klaar om vanuit dit project alle functionaliteiten te 
+implementeren en onderzoeken, buiten de basisfunctionaliteiten. Hiervoor zullen we vanuit een ander project starten, 
+maar zullen we de Perormance Monitoring tool op dezelfde manier implementeren.

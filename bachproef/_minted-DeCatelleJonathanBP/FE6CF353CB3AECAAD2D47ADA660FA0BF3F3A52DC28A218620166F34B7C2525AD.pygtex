@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{  }npm\PYG{+w}{ }install\PYG{+w}{ }@react\PYGZhy{}navigation/native
+\PYG{+w}{  }npm\PYG{+w}{ }install\PYG{+w}{ }react\PYGZhy{}native\PYGZhy{}screens\PYG{+w}{ }react\PYGZhy{}native\PYGZhy{}safe\PYGZhy{}area\PYGZhy{}context
+\end{Verbatim}

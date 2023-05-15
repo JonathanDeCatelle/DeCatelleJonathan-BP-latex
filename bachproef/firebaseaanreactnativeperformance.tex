@@ -1,0 +1,24 @@
+\subparagraph{1. Dependancy installeren}
+Als eerst moeten we de Performance Monitoring tool aan de root van ons project toevoegen. 
+Dit kunnen we doen met volgend commando.
+\begin{minted}{bash}
+npm install --save @react-native-firebase/perf
+\end{minted}
+
+\subparagraph{2. Performance Monitoring tool configureren}
+Daarnaast moeten we net zoals bij de React Native Firebase app module de plugin toevoegen aan 
+de dependancies binnen het \textit{/android/build.gradle} bestand. 
+\begin{minted}{java}
+buildscript {
+    dependencies {
+        // ... andere dependencies
+        classpath 'com.google.firebase:perf-plugin:1.4.2'
+    }
+}
+\end{minted}
+En moeten we de plugin uitvoeren door deze aan het \textit{/android/app/build.gradle} bestand toe te voegen.
+\begin{minted}{java}
+apply plugin: 'com.google.firebase.firebase-perf'
+\end{minted}
+Nu is het blanco project klaar om vanuit dit project alle functionaliteiten te 
+implementeren en onderzoeken.

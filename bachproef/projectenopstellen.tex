@@ -24,26 +24,48 @@ startprojecten kunnen kiezen. Na het kiezen van het startproject geven we een na
 programmeertaal en de minimaal ondersteunde Android API. Voor dit onderzoek kiezen we 
 voor Kotlin. De naam en minimale ondersteunde Android API speelt hierbij geen rol.
 
-\paragraph{Basisfunctionaliteiten}
+\subsection{Basisfunctionaliteiten}
 \label{par:basisfunctionaliteiten}
 Bij de basisfunctionaliteiten zullen we als startproject 
 \textbf{Bottom Navigation Views Activity} gebruiken om te kunnen navigeren tussen 
 verschillende schermen. Daardoor moeten we zelf geen extra libraries gaan implementeren.
 
-\paragraph{Overige functionaliteiten}
-Voor de overige functionaliteiten (camera-integratie, gebruik van sensoren, 
+\subsection{Overige functionaliteiten}
+Voor de overige functionaliteiten (gebruik van sensoren, 
 push-notificaties en audio- en videospelers) zullen we als startproject 
 \textbf{Empty Activity} gebruiken. Op die manier hebben we de minste \gls{overhead} 
 dat de resultaten kan beïnvloeden.
 
-\section{cross-platform project}
+\subsection{Firebase Performance Monitoring}
+Om de performantie de applicaties te meten moeten we de Firebase Performance Monitoring tool 
+in het project implementeren. 
+
+\paragraph{Firebase project aanmaken}
+Om de Firebase Performance Monitoring tool te gebruiken hebben we als eerst een Firebase project nodig.
+Deze kan aangemaakt worden via volgende link \url{https://console.firebase.google.com/}.
+
+\paragraph{Firebase aan project toevoegen}
+Vooraleer we de Performance Monitoring tool kunnen implementeren moeten we eerst Firebase 
+aan ons project toevoegen. Hiervoor volgen we deze handleiding 
+\url{https://firebase.google.com/docs/android/setup}.
+
+\input{firebaseaanandroid}
+
+\paragraph{Implementatie Performance Monitoring tool}
+Nu dat Firebase aan ons project is toegevoegd kunnen we de Performance Monitor 
+toevoegen door deze handleiding te volgen \url{https://firebase.google.com/docs/perf-mon/get-started-android}.
+
+\input{firebaseaanandroidperformance.tex}
+
+
+\section{cross-platform project}\label{sec:projectencross}
 Om bij React native een project op te starten gebruiken we volgend commando. 
 Deze voeren we uit in de terminal van Visual Studio Code in de gewenste map waar 
 het project aangemaakt moet worden.
 \begin{minted}{bash}
-    npx react-native init <projectnaam>
-    // Of
-    npx react-native@X.XX.X init <projectnaam> --version X.XX.X
+npx react-native init <projectnaam>
+// Of
+npx react-native@X.XX.X init <projectnaam> --version X.XX.X
 \end{minted}
 
 % komt bovenaan code, andere manier om caption bij code te zetten
@@ -57,8 +79,27 @@ het project aangemaakt moet worden.
 %     \label{code:reactnativeprojectopstarten}
 % \end{listing}
 
-Dit commando zal een blanco React native project aanmaken waarmee we van start kunnen gaan 
-om de functionalieiten te implementeren. Hier kan ook een versie worden meegegeven, 
-door \textbf{X.XX.X} in bovenstaande commando te vervangen maken we een project aan 
-met de gespecifieerde versie.
+Het eerste commando zal een blanco React native project aanmaken met de laatste versie 
+waarmee we van start kunnen gaan om de functionalieiten te implementeren. Hier kan ook 
+een versie worden meegegeven, door \textbf{X.XX.X} in bovenstaande commando te vervangen 
+maken we een project aan met de gespecifieerde versie. In dit onderzoek maken we gebruik 
+van de laatste beschikbare versie namelijk \textbf{0.71.7}.
 
+\subsection{Firebase Performance Monitoring}
+Om de performantie de applicaties te meten moeten we net zoals bij native applicaties de 
+Firebase Performance Monitoring tool in het project implementeren. Om deze te implementeren 
+volgen we deze handleiding \url{https://rnfirebase.io/}.
+
+\paragraph{Firebase project aanmaken}
+Om de Firebase Performance Monitoring tool te gebruiken hebben we net zoals bij native 
+als eerst een Firebase project nodig. Maar aangezien deze al is aangemaakt, moeten we dit 
+niet opnieuw doen.
+
+\input{firebaseaanreactnative}
+
+\paragraph{Implementatie Performance Monitoring tool}
+Nu de React Native Firebase app module is geïmplementeerd zijn alle voorwaarden voldaan om de 
+Performance Monitoring tool verder te implementeren. Hiervoor volgen we deze handleiding 
+\url{https://rnfirebase.io/perf/usage}.
+
+\input{firebaseaanreactnativeperformance.tex}

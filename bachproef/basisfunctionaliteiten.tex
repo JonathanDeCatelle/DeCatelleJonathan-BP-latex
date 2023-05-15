@@ -10,17 +10,23 @@ Met deze resultaten kunnen we dan een gepaste conclusie vormen.
 
 \section{Native}
 \subsubsection{Wat hebben we nodig}
-%tools, libraries, ...
 Normaal gezien zullen we voor de functionaliteiten altijd een of andere library of API gebruiken. Enkel bij de navigatie is dit niet nodig. 
 Voor de navigatie zullen we gebruik maken van een startproject dat Android Studio aanbied, hierin zit de navigatie al geïmplementeerd 
 \ref{par:basisfunctionaliteiten}. Voor het laadscherm dat getoond wordt bij het opstarten van de applicatie gaan we wel een externe API gebruiken. 
-Deze is de SplashScreen API.
-Vooraleer we kunnen beginnen met het implementeren van de functionaliteit moeten we eerst kijken naar hoe we dit best kunnen doen. 
-Gelukkig bied Android Studio een template aan als startproject waarin de basisfunctionaliteit van navigeren tussen scherm ingewerkt 
-zit \ref{par:basisfunctionaliteiten}. Daarnaast moeten we wel zoeken naar een manier om een laadscherm te tonen terwijl de applicatie 
-aan het opstarten is.
+Deze is de SplashScreen API \url{https://developer.android.com/develop/ui/views/launch/splash-screen#getting-started}.
 
 \subsubsection{Uitvoering}
+Voor de navigatie was het voldoende om het nieuw project aan te maken. Hierbij zit de navigatie al geïmplemnteerd.
+Om de SplashScreen library in ons project te implementeren moeten we deze aan onze dependancies toe voegen 
+\textit{Gradle Scripts > build.gradle (Module :app)}.
+\begin{minted}{kotlin}
+    dependencies {
+        implementation("androidx.core:core-splashscreen:1.0.0")
+    }
+\end{minted}
+Na het toevoegen van de dependancy kunnen we het laadscherm customizen op basis van onze wensen. Zoals bijvoorbeeld: 
+windowSplashScreenBackground, windowSplashScreenAnimatedIcon, windowSplashScreenAnimationDuration, 
+windowSplashScreenIconBackgroundColor en windowSplashScreenBehavior. Dit kunnen we in ... doen.
 
 \subsubsection{Ontwikkeltijd}
 

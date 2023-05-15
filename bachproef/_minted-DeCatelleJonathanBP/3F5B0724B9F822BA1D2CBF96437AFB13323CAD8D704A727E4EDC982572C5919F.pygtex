@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{createNotificationChannel}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{c+c1}{// Channel aanmaken}
+\PYG{+w}{  }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{channel}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{NotificationChannel}\PYG{p}{(}\PYG{n}{CHANNEL\PYGZus{}ID}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{CHANNEL\PYGZus{}NAME}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{NotificationManager}\PYG{p}{.}\PYG{n+na}{IMPORTANCE\PYGZus{}DEFAULT}\PYG{p}{).}\PYG{n+na}{apply}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{description}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{CHANNEL\PYGZus{}DESCRIPTION}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{  }\PYG{c+c1}{// Channel bij het systeem registreren}
+\PYG{+w}{  }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{notificationManager}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{NotificationManager}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{    }\PYG{n}{getSystemService}\PYG{p}{(}\PYG{n}{Context}\PYG{p}{.}\PYG{n+na}{NOTIFICATION\PYGZus{}SERVICE}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{NotificationManager}
+\PYG{+w}{  }\PYG{n}{notificationManager}\PYG{p}{.}\PYG{n+na}{createNotificationChannel}\PYG{p}{(}\PYG{n}{channel}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

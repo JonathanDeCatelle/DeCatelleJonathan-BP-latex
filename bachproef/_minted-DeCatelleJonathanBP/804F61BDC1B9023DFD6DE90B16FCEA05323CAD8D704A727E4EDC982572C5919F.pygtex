@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{  }\PYG{n}{Intent}\PYG{+w}{ }\PYG{n}{intent}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{new}\PYG{+w}{ }\PYG{n}{Intent}\PYG{p}{(}\PYG{n}{context}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{SpecifiekSchermActivity}\PYG{p}{.}\PYG{n+na}{class}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{intent}\PYG{p}{.}\PYG{n+na}{setAction}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}ACTION\PYGZus{}MY\PYGZus{}ACTION\PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{PendingIntent}\PYG{+w}{ }\PYG{n}{pendingIntent}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{PendingIntent}\PYG{p}{.}\PYG{n+na}{getActivity}\PYG{p}{(}\PYG{n}{context}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m}{0}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{intent}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{PendingIntent}\PYG{p}{.}\PYG{n+na}{FLAG\PYGZus{}UPDATE\PYGZus{}CURRENT}\PYG{p}{);}
+
+\PYG{+w}{  }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{builder}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{NotificationCompat}\PYG{p}{.}\PYG{n+na}{Builder}\PYG{p}{(}\PYG{k}{this}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{CHANNEL\PYGZus{}ID}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{.}\PYG{n+na}{setSmallIcon}\PYG{p}{(}\PYG{n}{DRAWABLE\PYGZus{}ICON}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{.}\PYG{n+na}{setContentTitle}\PYG{p}{(}\PYG{n}{TITLE}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{.}\PYG{n+na}{setContentText}\PYG{p}{(}\PYG{n}{DESCRIPTION}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{.}\PYG{n+na}{setPriority}\PYG{p}{(}\PYG{n}{NotificationCompat}\PYG{p}{.}\PYG{n+na}{PRIORITY\PYGZus{}DEFAULT}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{.}\PYG{n+na}{setContentIntent}\PYG{p}{(}\PYG{n}{pendingIntent}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{// Voeg deze toe}
+\end{Verbatim}

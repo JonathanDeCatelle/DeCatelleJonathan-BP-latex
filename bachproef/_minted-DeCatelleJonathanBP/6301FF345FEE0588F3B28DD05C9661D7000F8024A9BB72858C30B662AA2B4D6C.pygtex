@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{  }\PYG{n}{val}\PYG{+w}{ }\PYG{n}{core\PYGZus{}version}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}1.6.0\PYGZdq{}}
+\PYG{+w}{  }\PYG{n}{dependencies}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{      }\PYG{n}{implementation}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}androidx.core:core\PYGZhy{}ktx:\PYGZdl{}core\PYGZus{}version\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
