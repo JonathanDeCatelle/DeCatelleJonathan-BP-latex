@@ -11,14 +11,21 @@ de dependancies binnen het \textit{/android/build.gradle} bestand.
 \begin{minted}{java}
 buildscript {
     dependencies {
-        // ... andere dependencies
-        classpath 'com.google.firebase:perf-plugin:1.4.2'
+        // andere dependencies
+        classpath "com.google.firebase:perf-plugin:1.4.2"
     }
 }
 \end{minted}
 En moeten we de plugin uitvoeren door deze aan het \textit{/android/app/build.gradle} bestand toe te voegen.
 \begin{minted}{java}
-apply plugin: 'com.google.firebase.firebase-perf'
+apply plugin: "com.google.firebase.firebase-perf"
+\end{minted}
+En voegen we deze ook toe aan de dependancies in hetzelfde \textit{/android/app/build.gradle} bestand.
+\begin{minted}{java}
+dependencies {
+    // andere dependancies
+    implementation "com.google.firebase:firebase-perf-ktx"
+}
 \end{minted}
 Nu is het blanco project klaar om vanuit dit project alle functionaliteiten te 
 implementeren en onderzoeken.

@@ -17,7 +17,7 @@ buildscript {
 
     dependencies {
         // andere dependancies
-        classpath 'com.google.gms:google-services:4.3.15'
+        classpath "com.google.gms:google-services:4.3.15"
     }
 }
 \end{minted}
@@ -25,14 +25,14 @@ Daarna moeten we de plugin uitvoeren door deze aan het build.gradle(module) best
 \begin{minted}{java}
 plugins {
     // andere plugins 
-    id 'com.google.gms.google-services'
+    id "com.google.gms.google-services"
 }
 \end{minted}
 Tot slot moeten we de Firebase SDKs toevoegen aan het build.gradle(module) bestand.
 \begin{minted}{java}
 dependencies {
     // andere dependancies
-    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+    implementation platform("com.google.firebase:firebase-bom:32.0.0")
 }
 \end{minted}
 Firebase is nu volledig aan ons project toegevoegd.

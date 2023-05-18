@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{plugins}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{c+c1}{// andere plugins}
+\PYG{+w}{    }\PYG{n}{id}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}com.google.gms.google\PYGZhy{}services\PYGZdq{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

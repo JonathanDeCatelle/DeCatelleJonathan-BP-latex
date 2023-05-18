@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{apply}\PYG{+w}{ }\PYG{n}{plugin}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}com.google.firebase.firebase\PYGZhy{}perf\PYGZdq{}}
+\end{Verbatim}

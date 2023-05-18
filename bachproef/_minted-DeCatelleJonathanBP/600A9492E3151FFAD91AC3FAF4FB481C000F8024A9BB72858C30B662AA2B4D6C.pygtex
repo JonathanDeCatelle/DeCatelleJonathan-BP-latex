@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{dependencies}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{c+c1}{// andere dependancies}
+\PYG{+w}{    }\PYG{n}{implementation}\PYG{+w}{ }\PYG{n+nf}{platform}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}com.google.firebase:firebase\PYGZhy{}bom:32.0.0\PYGZdq{}}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -2,7 +2,7 @@
 \PYG{n}{buildscript}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
 \PYG{+w}{    }\PYG{n}{dependencies}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
 \PYG{+w}{        }\PYG{c+c1}{// andere dependencies}
-\PYG{+w}{        }\PYG{n}{classpath}\PYG{+w}{ }\PYG{err}{\PYGZsq{}}\PYG{n}{com}\PYG{p}{.}\PYG{n+na}{google}\PYG{p}{.}\PYG{n+na}{gms}\PYG{p}{:}\PYG{n}{google}\PYG{o}{\PYGZhy{}}\PYG{n}{services}\PYG{p}{:}\PYG{l+m+mf}{4.3.15}\PYG{err}{\PYGZsq{}}
+\PYG{+w}{        }\PYG{n}{classpath}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}com.google.firebase:perf\PYGZhy{}plugin:1.4.2\PYGZdq{}}
 \PYG{+w}{    }\PYG{p}{\PYGZcb{}}
 \PYG{p}{\PYGZcb{}}
 \end{Verbatim}

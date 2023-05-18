@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{apply}\PYG{+w}{ }\PYG{n}{plugin}\PYG{p}{:}\PYG{+w}{ }\PYG{err}{\PYGZsq{}}\PYG{n}{com}\PYG{p}{.}\PYG{n+na}{google}\PYG{p}{.}\PYG{n+na}{gms}\PYG{p}{.}\PYG{n+na}{google}\PYG{o}{\PYGZhy{}}\PYG{n}{services}\PYG{err}{\PYGZsq{}}
-\end{Verbatim}
