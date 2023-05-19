@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{export}\PYG{+w}{ }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{notificationsSetup}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{async}\PYG{+w}{ }\PYG{p}{()}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{PERMISSION}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{await}\PYG{+w}{ }\PYG{n+nx}{notifee}\PYG{p}{.}\PYG{n+nx}{requestPermission}\PYG{p}{();}
+
+\PYG{+w}{  }\PYG{k}{if}\PYG{p}{(}\PYG{n+nx}{PERMISSION}\PYG{p}{.}\PYG{n+nx}{authorizationStatus}\PYG{+w}{ }\PYG{o}{===}\PYG{+w}{ }\PYG{n+nx}{AuthorizationStatus}\PYG{p}{.}\PYG{n+nx}{DENIED}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{return}\PYG{p}{;}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{  }\PYG{k}{await}\PYG{+w}{ }\PYG{n+nx}{notifee}\PYG{p}{.}\PYG{n+nx}{createChannel}\PYG{p}{(\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nx}{id}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}bachproef\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nx}{name}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}BachproefNotificaties\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{});}
+\PYG{p}{\PYGZcb{}}
+
+\end{Verbatim}

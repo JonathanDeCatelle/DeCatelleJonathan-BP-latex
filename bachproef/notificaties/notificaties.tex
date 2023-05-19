@@ -1,0 +1,131 @@
+%%=============================================================================
+%% Push-notificaties
+%%=============================================================================
+
+\chapter{Notificaties}%
+\label{ch:notificaties}
+
+In dit hoofdstuk gaan we de lokale notificaties van native en cross-platform vergelijken. 
+Met deze resultaten kunnen we dan een gepaste conclusie vormen.
+
+\section{Native}
+\subsubsection{Wat hebben we nodig}
+Om lokale notificaties aan te kunnen maken bij Android maken we gebruik van de NotificationCompat API aangeboden 
+door de Android support library. Deze stelt ons in staat om de titel, tekst, pictogram en andere inhoud van de 
+notificatie in te stellen. Notificaties kunnen ook worden ingesteld om speciale acties te ondernemen bij het openen 
+van de applicatie via de notificatie. Er kan ook een eventueel een prioriteit worden meegegeven.
+
+\subsubsection{Uitvoering}
+
+\input{./notificaties/notificatiesnativeuitvoering.tex}
+
+\subsubsection{Ontwikkeltijd}
+
+\input{./notificaties/notificatiesnativeontwikkeltijd.tex}
+
+\subsubsection{Performantie}
+
+\input{./notificaties/notificatiesnativeperformantie.tex}
+
+\subsubsection{Schaalbaarheid}
+
+\input{./notificaties/notificatiesnativeschaalbaarheid.tex}
+
+
+\section{Cross-platform}
+\subsubsection{Wat hebben we nodig}
+Om lokale notificaties bij React native te tonen gaan we gebruik maken van de externe library Notifee.
+Met deze library kunnen we net zoals bij Android de notificatie aanpassen naar onze wensen.
+
+\subsubsection{Uitvoering}
+
+\input{./notificaties/notificatiescrossuitvoering.tex}
+
+\subsubsection{Ontwikkeltijd}
+
+\input{./notificaties/notificatiescrossontwikkeltijd.tex}
+
+\subsubsection{Performantie}
+
+\input{./notificaties/notificatiescrossperformantie.tex}
+
+\subsubsection{Schaalbaarheid}
+
+\input{./notificaties/notificatiescrossschaalbaarheid.tex}
+
+\section{Conclusie}
+Dankzij de resultaten van beide applicaties kunnen we concluderen dat de ontwikkeltijd van notificaties met 
+beide ontwikkelingsmethodes relatief gelijk blijft. Bij beide applicaties moest er toestemming gevraagd worden. 
+Door bij Android dit aan het \textbf{AndroidManifest.xml} bestand toe te voegen, en bij React native door 
+de \textbf{notifee.requestPermission();} methode uit te voeren. Hierna moet er bij beide applicaties een 
+channel worden aangemaakt en tot slot dan de notificatie.
+
+\begin{tabular}{ |p{3cm}||p{5cm}|p{5cm}| }
+    \hline
+     & Native (Android) & Cross-platform (React native) \\
+    \hline
+    \multicolumn{3}{|c|}{Tijdsduur} \\
+    \hline
+    Minimaal & 4ms & 141ms \\
+    Maximaal & 88ms & 166ms \\
+    Gemiddeld & 12ms & 297ms \\
+    \hline
+    \multicolumn{3}{|c|}{Geheugen} \\ 
+    \hline
+    Minimaal & / & / \\
+    Maximaal & / & / \\
+    Gemiddeld & 81MB & 172MB \\
+    \hline
+    \multicolumn{3}{|c|}{CPU} \\
+    \hline
+    Minimaal & 19\% & 25\% \\
+    Maximaal & 27\% & 30\% \\
+    Gemiddeld & 21\% & 28\% \\
+    \hline
+\end{tabular}
+
+Daarnaast zien we bij de tijdsduur dat nodig is om een notificatie aan te maken wel een duidelijk 
+verschil tussen Android en React native. Gemiddel is het aanmaken van een notificatie bij Android
+154ms sneller dan bij React native. Bij React native duurt het gemiddel 166ms om een notificatie 
+aan te maken terwijl dit bij Android maar 12ms duurt. Dit kan liggen aan het feit dat de externe 
+library de code moet omzetten naar platformspecifieke code waardoor er veel tijd wordt verloren.
+\\\\
+We zien dan wel bij het geheugen dat er geen verschil is tussen het aanmaken van een notificatie en wanneer er 
+niks gebeurd op de appplicatie. Maar ondanks dat er geen invloed is om het aanmaken van een notificatie bij 
+Android en React native zien we wel dat er 112,35\% meer geheugen wordt gebruikt bij React native dan 
+bij Android (81MB in vergelijking met 172MB). 
+\\\\
+Bij het CPU gebruik zien we wel een verschil tijdens het aanmaken van een notificatie en wanneer de 
+applicatie inactief is. Daarnaast zien we ook een verschil tussen Android en React-native. Bij React native 
+springt het CPU gebruik gemiddeld naar 28\% terwijl dat het bij Android maar naar 21\% springt. Ookal 
+draaien beide applicaties op hetzelfde apparaat gebruikt de React native applicatie gemiddeld 7\% meer 
+van de CPU dan de Android applicatie.
+\\\\
+Op vlak van schaalbaarheid merken we dat beide ontwikkelingsmethodes net zoals bij de ontwikkelingstijd 
+lijken op elkaar. Allebei geven ze de mogelijkheid om de logica in methodes te onderscheiden, 
+waardoor deze later individueel herbruikt of opgeschaald kunnen worden.
+
+
+%notificatie aanmaken heeft bij cross geen invloed op het geheugen, enkel de tijdsduur en het CPU gebruik is varierend
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

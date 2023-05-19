@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{  }\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{createNotification}\PYG{p}{(}\PYG{n}{title}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{String}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{body}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{String}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{builder}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{NotificationCompat}\PYG{p}{.}\PYG{n+na}{Builder}\PYG{p}{(}\PYG{k}{this}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{CHANNEL\PYGZus{}ID}\PYG{p}{)}
+\PYG{+w}{      }\PYG{p}{.}\PYG{n+na}{setSmallIcon}\PYG{p}{(}\PYG{n}{icon}\PYG{p}{)}
+\PYG{+w}{      }\PYG{p}{.}\PYG{n+na}{setContentTitle}\PYG{p}{(}\PYG{n}{title}\PYG{p}{)}
+\PYG{+w}{      }\PYG{p}{.}\PYG{n+na}{setContentText}\PYG{p}{(}\PYG{n}{body}\PYG{p}{)}
+\PYG{+w}{      }\PYG{p}{.}\PYG{n+na}{setPriority}\PYG{p}{(}\PYG{n}{NotificationCompat}\PYG{p}{.}\PYG{n+na}{PRIORITY\PYGZus{}DEFAULT}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{notificationManager}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{NotificationManager}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{      }\PYG{n}{getSystemService}\PYG{p}{(}\PYG{n}{Context}\PYG{p}{.}\PYG{n+na}{NOTIFICATION\PYGZus{}SERVICE}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{NotificationManager}
+\PYG{+w}{    }\PYG{n}{notificationManager}\PYG{p}{.}\PYG{n+na}{notify}\PYG{p}{(}\PYG{n}{notificationId}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{builder}\PYG{p}{.}\PYG{n+na}{build}\PYG{p}{())}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,15 @@
+\paragraph{Complexiteit}
+De complexiteit van de library valt goed mee, dankzij de beschikbare documentatie van de library is het zeer 
+simpel om alle mogelijkheden van de library terug te vinden en zelf in een project te implementeren. 
+
+\paragraph{Herbruikbaarheid}
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.2\textheight]{notificationsschaalbaarheidcross.png}
+    \caption{Structuur notificaties implementatie React native.}
+\end{figure}
+Door het opdelen van de logica van de library is het makkelijk om later opnieuw dezelfde logica op andere plaatsen 
+in de code te gebruiken. Er moet enkel een methode geïmporteerd worden om een notificatie aan te maken. Aan die methode 
+wordt dan de titel en beschrijving meegegeven. Ook is het mogelijk om de logica voor het aanmaken van een notificatie 
+aan te passen. Dit kan dan makkelijk gebeuren in het \textbf{create.ts} bestand. Of er kan een nieuwe methode worden 
+aangemaakt om bijvoorbeeld de notificatie in te plannen op een later tijdsstip.

@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{createNotificationChannel}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{Build}\PYG{p}{.}\PYG{n+na}{VERSION}\PYG{p}{.}\PYG{n+na}{SDK\PYGZus{}INT}\PYG{+w}{ }\PYG{o}{\PYGZgt{}=}\PYG{+w}{ }\PYG{n}{Build}\PYG{p}{.}\PYG{n+na}{VERSION\PYGZus{}CODES}\PYG{p}{.}\PYG{n+na}{O}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{name}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}bachproef\PYGZdq{}}
+\PYG{+w}{    }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{descriptionText}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}bachproef notificaties\PYGZdq{}}
+\PYG{+w}{    }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{importance}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{NotificationManager}\PYG{p}{.}\PYG{n+na}{IMPORTANCE\PYGZus{}DEFAULT}
+\PYG{+w}{    }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{channel}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{NotificationChannel}\PYG{p}{(}\PYG{n}{CHANNEL\PYGZus{}ID}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{name}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{importance}\PYG{p}{).}\PYG{n+na}{apply}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{      }\PYG{n}{description}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{descriptionText}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{c+c1}{// Channel bij het systeem registreren}
+\PYG{+w}{    }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{notificationManager}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{NotificationManager}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{      }\PYG{n}{getSystemService}\PYG{p}{(}\PYG{n}{Context}\PYG{p}{.}\PYG{n+na}{NOTIFICATION\PYGZus{}SERVICE}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{NotificationManager}
+\PYG{+w}{    }\PYG{n}{notificationManager}\PYG{p}{.}\PYG{n+na}{createNotificationChannel}\PYG{p}{(}\PYG{n}{channel}\PYG{p}{)}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

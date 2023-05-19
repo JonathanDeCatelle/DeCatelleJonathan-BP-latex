@@ -203,8 +203,8 @@
 \maketitle
 \hypersetup{pageanchor=true}
 
-\input{voorwoord}
-\input{samenvatting}
+\input{./voorwoord/voorwoord.tex}
+\input{./samenvatting/samenvatting.tex}
 
 %---------- Inhoud, lijst figuren, ... -----------------------------------------
 
@@ -243,22 +243,22 @@
 % om bijvoorbeeld de inleiding en/of stand van zaken over meerdere hoofdstukken
 % te verspreiden!
 
-\input{inleiding}
-\input{standvanzaken}
-\input{methodologie}
+\input{./inleiding/inleiding.tex}
+\input{./standvanzaken/standvanzaken.tex}
+\input{./methodologie/methodologie.tex}
 
 % Voeg hier je eigen hoofdstukken toe die de ``corpus'' van je bachelorproef
 % vormen. De structuur en titels hangen af van je eigen onderzoek. Je kan bv.
 % elke fase in je onderzoek in een apart hoofdstuk bespreken.
 
-\input{ontwikkelomgeving}
-\input{projectenopstellen}
-\input{basisfunctionaliteiten}
-\input{sensoren}
-\input{notificaties}
-\input{audioenvideo}
+\input{./ontwikkelomgeving/ontwikkelomgeving.tex}
+\input{./projectopstellen/projectenopstellen.tex}
+\input{./basis/basis.tex}
+\input{./sensoren/sensoren.tex}
+\input{./notificaties/notificaties.tex}
+\input{./media/audioenvideo.tex}
 
-\input{conclusie}
+\input{./conclusie/conclusie.tex}
 
 %---------- Bijlagen -----------------------------------------------------------
 
@@ -266,11 +266,18 @@
 
 \chapter{Onderzoeksvoorstel}
 
-Het onderwerp van deze bachelorproef is gebaseerd op een onderzoeksvoorstel dat vooraf werd beoordeeld door de promotor. Dat voorstel is opgenomen in deze bijlage.
+Het onderwerp van deze bachelorproef is gebaseerd op een onderzoeksvoorstel dat vooraf werd beoordeeld door de 
+promotor. Dat voorstel is opgenomen in deze bijlage.
 
 \section*{Samenvatting}
 
-In deze paper gaan we de performantie, schaalbaarheid en functionaliteit van mobiele applicaties onderzoeken om te bepalen of het interessanter is om native te ontwikkelen in vergelijking met cross-platform. Langs de native kant gaan we Kotlin in Android Studio en Swift in Xcode gebruiken. Voor cross-platform zullen we Javascript in React native gebruiken. Zo kunnen we ook een eventueel verschil tussen Android en IOS ontdekken. Op deze manier zullen we kleine tot middelgrote organisaties of bedrijven helpen met het kiezen van een gebruikte ontwikkelingsmethode. We zullen in het onderzoek met kleine en grote applicaties rekening houden om te bepalen vanaf wanneer het interessanter wordt.
+In deze paper gaan we de performantie, schaalbaarheid en functionaliteit van mobiele applicaties onderzoeken 
+om te bepalen of het interessanter is om native te ontwikkelen in vergelijking met cross-platform. Langs de 
+native kant gaan we Kotlin in Android Studio en Swift in Xcode gebruiken. Voor cross-platform zullen we 
+Javascript in React native gebruiken. Zo kunnen we ook een eventueel verschil tussen Android en IOS ontdekken. 
+Op deze manier zullen we kleine tot middelgrote organisaties of bedrijven helpen met het kiezen van een 
+gebruikte ontwikkelingsmethode. We zullen in het onderzoek met kleine en grote applicaties rekening houden 
+om te bepalen vanaf wanneer het interessanter wordt.
 
 % Verwijzing naar het bestand met de inhoud van het onderzoeksvoorstel
 \input{../voorstel/voorstel-inhoud}

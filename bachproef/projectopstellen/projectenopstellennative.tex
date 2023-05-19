@@ -1,0 +1,48 @@
+Bij Android Studio kunnen we in de IDE zelf nieuwe projecten aanmaken om de 
+functionaliteiten te maken. Dit doen we met \textit{File > New > New Project\dots}. 
+Hierna krijgen we een overzicht van projecten die we als basis kunnen gebruiken. Ook 
+kan er op dit scherm gekozen worden voor welk apparaat de applicatie is.
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.35\textheight]{OverzichtProjecten.png}
+    \caption{Overzicht startprojecten Android Studio.}
+\end{figure}
+Afhankelijk van de functionaliteit dat we gaan implementeren zullen we dus andere 
+startprojecten kunnen kiezen. Na het kiezen van het startproject geven we een naam, 
+programmeertaal en de minimaal ondersteunde Android API. Voor dit onderzoek kiezen we 
+voor Kotlin. De naam en minimale ondersteunde Android API speelt hierbij geen rol.
+
+\subsection{Basisfunctionaliteiten}
+\label{par:basisfunctionaliteiten}
+Bij de basisfunctionaliteiten zullen we als startproject 
+\textbf{Bottom Navigation Views Activity} gebruiken om te kunnen navigeren tussen 
+verschillende schermen. Daardoor moeten we zelf geen extra libraries gaan implementeren.
+
+\subsection{Overige functionaliteiten}
+Voor de overige functionaliteiten (gebruik van sensoren, 
+push-notificaties en audio- en videospelers) zullen we als startproject 
+\textbf{Empty Views Activity} gebruiken. Op die manier hebben we de minste \gls{overhead} 
+dat de resultaten kan beïnvloeden.
+
+\subsection{Firebase Performance Monitoring}
+Om de performantie van de applicaties te meten, meer specifiek de tijdsduur dat een stuk code nodig heeft om uit te voeren 
+gaan we de Firebase Performance Monitoring tool in het project implementeren. 
+
+\paragraph{Firebase project aanmaken}
+Om de Firebase Performance Monitoring tool te gebruiken hebben we als eerst een Firebase project nodig.
+Deze kan aangemaakt worden via volgende link \url{https://console.firebase.google.com/}.
+
+\paragraph{Firebase aan project toevoegen}
+Vooraleer we de Performance Monitoring tool kunnen implementeren moeten we eerst Firebase 
+aan ons project toevoegen. Hiervoor volgen we deze handleiding 
+\url{https://firebase.google.com/docs/android/setup}.
+
+\input{./projectopstellen/firebaseaanandroid}
+
+\paragraph{Implementatie Performance Monitoring tool}
+Nu dat Firebase aan ons project is toegevoegd kunnen we de Performance Monitor 
+toevoegen door deze handleiding te volgen \url{https://firebase.google.com/docs/perf-mon/get-started-android}.
+
+\input{./projectopstellen/firebaseaanandroidperformance.tex}
+
+\input{./projectopstellen/projectenopstellenandroidprofiler.tex}

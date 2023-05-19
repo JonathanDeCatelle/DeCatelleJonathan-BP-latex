@@ -1,0 +1,12 @@
+Ondanks dat er een probleem heeft opgedaan bij het implementeren van de functionaliteit, was 
+het implementeren van de notificaties heel simpel. Als de tijdsduur van het probleem niet wordt meegerekend 
+dan kostte het 30 minuten om notificaties te sturen, mede dankzij officiële documentatie van Android.
+Tot slot heb ik gekeken om de logica te onderscheiden van elkaar waardoor de schaalbaarheid 
+en herbruikbaarheid verbeterd. Hieraan heb ik 30 minuten gespendeerd.
+
+\paragraph{Problemen}
+Naast de tijd die nodig was om de functionaliteit te implementeren is er ook 2 uur verloren aan een probleem. 
+Waarom het probleem zich voordeed is niet duidelijk maar de applicatie vroeg ondanks dat de 
+\textbf{POST\_NOTIFICATIONS} bij user-permissions in het AndroidManifest.xml bestand stond 
+niet om toestemming om notificaties te sturen. Hierdoor leek het alsof er geen notificaties werden aangemaakt
+terwijl het probleem was dat de applicatie geen toestemming had gegeven om notificaties te ontvangen.

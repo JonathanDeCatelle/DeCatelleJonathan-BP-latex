@@ -1,8 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{+w}{  }\PYG{k}{await}\PYG{+w}{ }\PYG{n+nx}{notifee}\PYG{p}{.}\PYG{n+nx}{requestPermission}\PYG{p}{()}
-
-\PYG{+w}{  }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{channelId}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{await}\PYG{+w}{ }\PYG{n+nx}{notifee}\PYG{p}{.}\PYG{n+nx}{createChannel}\PYG{p}{(\PYGZob{}}
-\PYG{+w}{    }\PYG{n+nx}{id}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}default\PYGZsq{}}\PYG{p}{,}
-\PYG{+w}{    }\PYG{n+nx}{name}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Default Channel\PYGZsq{}}\PYG{p}{,}
-\PYG{+w}{  }\PYG{p}{\PYGZcb{});}
-\end{Verbatim}

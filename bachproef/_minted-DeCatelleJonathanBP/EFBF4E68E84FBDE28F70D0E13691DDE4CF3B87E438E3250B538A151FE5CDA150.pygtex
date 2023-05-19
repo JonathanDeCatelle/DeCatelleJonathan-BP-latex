@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{export}\PYG{+w}{ }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{createNotification}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{async}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nx}{title}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{string}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{body}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{string}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{k}{await}\PYG{+w}{ }\PYG{n+nx}{notifee}\PYG{p}{.}\PYG{n+nx}{displayNotification}\PYG{p}{(\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nx}{title}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nx}{body}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nx}{android}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{      }\PYG{n+nx}{channelId}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}bachproef\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{      }\PYG{n+nx}{pressAction}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n+nx}{id}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}default\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{},}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{},}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{});}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
