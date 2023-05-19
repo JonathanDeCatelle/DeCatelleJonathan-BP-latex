@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{override}\PYG{+w}{ }\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{onCreate}\PYG{p}{(}\PYG{n}{savedInstanceState}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Bundle?)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{super}\PYG{p}{.}\PYG{n+na}{onCreate}\PYG{p}{(}\PYG{n}{savedInstanceState}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{setContentView}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{layout}\PYG{p}{.}\PYG{n+na}{activity\PYGZus{}main}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{n}{sensorManager}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{getSystemService}\PYG{p}{(}\PYG{n}{Context}\PYG{p}{.}\PYG{n+na}{SENSOR\PYGZus{}SERVICE}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{SensorManager}
+\PYG{+w}{    }\PYG{n}{accelerometer}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{sensorManager}\PYG{p}{.}\PYG{n+na}{getDefaultSensor}\PYG{p}{(}\PYG{n}{Sensor}\PYG{p}{.}\PYG{n+na}{TYPE\PYGZus{}ACCELEROMETER}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{gyroscope}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{sensorManager}\PYG{p}{.}\PYG{n+na}{getDefaultSensor}\PYG{p}{(}\PYG{n}{Sensor}\PYG{p}{.}\PYG{n+na}{TYPE\PYGZus{}GYROSCOPE}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

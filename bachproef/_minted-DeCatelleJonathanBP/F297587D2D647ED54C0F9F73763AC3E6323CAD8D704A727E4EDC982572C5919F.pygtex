@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{sensorEventListener}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{object}\PYG{+w}{ }\PYG{p}{:}\PYG{+w}{ }\PYG{n+nc}{SensorEventListener}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{override}\PYG{+w}{ }\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{onSensorChanged}\PYG{p}{(}\PYG{n}{event}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{SensorEvent}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{event}\PYG{p}{.}\PYG{n+na}{sensor}\PYG{p}{.}\PYG{n+na}{type}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{Sensor}\PYG{p}{.}\PYG{n+na}{TYPE\PYGZus{}ACCELEROMETER}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{x}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{event}\PYG{p}{.}\PYG{n+na}{values}\PYG{o}{[}\PYG{l+m}{0}\PYG{o}{]}
+\PYG{+w}{            }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{y}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{event}\PYG{p}{.}\PYG{n+na}{values}\PYG{o}{[}\PYG{l+m}{1}\PYG{o}{]}
+\PYG{+w}{            }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{z}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{event}\PYG{p}{.}\PYG{n+na}{values}\PYG{o}{[}\PYG{l+m}{2}\PYG{o}{]}
+\PYG{+w}{            }\PYG{c+c1}{// Doe iets met de accelerometerwaarden (x, y, z)}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{event}\PYG{p}{.}\PYG{n+na}{sensor}\PYG{p}{.}\PYG{n+na}{type}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{Sensor}\PYG{p}{.}\PYG{n+na}{TYPE\PYGZus{}GYROSCOPE}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{x}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{event}\PYG{p}{.}\PYG{n+na}{values}\PYG{o}{[}\PYG{l+m}{0}\PYG{o}{]}
+\PYG{+w}{            }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{y}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{event}\PYG{p}{.}\PYG{n+na}{values}\PYG{o}{[}\PYG{l+m}{1}\PYG{o}{]}
+\PYG{+w}{            }\PYG{k+kd}{val}\PYG{+w}{ }\PYG{n+nv}{z}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{event}\PYG{p}{.}\PYG{n+na}{values}\PYG{o}{[}\PYG{l+m}{2}\PYG{o}{]}
+\PYG{+w}{            }\PYG{c+c1}{// Doe iets met de gyroscoopwaarden (x, y, z)}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{    }\PYG{k+kd}{override}\PYG{+w}{ }\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{onAccuracyChanged}\PYG{p}{(}\PYG{n}{sensor}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Sensor?,}\PYG{+w}{ }\PYG{n}{accuracy}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{c+c1}{// Niet nodig voor deze demo}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

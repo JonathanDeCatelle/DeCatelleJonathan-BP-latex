@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{import}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{accelerometer}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{gyroscope}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}react\PYGZhy{}native\PYGZhy{}sensors\PYGZdq{}}\PYG{p}{;}
+\end{Verbatim}

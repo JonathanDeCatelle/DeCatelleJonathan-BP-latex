@@ -29,3 +29,22 @@ dependencies {
 \end{minted}
 Nu is het blanco project klaar om vanuit dit project alle functionaliteiten te 
 implementeren en onderzoeken.
+
+\subparagraph{3. Performance meten}
+Nu kunnen we een trace maken om de performantie te meten. Doorheen de applicaties zal dit er als 
+volgt uitzien.
+\begin{minted}{typescript}
+import perf from '@react-native-firebase/perf';
+\end{minted}
+Eerst importeren we de Performance Monitoring tool. Daarna kunnen we een trace maken en starten.
+\begin{minted}{typescript}
+const trace = await perf().newTrace('naam_trace');
+
+trace.start();
+// uit te voeren code
+trace.stop();
+
+\end{minted}
+De trace wordt gestart voor de code die we willen meten en gestopt na de code die we willen meten.
+De trace wordt dan automatisch naar de Firebase console gestuurd. Hier kunnen we de trace terugvinden
+en de performantie analyseren.

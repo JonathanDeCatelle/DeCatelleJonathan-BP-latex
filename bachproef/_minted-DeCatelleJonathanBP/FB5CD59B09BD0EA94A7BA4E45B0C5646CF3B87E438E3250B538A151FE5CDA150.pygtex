@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{const}\PYG{+w}{ }\PYG{p}{[}\PYG{n+nx}{accelerometerData}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{setAccelerometerData}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{useState}\PYG{p}{(\PYGZob{}\PYGZcb{});}
+\PYG{k+kd}{const}\PYG{+w}{ }\PYG{p}{[}\PYG{n+nx}{gyroscopeData}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{setGyroscopeData}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{useState}\PYG{p}{(\PYGZob{}\PYGZcb{});}
+\end{Verbatim}

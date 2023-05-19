@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{include}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}:react\PYGZhy{}native\PYGZhy{}sensors\PYGZsq{}}
+\PYG{n}{project}\PYG{o}{(}\PYG{l+s+s1}{\PYGZsq{}:react\PYGZhy{}native\PYGZhy{}sensors\PYGZsq{}}\PYG{o}{).}\PYG{n+na}{projectDir}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{    }\PYG{k}{new}\PYG{+w}{ }\PYG{n}{File}\PYG{o}{(}\PYG{n}{rootProject}\PYG{o}{.}\PYG{n+na}{projectDir}
+\PYG{+w}{        }\PYG{o}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}../node\PYGZus{}modules/react\PYGZhy{}native\PYGZhy{}sensors/android\PYGZsq{}}\PYG{o}{)}
+\end{Verbatim}

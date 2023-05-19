@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{val}\PYG{+w}{ }\PYG{n}{trace}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{FirebasePerformance}\PYG{p}{.}\PYG{n+na}{getInstance}\PYG{p}{().}\PYG{n+na}{newTrace}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}naam\PYGZus{}trace\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{trace}\PYG{p}{.}\PYG{n+na}{start}\PYG{p}{()}
+\PYG{c+c1}{// uit te voeren code}
+\PYG{n}{trace}\PYG{p}{.}\PYG{n+na}{stop}\PYG{p}{()}
+\end{Verbatim}

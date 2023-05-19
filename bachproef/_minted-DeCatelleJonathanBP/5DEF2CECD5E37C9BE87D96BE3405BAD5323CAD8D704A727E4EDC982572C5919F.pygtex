@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{fetchButton}\PYG{p}{.}\PYG{n+na}{setOnClickListener}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{sensorManager}\PYG{p}{.}\PYG{n+na}{registerListener}\PYG{p}{(}
+\PYG{+w}{        }\PYG{n}{sensorEventListener}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{sensor}\PYG{p}{,}\PYG{+w}{ }\PYG{c+c1}{// Veranderen door gyroscope of accelerometer}
+\PYG{+w}{        }\PYG{n}{SensorManager}\PYG{p}{.}\PYG{n+na}{SENSOR\PYGZus{}DELAY\PYGZus{}NORMAL}
+\PYG{+w}{    }\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

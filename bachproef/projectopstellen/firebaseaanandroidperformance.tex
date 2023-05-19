@@ -26,3 +26,17 @@ plugins {
 Nu is het blanco project klaar om vanuit dit project alle functionaliteiten te 
 implementeren en onderzoeken, buiten de basisfunctionaliteiten. Hiervoor zullen we vanuit een ander project starten, 
 maar zullen we de Perormance Monitoring tool op dezelfde manier implementeren.
+
+\subparagraph{3. Performance meten}
+Nu kunnen we een trace maken om de performantie te meten. Doorheen de applicaties zal dit er als 
+volgt uitzien.
+\begin{minted}{java}
+val trace = FirebasePerformance.getInstance().newTrace("naam_trace")
+
+trace.start()
+// uit te voeren code
+trace.stop()
+\end{minted}
+De trace wordt gestart voor de code die we willen meten en gestopt na de code die we willen meten.
+De trace wordt dan automatisch naar de Firebase console gestuurd. Hier kunnen we de trace terugvinden
+en de performantie analyseren.

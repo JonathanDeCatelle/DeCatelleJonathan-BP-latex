@@ -31,7 +31,7 @@ van de applicatie via de notificatie. Er kan ook een eventueel een prioriteit wo
 
 \input{./notificaties/notificatiesnativeschaalbaarheid.tex}
 
-
+\clearpage
 \section{Cross-platform}
 \subsubsection{Wat hebben we nodig}
 Om lokale notificaties bij React native te tonen gaan we gebruik maken van de externe library Notifee.
@@ -83,7 +83,7 @@ channel worden aangemaakt en tot slot dan de notificatie.
     Gemiddeld & 21\% & 28\% \\
     \hline
 \end{tabular}
-
+\\\\
 Daarnaast zien we bij de tijdsduur dat nodig is om een notificatie aan te maken wel een duidelijk 
 verschil tussen Android en React native. Gemiddel is het aanmaken van een notificatie bij Android
 154ms sneller dan bij React native. Bij React native duurt het gemiddel 166ms om een notificatie 
@@ -104,9 +104,10 @@ van de CPU dan de Android applicatie.
 Op vlak van schaalbaarheid merken we dat beide ontwikkelingsmethodes net zoals bij de ontwikkelingstijd 
 lijken op elkaar. Allebei geven ze de mogelijkheid om de logica in methodes te onderscheiden, 
 waardoor deze later individueel herbruikt of opgeschaald kunnen worden.
+\\\\
+Over het algemeen kunnen we concluderen dat het aanmaken van notificaties bij Android sneller gaat dan bij
+React native. En het dus beter is om met native te werken als je notificaties wilt gebruiken in je applicatie.
 
-
-%notificatie aanmaken heeft bij cross geen invloed op het geheugen, enkel de tijdsduur en het CPU gebruik is varierend
 
 
 

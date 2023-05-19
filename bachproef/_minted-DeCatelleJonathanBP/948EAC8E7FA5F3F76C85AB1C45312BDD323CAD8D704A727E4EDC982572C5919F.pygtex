@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kd}{lateinit}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{sensorManager}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{SensorManager}
+\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{accelerometer}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Sensor? }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kc}{null}
+\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{gyroscope}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Sensor? }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kc}{null}
+\end{Verbatim}
