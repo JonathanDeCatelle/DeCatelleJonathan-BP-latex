@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{import}\PYG{+w}{ }\PYG{n+nx}{TrackPlayer}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}react\PYGZhy{}native\PYGZhy{}track\PYGZhy{}player\PYGZsq{}}\PYG{p}{;}
+\PYG{c+c1}{// AppRegistry.registerComponent(...);}
+\PYG{n+nx}{TrackPlayer}\PYG{p}{.}\PYG{n+nx}{registerPlaybackService}\PYG{p}{(()}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{n+nx}{require}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}./service.js\PYGZsq{}}\PYG{p}{));}
+\end{Verbatim}

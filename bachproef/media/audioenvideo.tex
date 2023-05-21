@@ -10,8 +10,9 @@ Met deze resultaten kunnen we dan een gepaste conclusie vormen.
 
 \section{Native}
 \subsubsection{Wat hebben we nodig}
-Om audio en vide af te spelen binnen een applicatie gaan we gebruik maken van de MediaPlayer en 
-VideoView klasse
+Om audio en vide af te spelen binnen een applicatie gaan we gebruik maken van het MediaPlayer 
+framework en de VideoView klasse. Deze stellen ons in staat om makkelijk audio en video af te spelen binnen 
+onze applicatie. We kunnen daarvor gebruik maken van lokale files of streams van het internet.
 
 \subsubsection{Uitvoering}
 
@@ -32,7 +33,10 @@ VideoView klasse
 
 \section{Cross-platform}
 \subsubsection{Wat hebben we nodig}
-
+Om audio en video af te spelen binnen een cross-platform applicatie gaan we gebruik maken van de
+react-native-track-player en react-native-video libraries. Deze stellen ons in staat om makkelijk 
+audio en video af te spelen binnen onze applicatie. We kunnen daarvoor gebruik maken van lokale files
+of streams van het internet.
 
 \subsubsection{Uitvoering}
 
@@ -52,12 +56,68 @@ VideoView klasse
 
 
 \section{Conclusie}
-
-
-
-
-
-
+Dankzij de verkregen resultaten van beide applicaties kunnen we concluderen dat de ontwikkeltijd bij 
+native veel lager lag dan bij cross-platform. Dit komt omdat native makkelijker te implementeren en te gebruiken is.
+En dit komt omdat er geen extra libraries nodig zijn. Terwijl dit bij cross-platform wel het geval is.
+Maar bij cross-platform kan het wel waard zijn om die extra tijd er in te steken omdat de gebruikte library 
+meer mogelijkheden biedt. Zoals bijvoorbeeld het afspelen van audio en video in de achtergrond.
+\\\\
+\begin{tabular}{ |p{3cm}||p{5cm}|p{5cm}| }
+    \hline
+    \multicolumn{3}{|c|}{Audio} \\ 
+    \hline
+     & Native (Android) & Cross-platform (React native) \\
+    \hline
+     & \multicolumn{2}{|c|}{Geheugen} \\ 
+    \hline
+    Offset & 2-3MB & 1-2MB \\
+    Gemiddeld & 73MB & 207MB \\
+    \hline
+     & \multicolumn{2}{|c|}{CPU} \\
+    \hline
+    (Start)Piek & 17 & 42\% \\
+    (Eind)Piek & 23 & 35\% \\
+    Offset & / & 5\% \\
+    Gemiddeld & 0-1\% & 20\% \\
+    \hline
+    \multicolumn{3}{|c|}{Video} \\ 
+    \hline
+     & Native (Android) & Cross-platform (React native) \\
+    \hline
+     & \multicolumn{2}{|c|}{Geheugen} \\ 
+    \hline
+    Offset & 2-3MB & 1-2MB \\
+    Gemiddeld & 73MB & 207MB \\
+    \hline
+     & \multicolumn{2}{|c|}{CPU} \\
+    \hline
+    (Start)Piek & 17 & 43\% \\
+    (Eind)Piek & 16 & 28\% \\
+    Offset & 3 & 12\% \\
+    Gemiddeld & 4\% & 22\% \\
+    \hline
+\end{tabular}
+\\\\
+We zien bij het geheugen dat er geen verschil is tussen het afspelen van audio of video 
+en het inactief zijn van de applicatie. Desondanks is het geheugengebruik bij cross-platform veel 
+hoger dan bij native. er wordt bij native maar 73MB gebruikt in vergelijking met 207MB 
+bij cross-platform, een verschil van 183,56\%. 
+Dit komt omdat er bij cross-platform gebruik gemaakt wordt van extra libraries die voor 
+extra functionaliteit zorgen maar ook voor extra geheugengebruik.
+\\\\
+Ook bij het CPU gebruik scoort native beter. Zowel bij het afspelen van audio als video 
+is het CPU gebruik bij native lager dan bij cross-platform. Bij het afspelen van audio bij 
+native is de beginpiek 17\% en de eindpiek 23\%. Bij cross-platform is de 
+beginpiek 42\% en de eindpiek 35\% terwijl het gemiddeld CPU gebruik bij native 0-1\% is en bij
+cross-platform 20\%. Bij het afspelen van video bij native is de beginpiek 17\% en de eindpiek 16\%.
+Bij cross-platform is de beginpiek 43\% en de eindpiek 28\% terwijl het gemiddeld CPU gebruik bij
+native 4\% is en bij cross-platform 22\%. 
+\\\\
+Hieruit kunnen we concluderen dat voor het afspelen van audio en video native de beste keuze is.
+Dit komt omdat native beter scoort op vlak van performantie. Ook is native makkelijker te implementeren
+en te gebruiken. Dit komt omdat er geen extra libraries nodig zijn. Let wel op, dit is enkel het geval
+wanneer er geen extra functionaliteit nodig is. Want indien er extra functionaliteit nodig is, kan
+cross-platform een betere keuze zijn. Je zal dan wel met een groot performantie verschil zitten.
 
 
 

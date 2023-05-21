@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// Audio}
+\PYG{n}{mediaPlayer}\PYG{o}{?.}\PYG{n+na}{start}\PYG{p}{()}
+\PYG{n}{mediaPlayer}\PYG{o}{?.}\PYG{n+na}{pause}\PYG{p}{()}
+\PYG{n}{mediaPlayer}\PYG{o}{?.}\PYG{n+na}{stop}\PYG{p}{()}
+
+\PYG{c+c1}{// Video}
+\PYG{n}{videoView}\PYG{o}{?.}\PYG{n+na}{start}\PYG{p}{()}
+\PYG{n}{videoView}\PYG{o}{?.}\PYG{n+na}{pause}\PYG{p}{()}
+\PYG{n}{videoView}\PYG{o}{?.}\PYG{n+na}{stopPlayback}\PYG{p}{()}
+\end{Verbatim}

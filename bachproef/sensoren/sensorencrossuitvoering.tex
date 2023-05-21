@@ -6,10 +6,10 @@ npm install react-native-sensors --save
 
 \paragraph{2. Package teruggeven}
 Normaal gezien moeten we de package dan toevoegen aan het 
-\textit{android/app/src/main/java/com/project/MainApplication.java} bestand.
+\textit{android/app/src/} \textbf{main/java/com/project/MainApplication.java} bestand.
 Maar dit is niet meer nodig bij React Native 0.60+.
 
-\paragraph{3. build.gradle aanpassen}
+\paragraph{3. gradle instellingen aanpassen}
 Tot slot voegen we de volgende regel toe aan het \textit{android/app/build.gradle} bestand.
 \begin{minted}{groovy}
 implementation project(':react-native-sensors')
@@ -74,6 +74,6 @@ data op te halen. Als de knoppen ingedrukt worden, dan wordt ofwel de
 van de sensoren opgehaald en in de \textbf{<Text>} componenten geplaatst.
 \begin{figure}[H]
     \centering
-    \includegraphics[height=0.5\textheight]{sensoren_layoutcross.png}
+    \includegraphics[height=0.4\textheight]{sensoren_layoutcross.png}
     \caption{Layout van applicatie voor data van sensoren op te halen bij React native.}
 \end{figure}

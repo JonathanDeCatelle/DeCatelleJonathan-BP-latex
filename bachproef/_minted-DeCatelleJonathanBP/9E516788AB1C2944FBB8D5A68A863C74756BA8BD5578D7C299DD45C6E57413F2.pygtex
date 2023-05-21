@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nx}{module}\PYG{p}{.}\PYG{n+nx}{exports}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{async}\PYG{+w}{ }\PYG{k+kd}{function}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{c+c1}{// ...}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

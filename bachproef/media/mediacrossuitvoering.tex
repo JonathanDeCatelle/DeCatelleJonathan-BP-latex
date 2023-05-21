@@ -1,0 +1,85 @@
+\paragraph{1. Library toevoegen}
+Als eerst moeten we de libraries aan de root van ons project toevoegen. Dit doen we door de 
+volgende commando's uit te voeren.
+\begin{minted}{bash}
+npm install --save react-native-track-player
+npm install --save react-native-video
+\end{minted}
+
+\paragraph{2. Package teruggeven}
+Normaal gezien moeten we de package dan toevoegen aan het 
+\textit{android/app/src/} \textbf{main/java/com/project/MainApplication.java} bestand.
+Maar dit is niet meer nodig bij React Native 0.60+.
+
+\paragraph{3. Audio library initialiseren}
+Om de audio speler te kunnen gebruiken moeten we de service registreren in de main 
+component van de applicatie, meestal is dit het \textit{index.js} bestand. Dit doen we door de volgende
+regels toe te voegen.
+\begin{minted}{javascript}
+import TrackPlayer from 'react-native-track-player';
+// AppRegistry.registerComponent(...);
+TrackPlayer.registerPlaybackService(() => require('./service.js'));
+\end{minted}
+Daarna moeten we nog een service aanmaken in een apart bestand. Dit doen we door de volgende regels
+toe te voegen aan een \textit{service.js} bestand. 
+\begin{minted}{javascript}
+module.exports = async function() {
+    // ...
+}
+\end{minted}
+Tot slot moeten we dan de TrackPlayer opzetten met de \textbf{setupPlayer()} methode. Deze methode
+moet aangeroepen worden voor de \textbf{TrackPlayer} gebruikt kan worden. Dit doen we door de volgende
+regels toe te voegen aan het \textit{App.tsx} bestand.
+\begin{minted}{javascript}
+import TrackPlayer from 'react-native-track-player';
+
+await TrackPlayer.setupPlayer()
+\end{minted}
+
+\paragraph{4. Audio en video speler gebruiken}
+\subparagraph{Audio}
+Om de audio speler te gebruiken moeten we eerst een \textbf{Track} object aanmaken.
+\begin{minted}{typescript}
+const track = {
+    url: require(''),
+    title: 'Title',
+    artist: 'Artist',
+    artwork: require(''),
+    duration: 100
+};
+\end{minted}
+Daarna voegen we deze toe aan het \textbf{TrackPlayer} object.
+\begin{minted}{typescript}
+await TrackPlayer.add(track);
+\end{minted}
+Nu kunnen we het objecten controleren met behulp van een aantal \textbf{<Button>} componenten.
+\begin{minted}{typescript}
+<Button title="Play" onPress={() => TrackPlayer.play()} />
+<Button title="Pause" onPress={() => TrackPlayer.pause()} />
+<Button title="Stop" onPress={() => TrackPlayer.stop()} />
+\end{minted}
+
+\subparagraph{Video}
+Om de video speler te gebruiken moeten we eerst een \textbf{<Video>} component aanmaken.
+\begin{minted}{typescript}
+<Video source={require('')} />
+\end{minted}
+Daarna kunnen we het objecten controleren met behulp van een aantal \textbf{<Button>} componenten.
+\begin{minted}{typescript}
+<Button title="Play" onPress={() => this.video.play()} />
+<Button title="Pause" onPress={() => this.video.pause()} />
+<Button title="Stop" onPress={() => this.video.stop()} />
+\end{minted}
+
+\paragraph{5. Applicatie maken}
+De applicatie bestaat net zoals bij native voor elk de audio en video speler uit een \textbf{<View>}
+component met daarin dire \textbf{<Button>} componenten voor de audio of video te starten, te pauzeren
+of te stoppen. Daarnaast bevat de applicatie ook een \textbf{<View>} component met daarin een
+\textbf{<Video>} component voor het afspelen van de video.
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.4\textheight]{sensoren_layoutcross.png}
+    \caption{Layout van applicatie voor het afspelen van audio en video bij React native.}
+\end{figure}
+
+

@@ -64,19 +64,18 @@ channel worden aangemaakt en tot slot dan de notificatie.
     \hline
      & Native (Android) & Cross-platform (React native) \\
     \hline
-    \multicolumn{3}{|c|}{Tijdsduur} \\
+     & \multicolumn{2}{|c|}{Tijdsduur} \\
     \hline
     Minimaal & 4ms & 141ms \\
     Maximaal & 88ms & 166ms \\
     Gemiddeld & 12ms & 297ms \\
     \hline
-    \multicolumn{3}{|c|}{Geheugen} \\ 
+     & \multicolumn{2}{|c|}{Geheugen} \\ 
     \hline
-    Minimaal & / & / \\
-    Maximaal & / & / \\
+    Offset & 2-3MB & 0,5MB \\
     Gemiddeld & 81MB & 172MB \\
     \hline
-    \multicolumn{3}{|c|}{CPU} \\
+     & \multicolumn{2}{|c|}{CPU} \\
     \hline
     Minimaal & 19\% & 25\% \\
     Maximaal & 27\% & 30\% \\
@@ -91,9 +90,10 @@ aan te maken terwijl dit bij Android maar 12ms duurt. Dit kan liggen aan het fei
 library de code moet omzetten naar platformspecifieke code waardoor er veel tijd wordt verloren.
 \\\\
 We zien dan wel bij het geheugen dat er geen verschil is tussen het aanmaken van een notificatie en wanneer er 
-niks gebeurd op de appplicatie. Maar ondanks dat er geen invloed is om het aanmaken van een notificatie bij 
+niks gebeurd in de appplicatie. Maar ondanks dat er geen invloed is om het aanmaken van een notificatie bij 
 Android en React native zien we wel dat er 112,35\% meer geheugen wordt gebruikt bij React native dan 
-bij Android (81MB in vergelijking met 172MB). 
+bij Android (81MB in vergelijking met 172MB). Dit kan ook weer liggen aan het feit dat de externe library
+de code moet omzetten naar platformspecifieke code waardoor er veel geheugen wordt gebruikt.
 \\\\
 Bij het CPU gebruik zien we wel een verschil tijdens het aanmaken van een notificatie en wanneer de 
 applicatie inactief is. Daarnaast zien we ook een verschil tussen Android en React-native. Bij React native 

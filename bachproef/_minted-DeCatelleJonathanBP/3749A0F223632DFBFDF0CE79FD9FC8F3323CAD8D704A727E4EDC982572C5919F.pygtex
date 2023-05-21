@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{mediaPlayer}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{MediaPlayer? }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kc}{null}
+\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nv}{videoView}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{VideoView? }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kc}{null}
+
+\PYG{k+kd}{override}\PYG{+w}{ }\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{onCreate}\PYG{p}{(}\PYG{n}{savedInstanceState}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Bundle?)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{super}\PYG{p}{.}\PYG{n+na}{onCreate}\PYG{p}{(}\PYG{n}{savedInstanceState}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{setContentView}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{layout}\PYG{p}{.}\PYG{n+na}{activity\PYGZus{}main}\PYG{p}{)}
+\PYG{+w}{    }\PYG{c+c1}{// R.raw.sample is een audio file in de raw folder}
+\PYG{+w}{    }\PYG{n}{mediaPlayer}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{MediaPlayer}\PYG{p}{.}\PYG{n+na}{create}\PYG{p}{(}\PYG{k}{this}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{raw}\PYG{p}{.}\PYG{n+na}{sample}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{videoView}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{findViewById}\PYG{p}{(}\PYG{n}{R}\PYG{p}{.}\PYG{n+na}{id}\PYG{p}{.}\PYG{n+na}{videoView}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{videoView}\PYG{o}{?.}\PYG{n+na}{setVideoPath}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Video URL\PYGZdq{}}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

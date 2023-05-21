@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZlt{}}\PYG{n+nx}{Button}\PYG{+w}{ }\PYG{n+nx}{title}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Play\PYGZdq{}}\PYG{+w}{ }\PYG{n+nx}{onPress}\PYG{o}{=}\PYG{p}{\PYGZob{}()}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{video}\PYG{p}{.}\PYG{n+nx}{play}\PYG{p}{()\PYGZcb{}}\PYG{+w}{ }\PYG{o}{/\PYGZgt{}}
+\PYG{o}{\PYGZlt{}}\PYG{n+nx}{Button}\PYG{+w}{ }\PYG{n+nx}{title}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Pause\PYGZdq{}}\PYG{+w}{ }\PYG{n+nx}{onPress}\PYG{o}{=}\PYG{p}{\PYGZob{}()}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{video}\PYG{p}{.}\PYG{n+nx}{pause}\PYG{p}{()\PYGZcb{}}\PYG{+w}{ }\PYG{o}{/\PYGZgt{}}
+\PYG{o}{\PYGZlt{}}\PYG{n+nx}{Button}\PYG{+w}{ }\PYG{n+nx}{title}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Stop\PYGZdq{}}\PYG{+w}{ }\PYG{n+nx}{onPress}\PYG{o}{=}\PYG{p}{\PYGZob{}()}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{k}{this}\PYG{p}{.}\PYG{n+nx}{video}\PYG{p}{.}\PYG{n+nx}{stop}\PYG{p}{()\PYGZcb{}}\PYG{+w}{ }\PYG{o}{/\PYGZgt{}}
+\end{Verbatim}

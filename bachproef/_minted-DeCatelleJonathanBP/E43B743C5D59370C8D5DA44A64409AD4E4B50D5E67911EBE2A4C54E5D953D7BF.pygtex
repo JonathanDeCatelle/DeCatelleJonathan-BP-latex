@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{\PYGZlt{}uses\PYGZhy{}permission}\PYG{+w}{ }\PYG{n+na}{android:name=}\PYG{l+s}{\PYGZdq{}android.permission.WAKE\PYGZus{}LOCK\PYGZdq{}}\PYG{+w}{ }\PYG{n+nt}{/\PYGZgt{}}
+\end{Verbatim}

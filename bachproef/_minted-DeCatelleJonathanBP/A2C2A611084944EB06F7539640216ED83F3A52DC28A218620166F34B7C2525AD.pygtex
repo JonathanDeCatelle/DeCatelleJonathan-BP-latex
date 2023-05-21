@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+npm\PYG{+w}{ }install\PYG{+w}{ }\PYGZhy{}\PYGZhy{}save\PYG{+w}{ }react\PYGZhy{}native\PYGZhy{}track\PYGZhy{}player
+npm\PYG{+w}{ }install\PYG{+w}{ }\PYGZhy{}\PYGZhy{}save\PYG{+w}{ }react\PYGZhy{}native\PYGZhy{}video
+\end{Verbatim}

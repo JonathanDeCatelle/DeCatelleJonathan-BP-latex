@@ -56,14 +56,86 @@ native sensoren van Android en iOS.
 
 
 \section{Conclusie}
+Dankzij de resultaten van beide applicaties kunnen we concluderen dat de ontwikkeltijd van het gebruik van sensoren
+bij native en cross-platform ongeveer hetzelfde is. Buiten het feit dat we bij cross-platform een extra library moeten
+implementeren waardoor de ontwikkeltijd iets langer kan zijn. Bij beide applicaties is er een knop om de methode aan 
+te roepen om het ophalen van data te starten.
 
-
-
-
-
-
-
-
+\begin{tabular}{ |p{3cm}||p{5cm}|p{5cm}| }
+    \hline
+    \multicolumn{3}{|c|}{Accelerometer} \\ 
+    \hline
+     & Native (Android) & Cross-platform (React native) \\
+    \hline
+     & \multicolumn{2}{|c|}{Tijdsduur} \\
+    \hline
+    Minimaal & 736µs & 310µs \\
+    Maximaal & 7ms & 143ms \\
+    Gemiddeld & 2ms & 12ms \\
+    \hline
+     & \multicolumn{2}{|c|}{Geheugen} \\ 
+    \hline
+    Offset & 2-3MB & 3-4MB \\
+    Gemiddeld & 88MB & 192MB \\
+    \hline
+     & \multicolumn{2}{|c|}{CPU} \\
+    \hline
+    (Begin)Piek & / & 50\% \\
+    Offset & 20\% & 10\% \\
+    Gemiddeld & 23\% & 9\% \\
+    \hline
+    \multicolumn{3}{|c|}{Gyroscoop} \\ 
+    \hline
+     & Native (Android) & Cross-platform (React native) \\
+    \hline
+     & \multicolumn{2}{|c|}{Tijdsduur} \\
+    \hline
+    Minimaal & 996µs & 203µs \\
+    Maximaal & 3ms & 163ms \\
+    Gemiddeld & 2ms & 11ms \\
+    \hline
+     & \multicolumn{2}{|c|}{Geheugen} \\ 
+    \hline
+    Offset & 4-5MB & 3-4MB \\
+    Gemiddeld & 88MB & 197MB \\
+    \hline
+     & \multicolumn{2}{|c|}{CPU} \\
+    \hline
+    (Begin)Piek & 30\% & 40\% \\
+    Offset & 5\% & 10\% \\
+    Gemiddeld & 8\% & 10\% \\
+    \hline
+\end{tabular}
+\\\\
+De tijdsduur van het ophalen van de data van de sensoren is bij native veel sneller dan bij cross-platform.
+Dit komt omdat de library die we gebruiken bij cross-platform een wrapper is voor de native sensoren.
+Hierdoor moet de data van de sensoren eerst naar de wrapper gestuurd worden en dan pas naar de applicatie.
+Bij native is dit niet het geval. De data van de sensoren wordt rechtstreeks naar de applicatie gestuurd.
+Het ophalen van data is daardoor gemiddeld 10ms trager bij cross-platform dan bij native.
+\\\\
+We zien bij het geheugen dat er geen verschil is tussen het ophalen van sensoren data en wanneer er 
+niks gebeurd in de appplicatie. Maar ondanks dat er geen invloed is om het ophalen van data bij 
+Android en React native zien we wel dat er 121.59\% meer geheugen wordt gebruikt bij React native dan 
+bij Android (88MB in vergelijking met gemiddeld 195MB). Dit komt omdat we bij cross-platform een extra 
+library moeten implementeren. Deze library neemt ook geheugen in beslag.
+\\\\
+Bij het CPU gebruik zijn er onderling tussen de accelerometer en gyroscoop ook verschillen. Bij native 
+heeft de accelerometer geen piek maar blijft deze constant op gemiddeld 23\% CPU gebruik. Bij cross-platform zien we
+dat de accelerometer een piek heeft van 50\% CPU gebruik en daarna zakt naar 9\% CPU gebruik, een groot verschil. 
+Bij de gyroscoop zien we dat bij native de piek 30\% CPU gebruik is en daarna zakt naar 8\% CPU gebruik. Bij cross-platform
+is de piek 40\% CPU gebruik en zakt daarna naar 10\% CPU gebruik. Ook is er bij alle sensoren een schommeling van 5 tot 20\% 
+CPU gebruik. Dit komt omdat de sensoren data constant wordt opgehaald. Normaal zou er verwacht worden dat de sensoren bij native 
+minder CPU gebruiken, aangezien de data eerst naar de wrapper wordt gestuurd en dan pas naar de applicatie. Maar bij 
+de accelerometer is dit niet het geval. Hier is het CPU gebruik bij cross-platform lager dan bij native.
+\\\\
+Op vlak van schaalbaarheid is er geen verschil tussen native en cross-platform. Beide applicaties kunnen
+makkelijk uitgebreid worden met extra sensoren en de bestaande logica van de sensoren kan makkelijk 
+hergebruikt of opgeschaald worden.
+\\\\
+Uit deze resultaten kunnen we concluderen dat we het gebruik van native boven cross-platform Aangeraden is.
+Ondanks dat het CPU gebruik bij de accelerometer beter is bij cross-platform dan bij native, is de tijdsduur
+van het ophalen van data bij cross-platform veel trager dan bij native. Bij de gyroscoop is het CPU gebruik en 
+tijdsduur wel beter bij native. 
 
 
 
