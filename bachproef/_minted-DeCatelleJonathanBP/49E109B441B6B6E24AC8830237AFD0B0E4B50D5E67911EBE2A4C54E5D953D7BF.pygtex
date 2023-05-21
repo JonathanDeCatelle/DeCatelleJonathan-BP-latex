@@ -3,7 +3,8 @@
 \PYG{n+nt}{\PYGZlt{}resources\PYGZgt{}}
 \PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}style}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}Theme.MyApp.MySplash\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{parent=}\PYG{l+s}{\PYGZdq{}Theme.SplashScreen\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
 \PYG{+w}{        }\PYG{n+nt}{\PYGZlt{}item}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}windowSplashScreenBackground\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}@color/black\PYG{n+nt}{\PYGZlt{}/item\PYGZgt{}}
-\PYG{+w}{        }\PYG{n+nt}{\PYGZlt{}item}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}windowSplashScreenAnimatedIcon\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}@drawable/bank\PYGZus{}svgrepo\PYGZus{}com\PYG{n+nt}{\PYGZlt{}/item\PYGZgt{}}
+\PYG{+w}{        }\PYG{n+nt}{\PYGZlt{}item}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}windowSplashScreenAnimatedIcon\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+\PYG{+w}{            }@drawable/bank\PYGZus{}svgrepo\PYGZus{}com\PYG{n+nt}{\PYGZlt{}/item\PYGZgt{}}
 \PYG{+w}{        }\PYG{n+nt}{\PYGZlt{}item}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}postSplashScreenTheme\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}@style/Theme.Basis\PYG{n+nt}{\PYGZlt{}/item\PYGZgt{}}
 \PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}/style\PYGZgt{}}
 \PYG{n+nt}{\PYGZlt{}/resources\PYGZgt{}}
