@@ -1,13 +1,13 @@
 \subparagraph{1. Configuratie bestanden toevoegen}
 In het Firebase project voegen we een nieuwe Android applicatie toe. Om deze aan te maken geven we de package naam 
-dat te vinden is in build.gradle(module) bestand als applicationId en optioneel de naam van de applicatie mee.
+dat te vinden is in \textbf{build.gradle(module)} bestand als applicationId en optioneel de naam van de applicatie mee.
 \\\\
 Na dat de Android applicatie is aangemaakt, moeten we het \textbf{google-services.json} bestand downloaden. 
 Deze plaatsen we dan in de \textit{app} folder.
 
 \subparagraph{2. Firebase plugins configureren}
 Om Firebase het configuratiebestand nu te laten gebruiken moeten we de google-services plugin toevoegen aan 
-de dependancies in het build.gradle(project) bestand boven de plugins. 
+de dependancies in het \textbf{build.gradle(project)} bestand boven de plugins. 
 \begin{minted}{java}
 buildscript {
     repositories {
@@ -21,14 +21,14 @@ buildscript {
     }
 }
 \end{minted}
-Daarna moeten we de plugin uitvoeren door deze aan het build.gradle(module) bestand toe te voegen.
+Daarna moeten we de plugin uitvoeren door deze aan het \textbf{build.gradle(module)} bestand toe te voegen.
 \begin{minted}{java}
 plugins {
     // andere plugins 
     id "com.google.gms.google-services"
 }
 \end{minted}
-Tot slot moeten we de Firebase SDKs toevoegen aan het build.gradle(module) bestand.
+Tot slot moeten we de Firebase SDKs toevoegen aan het \textbf{build.gradle(module)} bestand.
 \begin{minted}{java}
 dependencies {
     // andere dependancies

@@ -8,11 +8,11 @@ npm install --save react-native-video
 
 \paragraph{2. Package teruggeven}
 Normaal gezien moeten we de package dan toevoegen aan het 
-\textit{android/app/src/} \textbf{main/java/com/project/MainApplication.java} bestand.
+\textit{android/app/src/} \textit{main/java/com/project/MainApplication.java} bestand.
 Maar dit is niet meer nodig bij React Native 0.60+.
 
 \paragraph{3. Audio library initialiseren}
-Om de audio speler te kunnen gebruiken moeten we de service registreren in de main 
+Om de audio speler te kunnen gebruiken moeten we een service bestand registreren in de main 
 component van de applicatie, meestal is dit het \textit{index.js} bestand. Dit doen we door de volgende
 regels toe te voegen.
 \begin{minted}{javascript}
@@ -37,7 +37,7 @@ await TrackPlayer.setupPlayer()
 \end{minted}
 
 \paragraph{4. Audio en video speler gebruiken}
-\subparagraph{Audio}
+\subparagraph{4.1. Audio}
 Om de audio speler te gebruiken moeten we eerst een \textbf{Track} object aanmaken.
 \begin{minted}{typescript}
 const track = {
@@ -59,7 +59,7 @@ Nu kunnen we het objecten controleren met behulp van een aantal \textbf{<Button>
 <Button title="Stop" onPress={() => TrackPlayer.stop()} />
 \end{minted}
 
-\subparagraph{Video}
+\subparagraph{4.2. Video}
 Om de video speler te gebruiken moeten we eerst een \textbf{<Video>} component aanmaken.
 \begin{minted}{typescript}
 <Video source={require('')} />
@@ -78,7 +78,7 @@ of te stoppen. Daarnaast bevat de applicatie ook een \textbf{<View>} component m
 \textbf{<Video>} component voor het afspelen van de video.
 \begin{figure}[H]
     \centering
-    \includegraphics[height=0.4\textheight]{sensoren_layoutcross.png}
+    \includegraphics[height=0.4\textheight]{media_layoutcross.png}
     \caption{Layout van applicatie voor het afspelen van audio en video bij React native.}
 \end{figure}
 
