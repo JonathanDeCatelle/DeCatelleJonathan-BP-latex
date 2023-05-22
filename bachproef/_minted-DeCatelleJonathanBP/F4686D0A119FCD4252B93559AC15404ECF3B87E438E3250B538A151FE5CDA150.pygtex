@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{import}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{NavigationContainer}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}@react\PYGZhy{}navigation/native\PYGZsq{}}\PYG{p}{;}
+
+\PYG{k}{export}\PYG{+w}{ }\PYG{k}{default}\PYG{+w}{ }\PYG{k+kd}{function}\PYG{+w}{ }\PYG{n+nx}{App}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{    }\PYG{o}{\PYGZlt{}}\PYG{n+nx}{NavigationContainer}\PYG{o}{\PYGZgt{}}
+\PYG{+w}{      }\PYG{p}{\PYGZob{}}\PYG{c+cm}{/* ... */}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{o}{\PYGZlt{}}\PYG{err}{/NavigationContainer\PYGZgt{}}
+\PYG{+w}{  }\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

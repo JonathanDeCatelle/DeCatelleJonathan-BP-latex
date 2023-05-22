@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZlt{}}\PYG{n+nx}{Tab}\PYG{p}{.}\PYG{n+nx}{Navigator}\PYG{o}{\PYGZgt{}}
+\PYG{+w}{    }\PYG{o}{\PYGZlt{}}\PYG{n+nx}{Tab}\PYG{p}{.}\PYG{n+nx}{Screen}\PYG{+w}{ }\PYG{n+nx}{name}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Home\PYGZdq{}}\PYG{+w}{ }\PYG{n+nx}{component}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{HomeScreen}\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{o}{/\PYGZgt{}}
+\PYG{+w}{    }\PYG{o}{\PYGZlt{}}\PYG{n+nx}{Tab}\PYG{p}{.}\PYG{n+nx}{Screen}\PYG{+w}{ }\PYG{n+nx}{name}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Second\PYGZdq{}}\PYG{+w}{ }\PYG{n+nx}{component}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{SecondScreen}\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{o}{/\PYGZgt{}}
+\PYG{+w}{    }\PYG{o}{\PYGZlt{}}\PYG{n+nx}{Tab}\PYG{p}{.}\PYG{n+nx}{Screen}\PYG{+w}{ }\PYG{n+nx}{name}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Third\PYGZdq{}}\PYG{+w}{ }\PYG{n+nx}{component}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{n+nx}{ThirdScreen}\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{o}{/\PYGZgt{}}
+\PYG{o}{\PYGZlt{}}\PYG{err}{/Tab.Navigator\PYGZgt{}}
+\end{Verbatim}

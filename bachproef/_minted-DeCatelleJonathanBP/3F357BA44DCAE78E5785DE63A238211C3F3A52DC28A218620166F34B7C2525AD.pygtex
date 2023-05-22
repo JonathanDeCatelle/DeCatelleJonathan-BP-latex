@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+npx\PYG{+w}{ }react\PYGZhy{}native\PYG{+w}{ }generate\PYGZhy{}bootsplash\PYG{+w}{ }path/to/icon.png
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}background\PYGZhy{}color\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}\PYGZsh{}000000\PYGZdq{}}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}logo\PYGZhy{}width\PYG{o}{=}\PYG{l+m}{100}
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}assets\PYGZhy{}path\PYG{o}{=}assets
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}flavor\PYG{o}{=}main
+\PYG{+w}{    }\PYGZhy{}\PYGZhy{}platforms\PYG{o}{=}android,ios
+\end{Verbatim}

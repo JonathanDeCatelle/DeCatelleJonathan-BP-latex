@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{android.os.Bundle}\PYG{p}{;}
+\PYG{c+c1}{// ...}
+\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{class} \PYG{n+nc}{MainActivity}\PYG{+w}{ }\PYG{k+kd}{extends}\PYG{+w}{ }\PYG{n}{ReactActivity}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{c+c1}{// ...}
+\PYG{+w}{  }\PYG{n+nd}{@Override}
+\PYG{+w}{  }\PYG{k+kd}{protected}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{onCreate}\PYG{p}{(}\PYG{n}{Bundle}\PYG{+w}{ }\PYG{n}{savedInstanceState}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{super}\PYG{p}{.}\PYG{n+na}{onCreate}\PYG{p}{(}\PYG{k+kc}{null}\PYG{p}{);}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{  }\PYG{c+c1}{// ...}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

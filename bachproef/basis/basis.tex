@@ -35,7 +35,10 @@ de applicatie gaan we wel de SplashScreen API gebruiken die wordt aangeboden doo
 
 \section{Cross-platform}
 \subsubsection{Wat hebben we nodig}
-
+Bij React native hebben we voor de navigatie een library nodig. Hiervoor gaan we gebruik maken van
+React Navigation. Voor het laadscherm gaan we gebruik maken van de react-native-bootsplash library. 
+Deze zullen in ons in staat stellen te kunnen navigeren tussen de verschillende schermen en een
+laadscherm te tonen bij het opstarten van de applicatie.
 
 \subsubsection{Uitvoering}
 
@@ -56,6 +59,30 @@ de applicatie gaan we wel de SplashScreen API gebruiken die wordt aangeboden doo
 
 \section{Conclusie}
 
+
+\begin{tabular}{ |p{3cm}||p{6cm}|p{6cm}| }
+    \hline
+     & Native (Android) & Cross-platform (React native) \\
+    \hline
+     & \multicolumn{2}{|c|}{Tijdsduur} \\
+    \hline
+    Minimaal & 1,37s & 2,29s \\
+    Maximaal & 3,56s & 6,59s \\
+    Gemiddeld & 2,58s & 2,84s \\
+    \hline
+     & \multicolumn{2}{|c|}{Geheugen} \\ 
+    \hline
+    Offset & 2-3MB & 4-5MB \\
+    Gemiddeld & 81MB & 202MB \\
+    \hline
+     & \multicolumn{2}{|c|}{CPU} \\
+    \hline
+    Minimaal & 25\% & 27\% \\
+    Maximaal & 42\% & 40\% \\
+    Gemiddeld & 31\% & 32\% \\
+    \hline
+\end{tabular}
+\\\\
 
 
 
