@@ -55,11 +55,16 @@ laadscherm te tonen bij het opstarten van de applicatie.
 \subsubsection{Schaalbaarheid}
 
 \input{./basis/basiscrossschaalbaarheid.tex}
-
+Op basis van de verzamelde gegevens blijkt dat native ontwikkeling een betere
+performantie heeft dan cross-platform ontwikkeling voor de basisfunctionaliteiten. De gemiddelde 
+opstarttijd van de native applicatie is sneller, met een gemiddelde van 2,58 seconden 
+in vergelijking met 2,84 seconden bij cross-platform. Daarnaast heeft de native 
+applicatie een lager gemiddeld geheugengebruik van ongeveer 81MB, terwijl de cross-platform 
+applicatie gemiddeld 202MB aan geheugen vereist. Desondanks beide applicaties
+vergelijkbaar CPU-gebruik hebben, toont dit onderzoek aan dat native applicaties voor
+basisfunctionaliteiten beter zijn op vlak van opstartsnelheid en geheugenverbruik.
 
 \section{Conclusie}
-
-
 \begin{tabular}{ |p{3cm}||p{6cm}|p{6cm}| }
     \hline
      & Native (Android) & Cross-platform (React native) \\
@@ -83,7 +88,21 @@ laadscherm te tonen bij het opstarten van de applicatie.
     \hline
 \end{tabular}
 \\\\
-
+Met het behulp van Android Studio en het startproject dat Android Studio aanbied, 
+kunnen de basisfunctionaliteiten sneller worden geïmplementeerd bij 
+native applicaties dan bij cross-patform. Dit komt omdat installatieproces van 
+de gebruikte libraries bij cross-platform meer werk vraagt dan bij native applicaties. 
+Eenmaal dat de cross-platform libraries geïnstalleerd zijn is het implementeren van de 
+basisfunctionaliteiten gelijk. Enkel de opzet van de libraries vraagt meer tijd.
+\\\\
+Op het gebied van schaalbaarheid zijn beide ontwikkelmethodes een goede keuze, 
+omdat het makkelijk is om de navigatiecomponenten uit te breiden met extra schermen. 
+Daarnaast is het ook makkelijk om bestaande schermen te hergebruiken.
+\\\\
+In het algemeen kan geconcludeerd worden dat op het vlak van performantie native de 
+voorkeur krijgt. Daarnaast als er rekening wordt gehouden met het feit dat 
+native enkel Android bevat gaat de voorkeur op vlak van ontwikkeltijd naar cross-platform.
+Op het vlak van schaalbaarheid is er geen voorkeur tussen beide ontwikkelmethodes.
 
 
 
