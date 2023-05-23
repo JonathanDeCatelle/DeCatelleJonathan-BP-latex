@@ -8,12 +8,12 @@
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
 
-Vooraleer we van start kunnen gaan met de bachelorproef is het van belang om een inzicht te 
-verwerven in de basis van mobiele applicaties en hoe dat ze precies ontwikkeld worden. 
-Pas daarna kunnen verder met het uitvoeren van het onderzoek. Eerst worden mobiele applicaties 
+Voordat de bachelorproef van start kan gaan,is het belangrijk om inzicht te 
+krijgen in de basis van mobiele applicaties en hoe dat ze precies ontwikkeld worden. 
+Pas na deze uitleg kan het onderzoek worden uitgevoerd. Eerst worden mobiele applicaties 
 algemeen uitgelegd alsook de verschillende soorten mobiele applicaties. 
-Daarna worden de ontwikkelingsmethodes en hun verschillen uitgelegd die gebruikt worden tijdens het 
-onderzoek. Tot slot worden de verschillende functionaliteiten die we gaan onderzoeken kort uitgelegd.
+Daarna worden de ontwikkelmethodes en hun verschillen uitgelegd die gebruikt worden tijdens het 
+onderzoek.
 
 \section{Inleiding mobiele applicatie-ontwikkeling}
 
@@ -26,38 +26,20 @@ geopend via een mobiele webbrowser \autocite{IBM2023}.
 \\\\
 Mobiele applicaties worden in veel sectoren gebruikt zoals: telecommunicatie, 
 e-commerce, verzekeringen, gezondheidszorg, overheid, enz. Ze worden in deze sectoren 
-veel gebruikt omdat het een makkelijke en populaire manier is om mensen met bedrijven te 
-verbinden met elkaar en met het internet. Op deze manier kunnen bedrijven relevant, responsief 
+veel gebruikt omdat het een makkelijke en populaire manier is om mensen en bedrijven in contact te brengen 
+met elkaar en met het internet. Op deze manier kunnen bedrijven relevant, responsief 
 en succesvol blijven. 
 \\\\
-Er bestaan verschillende soorten mobiele applicaties. Zo hebben we native, web en hybride 
+Er bestaan verschillende soorten mobiele applicaties, zoals native, web en hybride 
 applicaties \autocite{AWS2023}. Elke soort mobiele applicatie is een manier waarop dat 
-applicaties op onze smartphone of computer staan of werken.
+applicaties op smartphones of computers worden geïnstalleerd of werken.
 
 \subsection{Native applicaties}\label{ch:native-applicaties}
-Dit is de meest gekende en gebruikte soort mobiele applicaties. Hierbij gaan we een applicatie 
-downloaden en installeren op ons apparaat. Het is een applicatie dat specifiek wordt ontwikkeld 
-voor één besturingssysteem, zoals Android of IOS \autocite{Laarhoven2021}. Native applicatie 
+Dit is de meest gekende en gebruikte soort mobiele applicaties. Hierbij wordt een applicatie 
+gedownload en geïnstalleerd op een apparaat. Het is een applicatie die specifiek wordt ontwikkeld 
+voor één besturingssysteem, zoals Android of IOS \autocite{Laarhoven2021}. Native applicaties 
 zijn vaak sneller en gebruiksvriendelijker dan een web of hybride applicatie. Dit komt omdat 
-ze platformspecifieke software gebruiken. 
-
-\subsubsection{Nadelen van native applicaties}
-\paragraph{Kost en onderhoudsprijs}
-Aangezien dat er een applicatie ontwikkeld wordt voor twee platformen, zal de kostprijs en 
-ontwikkelingstijd van een applicatie hoger liggen dan als er één applicatie ontwikkeld moet 
-worden. Daarnaast zullen er ook twee applicaties moeten worden onderhouden na dat de applicatie 
-ontwikkeld is. Het is dus niet enkel de kostprijs die hoger zal zijn. Ook de onderhoudsprijs zal 
-hoger liggen \autocite{AWS2023}. 
-
-\paragraph{Verschillende logica}
-Door dat de applicatie twee keer ontwikkeld wordt, is het altijd mogelijk dat de business 
-logica op bepaalde plaatsen in de applicatie verschillend kan zijn van elkaar. 
-Er moet dus altijd aandachtig getest worden zodat dit niet het geval is \autocite{Kotlin2023}.
-
-\paragraph{Downloaden}
-Zoals eerder gezegd, wordt de applicatie gedownload van op een app store \ref{ch:native-applicaties}. 
-Om die download te doen zal er natuurlijk een internetverbinding nodig zijn, 
-pas daarna kan de applicatie indien mogelijk offline werken.
+de applicaties platformspecifieke software gebruiken. 
 
 \subsubsection{Voordelen van native applicaties}
 \label{ch:voordelen-native-applicaties}
@@ -66,15 +48,11 @@ Omdat er platformspecifieke code wordt gebruikt, heeft de applicatie direct toeg
 de interne APIs van een apparaat \autocite{AWS2023}. Hierdoor zal ook de performantie hoger 
 liggen dan bij web of hybride applicaties. Ook hebben ze daardoor direct toegang tot bepaalde 
 functionaliteiten zoals: camera, gps, versnellingsmeter, kompas, lijst van contacten, enz. 
-Ze kunnen ook platform zijn notificatiesysteem gebruiken en ze werken offline in tegenstelling 
+Daarnaast hebben ze ook toegang tot het notificatiesysteem en werken ze offline in tegenstelling 
 tot web applicaties \autocite{Budiu2016}. 
 
-\paragraph{Flexibeler}
-Ook, aangezien dat we platformspecifieke code gebruiken, hebben we de mogelijkheid om meer flexibel te zijn. 
-We kunnen van alle functionaliteiten gebruik maken dat een apparaat aanbied \autocite{Sakovich2023}.
-
 \paragraph{Fouten vermijden of oplossen}
-Omdat het niet nodig is om twee applicaties te onderhouden vanuit één \Gls{codebase}, kan 
+Omdat het niet nodig is om twee applicaties te onderhouden vanuit één \gls{codebase}, kan 
 het makkelijker zijn om fouten bij een bepaald platform op de sporen of compleet te 
 vermijden \autocite{Koffer2023}. 
 
@@ -85,33 +63,79 @@ Dit zal voor een betere gebruikerservaring zorgen aangezien dat de applicatie ge
 aanvoelt \autocite{Kotlin2023}. 
 
 \paragraph{App store ondersteuning}
-Ook zullen native applicaties met hun betere performantie en snelheid populairder zijn in de app store. 
-Ze zullen ook makkelijker zijn om te publiceren in de app store \autocite{Koffer2023}.
+Dankzij hun betere performantie en snelheid zullen native applicaties populairder zijn in de app store. 
+Het is ook makkelijker om native applicaties te publiceren in de app store \autocite{Koffer2023}.
+
+\subsubsection{Nadelen van native applicaties}
+\paragraph{Kost en onderhoudsprijs}
+Aangezien dat er een applicatie ontwikkeld wordt voor twee platformen, zal de kostprijs en 
+ontwikkeltijd van een applicatie hoger liggen dan als er één applicatie ontwikkeld moet 
+worden. Daarnaast moeten beide applicaties worden onderhouden na dat ze 
+ontwikkeld zijn. Het is dus niet enkel de kostprijs die hoger zal zijn. Ook de onderhoudsprijs zal 
+hoger liggen \autocite{AWS2023}. 
+
+\paragraph{Verschillende logica}
+Door dat de applicatie twee keer ontwikkeld wordt, is het mogelijk dat de business 
+logica op bepaalde plaatsen in de applicatie verschillend is van elkaar. 
+Er moet dus altijd aandachtig getest worden zodat dit niet het geval is \autocite{Kotlin2023}.
+
+\paragraph{Downloaden}
+Zoals eerder gezegd, wordt de applicatie gedownload van op een app store \ref{ch:native-applicaties}. 
+Om die download te doen is er een internetverbinding nodig, 
+pas daarna kan de applicatie indien mogelijk offline werken.
 
 \subsection{Web applicaties}
 Web applicaties zijn niet echt applicaties maar het zijn mobiele versies van responsive websites. 
-Een web applicatie simuleert als een native applicatie op een apparaat en moet je ook niet installeren 
-op uw apparaat \autocite{Beeproger2023}. Ze zullen dus net zoals bij websites een HTTP request naar 
+Een web applicatie simuleert een native applicatie en wordt niet geïnstalleerd op een 
+apparaat \autocite{Beeproger2023}. Ze zullen dus net zoals bij websites een HTTP request naar 
 een server sturen die op zijn beurt dan een HTTP response zal terugsturen.
 \begin{figure}[H]
     \centering
     \includegraphics[height=0.4\textheight]{httpprotocol.png}
     \caption{Request-response cycle van HyperText Transfer Protocol \parencite{Hartl2019}.}
 \end{figure}
-
-Aangezien dat ze niet geïnstalleerd moeten worden is het dus wel nodig om een internetverbinding 
+Aangezien dat web applicaties niet geïnstalleerd worden is het dus wel nodig om een internetverbinding 
 te hebben bij het gebruik er van. Ze worden vaak gebruikt door bedrijven om informatie en diensten 
 aan hun klanten op een veilige manier aan te bieden \autocite{Nehra2023}. 
 \\\\
-Een web applicatie is Bereik en bruikbaar door een unieke URL in te voeren in een browser 
+Een web applicatie is bereikbaar door een unieke URL in te voeren in een browser 
 \autocite{Beeproger2023}. Microsoft Word is een voorbeeld van een native applicatie die 
 gebruikers moeten installeren op hun apparaat, in vergelijking met Google Docs dat een web applicatie 
 is en dat niet geïnstalleerd moet worden \autocite{Nehra2023}.
 \\\\
 Web applicaties worden op dezelfde manier gemaakt als websites. Ze maken gebruik van HTML, CSS en JavaScript. 
-De meeste web applicaties hebben een web server nodig voor het verwerken en beheren van requests en een 
-applicatieserver om de gevraagde taken te voltooien. Daarnaast ook een database om de gevraagde taken uit 
-te voeren \autocite{Varsha2023}.
+De meeste web applicaties gebruiken een web server voor het verwerken en beheren van requests, een 
+applicatieserver om de gevraagde taken te voltooien en een database om de gevraagde data 
+op te halen \autocite{Varsha2023}.
+
+\subsubsection{Voordelen van web applicaties}\label{ch:VoordelenWebApplicaties}
+\paragraph{Kostprijs}
+Aangezien dat één web applicatie op alle platformen draait zal dit veel goedkoper uitkomen dan bij native 
+applicaties \autocite{Laarhoven2021}. Er moet namelijk maar één applicatie ontwikkeld worden die op alle 
+platformen zal draaien
+
+\paragraph{Updates}
+Omdat web applicaties aan een URL gelinkt zijn, is het makkelijk om updates uit te voeren op de applicatie. 
+De URL wordt vanzelf periodiek geüpdatet. Hierdoor wordt de applicatie automatisch ook up to date gehouden 
+ongeacht van het platform dat een gebruiker gebruikt \autocite{Varsha2023}.
+
+\paragraph{Installatie \& Compatibiliteit}
+Daarnaast zoals gezegd, moet een web applicatie niet geïnstalleerd worden. Ze is beschikbaar op alle 
+platformen en browsers. Waardoor ze zeer toegankelijk is voor gebruikers. Er is enkel een actieve 
+internetverbinding nodig.
+
+\paragraph{Integratie}
+Web applicaties hebben daarnaast ook nog de mogelijkheid om makkelijk met andere web applicaties te integreren. 
+Ze kunnen bijvoorbeeld met \acrshort{cms} of \acrshort{crm} systemen werken om data te beheren \autocite{Nehra2023}.
+
+\paragraph{App store}
+Er is geen goedkeuring nodig van een app store om de app te gebruiken of te updaten. Omdat een web applicatie 
+via een browser wordt geopend is er zelfs geen nood voor een app store \autocite{Varsha2023}.
+
+\paragraph{Data veiligheid}
+Tot slot heeft de nood van een internetverbinding nog een voordeel. In het geval dat een apparaat
+crasht of vastloopt, zullen de gegevens niet verloren gaan. Dankzij de internetverbinding worden de
+gegevens automatisch opgeslagen op de server \autocite{Nehra2023}.
 
 \subsubsection{Nadelen van web applicaties}
 \paragraph{Internetverbinding}
@@ -124,41 +148,12 @@ In vergelijking met native applicaties, die gebruik kunnen maken van alle functi
 apparaat is het voor web applicaties niet mogelijk om alle functionaliteiten van een apparaat te gebruiken 
 \autocite{Laarhoven2021}.
 
-\subsubsection{Voordelen van web applicaties}\label{ch:VoordelenWebApplicaties}
-\paragraph{Kostprijs}
-Aangezien dat één web applicatie op alle platformen draait zal dit veel goedkoper uitkomen dan bij native 
-applicaties \autocite{Laarhoven2021}. Er moet namelijk maar één applicatie ontwikkeld worden die op alle 
-platformen zal draaien
-
-\paragraph{Updates}
-Omdat web applicaties aan een URL gelinkt zijn, is het makelijk om updates uit te voeren op de applicatie. 
-De URL wordt vanzelf periodiek geüpdatet. Hierdoor wordt de applicatie automatisch ook up to date gehouden 
-ongeacht van het platform dat een gebruiker gebruikt \autocite{Varsha2023}.
-
-\paragraph{Installatie \& Compatibiliteit}
-Daarnaast zoals gezegd, moet een web applicatie niet geïnstalleerd worden. Ze is beschikbaar op alle 
-platformen en browsers. Waardoor ze zeer toegankelijk zijn voor gebruikers. Er is enkel een actieve 
-internetverbinding nodig.
-
-\paragraph{Integratie}
-Web applicaties hebben daarnaast ook nog de mogelijkheid om makkelijk met andere web applicaties te integreren. 
-Ze kunnen bijvoorbeeld met \Gls{CMSofCRM} systemen werken om data te beheren \autocite{Nehra2023}.
-
-\paragraph{App store}
-Er is geen goedkeuring nodig van een app store om de app te gebruiken of te updaten. Omdat een web applicatie 
-via een browser wordt geopend is er geen nood voor een app store \autocite{Varsha2023}.
-
-\paragraph{Data veiligheid}
-Tot slot heeft de nood van een internetverbinding nog een voordeel. Aangezien dat er altijd een 
-internetverbinding nodig is, zullen er als een gebruiker zijn apparaat vastloopt of crasht geen gegevens 
-verloren gaan. Omdat de gegevens op de server bewaard worden \autocite{Nehra2023}. 
-
 \subsubsection{Verschil met een website}
 Het verschil tussen een web applicatie en een website is niet altijd duidelijk. Zoals eerder gezegd 
 is een web applicatie software dat toegankelijk is door er naar te surfen via een browser. 
 Enkele voorbeelden van web applicaties zijn: Google apps, Amazon en Youtube. Het verschil met 
 een website is dat een website een collectie is van gerelateerde web applicaties. Het bevat statische 
-data zoals: foto's, tekst, audio, video's, enz. Het kan ook bestaan uit meerdere pagina's 
+data zoals: foto's, tekst, audio, video's, enz... en kan bestaan uit meerdere pagina's 
 \autocite{sugandha2022}. Een voorbeeld is de website van een bank waarop dat je de diensten en 
 openingsuren kan zien.
 
@@ -173,7 +168,17 @@ ook in de app store komen waardoor het mogelijk is om hem te installeren.
 \\\\
 Bedrijven maken vaak hybride applicaties als omhulsel voor een bestaande web applicatie. 
 Op die manier proberen ze hun gebruikersaantal te vergroten door een aanwezigheid te hebben 
-in de app store zonder te veel moeite \autocite{Budiu2016}. 
+in de app store zonder al te veel moeite \autocite{Budiu2016}. 
+
+\subsubsection{Voordelen van hybride applicaties}
+\paragraph{Ontwikkelingskosten}
+Omdat hybride applicaties platform onafhankelijke ontwikkeling mogelijk maakt, kunnen 
+bedrijven op die manier de ontwikkelingskosten laag houden \autocite{Budiu2016}. 
+
+\paragraph{Offline gebruik \& installatie}
+Eigenlijk hebben hybride applicaties alle voordelen van web applicaties alleen krijgen ze 
+nu nog eens de extra mogelijkheid om applicaties offline te gebruiken en om ze te 
+installeren op een apparaat.
 
 \subsubsection{Nadelen van hybride applicaties}
 \paragraph{UI verschil}
@@ -191,16 +196,6 @@ applicatie niet afhankelijk is van data op een database \autocite{sgshradha2019}
 dit het geval is, kan het zijn dat de applicatie niet naar behoren werkt als er geen 
 internetverbinding aanwezig is.
 
-\subsubsection{Voordelen van hybride applicaties}
-\paragraph{Ontwikkelingskosten}
-Omdat hybride applicaties platform onafhankelijke ontwikkeling mogelijk maakt, kunnen 
-bedrijven op die manier de ontwikkelingskosten laag houden \autocite{Budiu2016}. 
-
-\paragraph{Offline gebruik \& installatie}
-Eigenlijk hebben hybride applicaties alle voordelen van web applicaties alleen krijgen ze 
-nu nog eens de extra mogelijkheid om applicaties offline te gebruiken en om ze te 
-installeren op een apparaat.
-
 \subsection{Samenvatting soorten mobiele applicaties}
 \begin{figure}[H]
     \centering
@@ -208,19 +203,18 @@ installeren op een apparaat.
     \caption{Native vs Web vs Hybride applicaties \parencite{Merenych2021}.}
     \label{fig:NativeWebHybride}
 \end{figure}
-
-Foto \ref{fig:NativeWebHybride} Toont een mooi overzicht van hoe dat de verschillende 
+Op de figuur is een mooi overzicht te zien van hoe dat de verschillende 
 soorten applicaties werken. Elke soort applicatie heeft een andere manier waarop dat ze 
 op een platform geïmplementeerd worden.
 
 \section{Native ontwikkeling}
 \subsection{Wat is native ontwikkeling?}\label{subsec:wat-is-native-ontwikkeling}
 Native ontwikkeling is het proces om native \ref{ch:native-applicaties} applicaties te maken 
-voor een specifiek besturingssysteem, zoals Android of IOS. Hierbij maak je gebruik van de 
+voor een specifiek besturingssysteem, zoals Android of IOS. Hierbij wordt er gebruik gemaakt van de 
 bijhorende programmeertalen en ontwikkelingsomgevingen die door de platformen worden aangeboden 
 \autocite{Meirelles2019}. Ook kunnen ontwikkelaars zoals eerder gezegd gebruik maken van 
 platform specifieke APIs die toegang verlenen tot de camera, gps, versnellingsmeter, kompas, 
-lijst van contacten, enz.
+lijst van contacten, enz...
 
 \subsection{Voordelen van native ontwikkeling}
 \paragraph{Schaalbaarheid}
@@ -238,17 +232,16 @@ voor één platform maken \autocite{Kotlin2023}.
 
 \paragraph{Onderhoudstijd}
 Na het ontwikkelen van een native applicatie kan het zijn dat er wijzigingen komen of 
-dat er updates moeten gebeuren. Aangezien we niet met een centrale codebase werken, maar 
+dat er updates moeten gebeuren. Aangezien dat er niet wordt gewerkt met één centraal codebase, maar 
 met twee onafhankelijke projecten, zullen de wijzigingen of updates op beide projecten 
 uitgevoerd moeten worden \autocite{Kotlin2023}.
 
 \subsection{Programmeertalen en frameworks voor native ontwikkeling}
-Zoals we reeds hebben besproken, gaat native ontwikkeling een applicatie ontwikkelen 
-specifiek voor één besturingssysteem \ref{subsec:wat-is-native-ontwikkeling}. Om die 
-applicatie te maken kunnen gebruik maken van verscheidene programmeertalen, frameworks 
-en \Gls{IDE}. Deze zijn allemaal specifiek voor ofwel Android of IOS. In de volgende 
-secties gaan we enkele programmeertalen overlopen waarvan we gebruik kunnen maken doorheen 
-de paper om het onderzoek uit te voeren.
+Zoals reeds hebben besproken, gaat native ontwikkeling een applicatie ontwikkelen 
+specifiek voor één besturingssysteem. Om die 
+applicatie kunnen verscheidene programmeertalen, frameworks 
+en \acrshort{ide} gebruikt worden. Deze zijn allemaal specifiek voor ofwel Android of IOS. In de volgende 
+secties gaan we enkele programmeertalen overlopen die gebruikt kunnen worden om het onderzoek uit te voeren.
 
 \subsubsection{Android programmeertalen}
 \paragraph{Java}
@@ -264,21 +257,21 @@ mede door zijn complexiteit een zeer robuust programma dat een heleboel voordele
 meebrengt zoals: flexibiliteit, portabiliteit en herbruikbaarheid \autocite{Kesavan2021}.
 
 \paragraph{Kotlin}
-Momenteel is Kotlin de eerste officiële programmeertaal voor Android applicatie ontwikkeling. 
-Het is ontwikkeld door Google en \Gls{JetBrains} als lichtere en gebruiksvriendelijker 
+Momenteel is Kotlin de officiële programmeertaal voor Android applicatie ontwikkeling. 
+Het is ontwikkeld door Google en \Gls{JetBrains} als lichtere en meer gebruiksvriendelijke
 manier om Android applicaties te maken \autocite{Thorndyke2021}. In vergelijking met Java 
-is er geen nood aan puntkomma's, minder code nodig om dezelfde applicatie te maken en Kotlin 
-laat toe om variabelen te maken zonder ze voorhand te moeten definiëren \autocite{Thorndyke2021}. 
-Het wordt door vele bedrijven gebruikt omwille van de herbruikbaarheid van code alsook het 
-gebruik van externe \Gls{library} \autocite{Kesavan2021}.
+is er geen nood aan puntkomma's en is er minder code nodig om dezelfde applicatie te maken. Daarnaast laat Kotlin 
+laat toe om variabelen te maken zonder ze op voorhand te moeten definiëren \autocite{Thorndyke2021}. 
+Het wordt door veel bedrijven gebruikt omwille van de herbruikbaarheid van code alsook het 
+gebruik van externe \gls{library} \autocite{Kesavan2021}.
 
 \paragraph{C++}
 C++ is een alternatieve methode voor Android applicatie ontwikkeling. Om C++ te gebruiken 
-moet er gebruik worden gemaakt van de \Gls{ANDK} (NDK). De applicatie kan wel niet compleet 
-met C++ worden gemaakt, maar C++ en de NDK kunnen gebruikt worden om libraries te ontwikkelen 
-die een applicatie gebruikt \autocite{harkiran2022}. Het gebruik van C++ voor libraries wordt 
+moet de \acrshort{andk} gebruikt worden. De applicatie kan wel niet compleet 
+met C++ worden gemaakt, maar C++ en de ANDK kunnen gebruikt worden om libraries te ontwikkelen 
+waarvan een applicatie gebruik maakt \autocite{harkiran2022}. Het gebruik van C++ voor libraries wordt 
 vaak gedaan voor de performantie die C++ met zich meebrengt. Er moet wel rekening worden 
-gehouden dat het een moeilijke programmeertaal is om te leren en dus niet voor iedereen is 
+gehouden dat het een moeilijke programmeertaal is om te leren en dus niet voor iedereen weggelegd is 
 \autocite{Designveloper2022}.
 
 \paragraph{C\#}\label{pa:csharp}
@@ -290,12 +283,12 @@ maar C\# heeft toegang tot het .NET framework \autocite{Kesavan2021}. Het .NET f
 bied heel wat tools en libraries aan die helpen bij het ontwikkelen van Android applicaties. 
 Daarnaast heeft C\# nog een aantal andere voordelen. C\# heeft wat cross-platform 
 capaciteiten, waardoor er code overheen platformen gedeeld kan worden en er is een 
-\Gls{GarbageCollector}, die ervoor zorgt dat er geen geheugen lekken zijn \autocite{Patel2023}.
+\gls{GarbageCollector}, die ervoor zorgt dat er geen geheugen lekken zijn \autocite{Patel2023}.
 
 \paragraph{Dart}
 Dart is een open-source programmeertaal, gemaakt door Google dat werd ontworpen om op 
 Android platformen te runnen \autocite{Kesavan2021} met de bedoeling van klanten een 
-geoptimaliseerde manier te geven om snel applicaties op het android platform te krijgen 
+geoptimaliseerde manier te geven om snel applicaties op het Android platform te krijgen 
 \autocite{harkiran2022}. Dit wordt gedaan door te focussen op UI development. De wijzigingen 
 worden snel aan de ontwikkelaar getoond dankzij de hot-reload. Tot slot is Dart ook gekend 
 voor hun performantie en de mogelijkheid om te compilen tot ARM en x64 code \autocite{harkiran2022}.
@@ -347,15 +340,15 @@ omgeving \autocite{Pruciak2022}.
 
 \paragraph{Objective-C}
 Objective-C was de originele programmeertaal voor Apple en de fundering van MacOS en 
-IOS \autocite{Johns2023}. Het is een \Gls{superset} van C, het breid C dus uit en het 
+IOS \autocite{Johns2023}. Het is een \gls{superset} van C, het breid C dus uit en het 
 voegt nieuwe functionaliteiten eraan toe \autocite{Johns2023}. Net zoals C\# is Objective-C 
 een object-georiënteerde programmeertaal \autocite{Pruciak2022}. Daarnaast bestaat 
 het wel al langer dan C\#, Objective-C is ontwikkeld in de vroege 1980's \autocite{Pruciak2022}. 
 Aangezien het van C komt, is het ook mogelijk om C code in een Objective-C klasse toe 
 te voegen. Daardoor worden Objective-C klassen simpeler, flexibeler en meer schaalbaar 
 voor mobiele applicaties \autocite{yuvraj2022}. Dankzij de eenvoud en betere runtijd is 
-Objective-C een van de meest gekozen programmeertalen, vooral dankzij de krachtige \Gls{SDK} 
-die gebruikt kunnen worden.
+Objective-C een van de meest gekozen programmeertalen, vooral dankzij de krachtige \acrshort{sdk} 
+die worden gebruikt.
 
 \paragraph{Samenvatting IOS programmeertalen}
 Er zijn verschillende programmeertalen beschikbaar voor het ontwikkelen van IOS 
@@ -365,23 +358,24 @@ wordt Swift vaak aangeraden om mee te ontwikkelen, aangezien het mogelijk maakt 
 applicaties snel te ontwikkelen die later makkelijk uitgebreid kunnen 
 worden \autocite{Pruciak2022}. 
 \\\\
+%TODO disclaimer
 Daarom zou Swift als programmeertaal gekozen worden om te gebruiken bij het vergelijken van 
-native IOS applicaties indien IOS ook in deze bachelorproef onderzocht werd. \ref{disclaimer:ios}
+native IOS applicaties indien IOS ook in deze bachelorproef onderzocht werd.
 
 \subsection{Tools en IDEs voor native ontwikkeling}
 
 \paragraph{Android Studio}
 Android Studio is een populaire IDE die vaak wordt gebruikt in combinatie met 
 Kotlin om native Android applicaties te ontwikkelen. Het wordt vaak door ontwikkelaars 
-gebruikt omwille van de ingebouwde \Gls{emulator} die Android Studio bevat. Hiermee 
+gebruikt omwille van de ingebouwde \gls{emulator} die Android Studio bevat. Hiermee 
 kunnen ontwikkelaars verschillende apparaten met verschillende Android versies uit 
-testen \autocite{Medewar2022}. Daarnaast ondersteund de emulator ook verschillende 
+testen \autocite{Medewar2022}. Daarnaast ondersteunt de emulator ook verschillende 
 features die normaal enkel toegankelijk zijn bij fysieke apparaten, zoals toegang tot 
 de camera, locatie, batterij instellingen, enz. \autocite{Okeke2022}. Tot slot biedt 
 Android Studio ook een krachtige manier om layouts te maken. Ontwikkelaars kunnen met 
 een visuele design editor schermen opbouwen in plaats van code te schrijven, die schermen 
 worden dan automatisch door Android Studio omgezet naar xml bestanden \autocite{Medewar2022}. 
-Het ondersteund ook GitHub integratie om makkelijk aand grote projecten te werken \autocite{Studio2023}.
+Het ondersteund ook GitHub integratie om makkelijk aan grote projecten te werken \autocite{Studio2023}.
 
 \paragraph{Eclipse}
 Eclipse is ontwikkeld in 2001 als een Java IDE. Maar over de jaren is het uitgegroeid 
@@ -391,7 +385,7 @@ Android applicaties te ontwikkelen. Het laat ook net zoals Android Studio ontwik
 om makkelijk te werken aan projecten dankzij de GitHub integratie \autocite{Okeke2022}, maar 
 het ondersteund ook andere integratiemethoden zoals Maven \autocite{Medewar2022}. Tot slot 
 bestaat er dankzij de populariteit een grootte community rondom Eclipse dat meewerkt aan de 
-verbetring van Eclipse \autocite{Medewar2022}.
+verbetering ervan \autocite{Medewar2022}.
 
 \paragraph{Xcode}
 Xcode is een IDE dat wordt gebruikt om software en applicaties te maken voor IOS, macOS, 
@@ -403,14 +397,15 @@ te schrijven wordt er gebruik gemaakt van Swift, C, C++ en Objective C compilers
 voor coderen, testen, debuggen en ontwerpen van gebruikersinterfaces \autocite{jahnavisarora2020}.
 
 \paragraph{Samenvatting Tools en IDEs}
-Voor Android hebben we keuze tussen 2 populaire en krachtige IDE. Maar omdate we bij Android 
+Voor Android hebben we keuze tussen 2 populaire en krachtige IDEs. Maar omdat we bij Android 
 gebruik maken van Kotlin als programmeertaal zullen we ook gebruik maken van Android Studio. 
 Ook kiezen we voor Android Studio omdat het door Google aan ontwikkelaars wordt aangeraden 
 \autocite{Medewar2022}.
 \\\\
+%TODO disclaimer
 Bij IOS zijn er nog een heleboel IDE die ontwikkelaars kunnen gebruiken die hier niet benoemd 
 worden. Desondanks zouden we indien IOS onderzocht werd in deze bachelorproef Xcode gebruiken 
-in combinatie met Swift. \ref{disclaimer:ios}
+in combinatie met Swift.
 
 \section{Cross-platform ontwikkeling}
 
@@ -453,7 +448,7 @@ van niet alleen Android en IOS applicaties, maar ook Linux, macOS, Fuchsia en Wi
 vanuit één codebase \autocite{Okeke2022a}. Het is vooral populair bij ontwikkelaars 
 dankzij de simpelheid om te gebruiken en de performantie \autocite{Sakovich22023}. De 
 hoge performantie komt door het gebruik van C en C++ \autocite{Terekhov2022}. Daarnaast 
-heeft het ook een \Gls{Hotreload} waardoor ontwikkelaars snel resultaten kunnen zien bij 
+heeft het ook een \gls{Hotreload} waardoor ontwikkelaars snel resultaten kunnen zien bij 
 veranderingen in de code \autocite{Sakovich22023}.
 
 \paragraph{React native}
