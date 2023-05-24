@@ -1,12 +1,12 @@
-Om cross-platform te ontwikkelen door gebruik te maken van React native is er wat meer werk om 
+Om cross-platform te ontwikkelen door gebruik te maken van React Native is er wat meer werk om 
 de omgeving op te stellen. Eerst zullen we Visual Studio Code downloaden. 
 Dit kan vanop de website \url{https://code.visualstudio.com/download} 
 
-Na het installeren van Visual Studio Code kunnen we de React native ontwikkelomgeving opstellen. 
+Na het installeren van Visual Studio Code kunnen we de React Native ontwikkelomgeving opstellen. 
 Dit kan door de handleiding te volgen vanop de website \url{https://reactnative.dev/docs/environment-setup}.
 
 \paragraph{1. React Native CLI Quickstart}
-Voor de React native ontwikkelomgeving kunnen we ook gebruik maken van Expo. 
+Voor de React Native ontwikkelomgeving kunnen we ook gebruik maken van Expo. 
 Dit is een simpele manier om snel applicaties visueel werkend te krijgen. 
 Maar voor dit onderzoek zullen we de applicaties op dezelfde emulator runnen waarop de native 
 ontwikkelde applicaties runnen. Hiervoor volgen we de React Native CLI Quickstart handleiding. 
@@ -16,28 +16,28 @@ Afhankelijk van het gebruikte besturingssysteem is er een andere handleiding.
 Doorheen dit onderzoek zullen we werken op een Windows laptop en zullen we focussen op Android applicaties.
 
 \paragraph{3. Node \& JDK}
-Als eerste moeten we \Gls{Node} en \acrshort{jdk} installeren. Dit kunnen we makkelijk 
+Als eerste moeten we \Gls{Node} en \acrshort{jdk} installeren. Dit kunnen we gemakkelijk 
 doen met \Gls{Chocolatey}. Chocolatey indien niet geïnstalleerd kan worden gedownload 
 vanop de website \url{https://chocolatey.org/install}. Eerst openen we een 
 opdrachtprompt (powershell) als administrator waaraan we volgende commando meegeven.
 \begin{minted}{bash}
 choco install -y nodejs-lts microsoft-openjdk11
 \end{minted}
-Voor Node gebruiken we de laatste versie. De minimale versie waarmee React native kan werken is 14. 
+Voor Node gebruiken we de laatste versie. De minimale versie waarmee React Native kan werken is 14. 
 Voor de JDK gebruiken we versie 11 aangezien hogere versies voor problemen kunnen zorgen.
 
 \paragraph{4. Android ontwikkelomgeving}
-Net zoals bij native ontwikkeling hebben we voor React native applicaties ook Android Studio nodig. 
+Net zoals bij native ontwikkeling hebben we voor React Native applicaties ook Android Studio nodig. 
 Dit is omdat we om de applicatie te runnen gebruik maken van de emulator binnenin Android Studio. 
 Android Studio zelf wordt niet direct gebruikt maar er wordt enkel gebruik gemaakt van de 
 emulator die Android Studio aanbied.
 \\\\
-Bij het opstellen van de React native omgeving zijn er een paar instellingen waar we rekening 
+Bij het opstellen van de React Native omgeving zijn er een paar instellingen waar we rekening 
 mee moeten houden. Maar hiermee is al rekening gehouden bij het installeren van Android Studio 
 in paragraaf \ref{par:sdk}.
 
 \paragraph{5. ANDROID\_HOME omgevingsvariabelen}
-De React native tools hebben enkele omgevingsvariabelen nodig om native applicaties te bouwen. 
+De React Native tools hebben enkele omgevingsvariabelen nodig om native applicaties te bouwen. 
 Om deze omgevingsvariabelen in te stellen openen we eerst het configuratiescherm van Windows. 
 Daarna gaan we naar 
 \textit{Gebruikersaccounts > Gebruikersaccounts > Mijn omgevingsvariabelen veranderen > Nieuw\dots}. 
@@ -62,8 +62,8 @@ Bij het nieuw verkregen scherm drukken we op \textit{Nieuw} en voegen we de path
 toe aan de lijst. Het path van de platform-tool is standaard 
 \textbf{\%LOCALAPPDATA\%\backslash Android\backslash Sdk\backslash platform-tools}.
 
-\paragraph{6. React native Command Lin Interface (CLI)}
-React native heeft een ingebouwde command line interface (CLI) om te werken met React native. 
+\paragraph{6. React Native Command Lin Interface (CLI)}
+React Native heeft een ingebouwde command line interface (CLI) om te werken met React naNativetive. 
 Deze kan gebruikt worden dankzij Node.js dat we daarnet installeerden.
 \begin{minted}{bash}
 npx react native [commando]
@@ -72,7 +72,7 @@ npx react native [commando]
 \paragraph{7. Emulator gebruiken} \label{par:emulatorgebruiken}
 Om nu effectief applicaties te laten runnen maken we gebruik van de emulator die Android Studio aanbied. 
 Aangezien deze al opgesteld is bij het opzetten van Android Studio \ref{se:native} 
-moeten we dit niet meer doen voor React native. Om de applicatie starten hebben we twee terminals nodig 
+moeten we dit niet meer doen voor React Native. Om de applicatie starten hebben we twee terminals nodig 
 binnen Visual Studio code, deze kunnen we openen via \textit{Terminal > New Terminal}. 
 In de eerste terminal starten we \Gls{Metro} met het volgende commando.
 \begin{minted}{bash}

@@ -34,7 +34,7 @@ van de applicatie via de notificatie. Er kan ook een eventueel een prioriteit wo
 \clearpage
 \section{Cross-platform}
 \subsubsection{Wat hebben we nodig}
-Om lokale notificaties bij React native te tonen gaan we gebruik maken van de externe library Notifee.
+Om lokale notificaties bij React Native te tonen gaan we gebruik maken van de externe library Notifee.
 Met deze library kunnen we net zoals bij Android de notificatie aanpassen naar onze wensen.
 
 \subsubsection{Uitvoering}
@@ -56,13 +56,13 @@ Met deze library kunnen we net zoals bij Android de notificatie aanpassen naar o
 \section{Conclusie}
 Dankzij de resultaten van beide applicaties kunnen we concluderen dat de ontwikkeltijd van notificaties met 
 beide ontwikkelmethodes relatief gelijk blijft. Bij beide applicaties moest er toestemming gevraagd worden. 
-Door bij Android dit aan het \textbf{AndroidManifest.xml} bestand toe te voegen, en bij React native door 
+Door bij Android dit aan het \textbf{AndroidManifest.xml} bestand toe te voegen, en bij React Native door 
 de \textbf{notifee.requestPermission();} methode uit te voeren. Hierna moet er bij beide applicaties een 
 channel worden aangemaakt en tot slot dan de notificatie.
 
 \begin{tabular}{ |p{3cm}||p{5cm}|p{5cm}| }
     \hline
-     & Native (Android) & Cross-platform (React native) \\
+     & Native (Android) & Cross-platform (React Native) \\
     \hline
      & \multicolumn{2}{|c|}{Tijdsduur} \\
     \hline
@@ -84,21 +84,21 @@ channel worden aangemaakt en tot slot dan de notificatie.
 \end{tabular}
 \\\\
 Daarnaast zien we bij de tijdsduur dat nodig is om een notificatie aan te maken wel een duidelijk 
-verschil tussen Android en React native. Gemiddel is het aanmaken van een notificatie bij Android
-154ms sneller dan bij React native. Bij React native duurt het gemiddel 166ms om een notificatie 
+verschil tussen Android en React Native. Gemiddel is het aanmaken van een notificatie bij Android
+154ms sneller dan bij React Native. Bij React Native duurt het gemiddel 166ms om een notificatie 
 aan te maken terwijl dit bij Android maar 12ms duurt. Dit kan liggen aan het feit dat de externe 
 library de code moet omzetten naar platformspecifieke code waardoor er veel tijd wordt verloren.
 \\\\
 We zien dan wel bij het geheugen dat er geen verschil is tussen het aanmaken van een notificatie en wanneer er 
 niks gebeurd in de appplicatie. Maar ondanks dat er geen invloed is om het aanmaken van een notificatie bij 
-Android en React native zien we wel dat er 112,35\% meer geheugen wordt gebruikt bij React native dan 
+Android en React Native zien we wel dat er 112,35\% meer geheugen wordt gebruikt bij React Native dan 
 bij Android (81MB in vergelijking met 172MB). Dit kan ook weer liggen aan het feit dat de externe library
 de code moet omzetten naar platformspecifieke code waardoor er veel geheugen wordt gebruikt.
 \\\\
 Bij het CPU gebruik zien we wel een verschil tijdens het aanmaken van een notificatie en wanneer de 
-applicatie inactief is. Daarnaast zien we ook een verschil tussen Android en React-native. Bij React native 
+applicatie inactief is. Daarnaast zien we ook een verschil tussen Android en React-native. Bij React Native 
 springt het CPU gebruik gemiddeld naar 28\% terwijl dat het bij Android maar naar 21\% springt. Ookal 
-draaien beide applicaties op hetzelfde apparaat gebruikt de React native applicatie gemiddeld 7\% meer 
+draaien beide applicaties op hetzelfde apparaat gebruikt de React Native applicatie gemiddeld 7\% meer 
 van de CPU dan de Android applicatie.
 \\\\
 Op vlak van schaalbaarheid merken we dat beide ontwikkelmethodes net zoals bij de ontwikkelingstijd 
@@ -106,7 +106,7 @@ lijken op elkaar. Allebei geven ze de mogelijkheid om de logica in methodes te o
 waardoor deze later individueel herbruikt of opgeschaald kunnen worden.
 \\\\
 Over het algemeen kunnen we concluderen dat het aanmaken van notificaties bij Android sneller gaat dan bij
-React native. En het dus beter is om met native te werken als je notificaties wilt gebruiken in je applicatie.
+React Native. En het dus beter is om met native te werken als je notificaties wilt gebruiken in je applicatie.
 
 
 

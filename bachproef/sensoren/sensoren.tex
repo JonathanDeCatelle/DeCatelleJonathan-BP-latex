@@ -34,7 +34,7 @@ gyroscoop opvragen.
 
 \section{Cross-platform}
 \subsubsection{Wat hebben we nodig}
-Om bij React native toegang te krijgen tot de sensoren moeten we gebruik maken van de react-native-sensors library.
+Om bij React Native toegang te krijgen tot de sensoren moeten we gebruik maken van de react-native-sensors library.
 Deze library biedt onder andere toegang tot de accelerometer en gyroscoop. Deze library is een wrapper voor de
 native sensoren van Android en iOS. 
 
@@ -65,7 +65,7 @@ te roepen om het ophalen van data te starten.
     \hline
     \multicolumn{3}{|c|}{Accelerometer} \\ 
     \hline
-     & Native (Android) & Cross-platform (React native) \\
+     & Native (Android) & Cross-platform (React Native) \\
     \hline
      & \multicolumn{2}{|c|}{Tijdsduur} \\
     \hline
@@ -86,7 +86,7 @@ te roepen om het ophalen van data te starten.
     \hline
     \multicolumn{3}{|c|}{Gyroscoop} \\ 
     \hline
-     & Native (Android) & Cross-platform (React native) \\
+     & Native (Android) & Cross-platform (React Native) \\
     \hline
      & \multicolumn{2}{|c|}{Tijdsduur} \\
     \hline
@@ -114,8 +114,8 @@ Bij native is dit niet het geval. De data van de sensoren wordt rechtstreeks naa
 Het ophalen van data is daardoor gemiddeld 10ms trager bij cross-platform dan bij native.
 \\\\
 We zien bij het geheugen dat er geen verschil is tussen het ophalen van sensoren data en wanneer er 
-niks gebeurd in de appplicatie. Maar ondanks dat er geen invloed is om het ophalen van data bij 
-Android en React native zien we wel dat er 121.59\% meer geheugen wordt gebruikt bij React native dan 
+niks gebeurd in de applicatie. Maar ondanks dat er geen invloed is om het ophalen van data bij 
+Android en React Native zien we wel dat er 121.59\% meer geheugen wordt gebruikt bij React Native dan 
 bij Android (88MB in vergelijking met gemiddeld 195MB). Dit komt omdat we bij cross-platform een extra 
 library moeten implementeren. Deze library neemt ook geheugen in beslag.
 \\\\
@@ -129,7 +129,7 @@ minder CPU gebruiken, aangezien de data eerst naar de wrapper wordt gestuurd en 
 de accelerometer is dit niet het geval. Hier is het CPU gebruik bij cross-platform lager dan bij native.
 \\\\
 Op vlak van schaalbaarheid is er geen verschil tussen native en cross-platform. Beide applicaties kunnen
-makkelijk uitgebreid worden met extra sensoren en de bestaande logica van de sensoren kan makkelijk 
+gemakkelijk uitgebreid worden met extra sensoren en de bestaande logica van de sensoren kan gemakkelijk 
 hergebruikt of opgeschaald worden.
 \\\\
 Uit deze resultaten kunnen we concluderen dat we het gebruik van native boven cross-platform Aangeraden is.

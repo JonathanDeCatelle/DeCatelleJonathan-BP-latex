@@ -9,7 +9,7 @@ Nu kunnen we de library importeren in de bestanden waar we deze nodig hebben.
 \end{minted}
 
 \paragraph{2. Toestemming vragen \& channel aanmaken}
-Nog voor we een notificatie kunnen tonen moeten we eerst de toestemming vragen aangezien dit bij React native 
+Nog voor we een notificatie kunnen tonen moeten we eerst de toestemming vragen aangezien dit bij React Native 
 niet automatisch gebeurt zoals bij Android Studio. Ook moeten we net zoals bij Android Studio 
 een channel aanmaken om de notificaties te groeperen. Het maakt niet uit wanneer dit gebeurt, maar 
 het moet wel gebeuren voor er een notificatie wordt getoond. Dus best zo vroeg mogelijk in de applicatie.
@@ -30,7 +30,7 @@ export const notificationsSetup = async () => {
 \end{minted}
 
 \paragraph{3. Notificatie aanmaken}
-Bij React native wordt de notificatie ook direct getoond bij het maken ervan. Net zoals bij Android Studio 
+Bij React Native wordt de notificatie ook direct getoond bij het maken ervan. Net zoals bij Android Studio 
 geven we de naam, description, channelId en optioneel een icon (default ic\_launcher). 
 \begin{minted}{typescript}
 export const createNotification = async (title: string, body: string) => {
@@ -55,5 +55,5 @@ uit twee \textbf{<TextInput/>} componenten voor een titel en beschijving van de 
 \begin{figure}[H]
   \centering
   \includegraphics[height=0.5\textheight]{notificaties_layoutcross.png}
-  \caption{Layout van applicatie voor notificaties te sturen bij React native.}
+  \caption{Layout van applicatie voor notificaties te sturen bij React Native.}
 \end{figure}
