@@ -241,7 +241,7 @@ Zoals reeds hebben besproken, gaat native ontwikkeling een applicatie ontwikkele
 specifiek voor één besturingssysteem. Om die 
 applicatie kunnen verscheidene programmeertalen, frameworks 
 en \acrshort{ide} gebruikt worden. Deze zijn allemaal specifiek voor ofwel Android of IOS. In de volgende 
-secties gaan we enkele programmeertalen overlopen die gebruikt kunnen worden om het onderzoek uit te voeren.
+secties worden enkele programmeertalen overlopen die gebruikt kunnen worden om het onderzoek uit te voeren.
 
 \subsubsection{Android programmeertalen}
 \paragraph{Java}
@@ -362,8 +362,12 @@ worden \autocite{Pruciak2022}.
 Daarom zou Swift als programmeertaal gekozen worden om te gebruiken bij het vergelijken van 
 native IOS applicaties indien IOS ook in deze bachelorproef onderzocht werd.
 
-\subsection{Tools en IDEs voor native ontwikkeling}
+Omdat dit onderzoek vooral focust op het verschil tussen native en cross-platform en niet 
+de verschillen tussen de native platformen wordt er langs de native kant één platform gekozen.
 
+
+
+\subsection{Tools en IDEs voor native ontwikkeling}
 \paragraph{Android Studio}
 Android Studio is een populaire IDE die vaak wordt gebruikt in combinatie met 
 Kotlin om native Android applicaties te ontwikkelen. Het wordt vaak door ontwikkelaars 
@@ -408,12 +412,20 @@ worden. Desondanks zouden we indien IOS onderzocht werd in deze bachelorproef Xc
 in combinatie met Swift.
 
 \section{Cross-platform ontwikkeling}
-
 \subsection{Wat is cross-platform ontwikkeling?}
 Cross-platform ontwikkeling is het proces om native applicaties \ref{ch:native-applicaties} 
 te maken voor een specifiek besturingssysteem, zoals Android en IOS. Cross-platform wordt 
 gebruikt om het platform specifiek probleem van native applicaties op te lossen door beide 
 applicaties te ontwikkelen vanuit één codebase \autocite{Khan2021}.
+
+\subsection{Voordelen van cross-platform ontwikkeling}
+Net zoals bij web applicaties \ref{ch:VoordelenWebApplicaties}, zal ook bij cross-platform 
+ontwikkeling de kostprijs van applicaties lager liggen dan bij native ontwikkeling. 
+Dit komt omdat er maar één applicatie ontwikkeld moet worden in plaats van twee. Ook zullen de 
+onderhoudskosten lager liggen voor dezelfde reden \autocite{Terekhov2022}. Nog een ander 
+groot voordeel van de gedeelde codebase voor twee applicaties is de gedeelde logica ervan. 
+Aangezien er maar één codebase is zal de logica voor beide applicaties altijd gelijk zijn, waarbij 
+dat bij native ontwikkeling soms niet het geval is \autocite{Kotlin2023}.
 
 \subsection{Nadelen van cross-platform ontwikkeling}
 Bij cross-platform ontwikkeling is het niet mogelijk om gebruik te maken van sommige 
@@ -422,15 +434,6 @@ ontwikkeling indien een apparaat een nieuwe functionaliteit aanbied hier onmidde
 van maken in vergelijking met cross-platform dat moet wachten op updates voor cross-platform 
 ontwikkeling \autocite{Sakovich22023}.
 
-\subsection{Voordelen van cross-platform ontwikkeling}
-Net zoals bij web applicaties \ref{ch:VoordelenWebApplicaties}, zal ook bij cross-platform 
-ontwikkeling de kostprijs van een applicaties lager liggen dan bij native ontwikkeling. 
-Dit omdat er maar één applicatie ontwikkeld moet worden in plaats van twee. Ook zullen de 
-onderhoudskosten lager liggen voor dezelfde reden \autocite{Terekhov2022}. Nog een ander 
-groot voordeel van de gedeelde codebase voor twee applicaties is de gedeelde logica ervan. 
-Aangezien er maar één codebase is zal de logica voor beide applicaties overeenkomen, waarbij 
-dat bij native ontwikkeling soms niet het geval is \autocite{Kotlin2023}.
-
 \subsubsection{Verschil met native ontwikkeling}
 Het grootste verschil met native ontwikkeling is dat er bij cross-platform maar één 
 programmeertaal en IDE nodig is om mobiele applicaties voor zowel Android als IOS te 
@@ -438,9 +441,9 @@ ontwikkelen \autocite{Hu2021}. Bij native ontwikkeling is er voor elk platform e
 programmeertaal en IDE nodig. 
 
 \subsection{Frameworks voor cross-platform ontwikkeling}
-Om cross-platform te ontwikkelen kunnen we gebruik maken van verscheidene frameworks en 
-IDEs. In de volgende secties gaan we enkele overlopen waarvan we gebruik kunnen maken 
-doorheen de bachelorproef om het onderzoek uit te voeren.
+Om cross-platform te ontwikkelen kunnen verschillende frameworks en 
+IDEs gebruikt worden. In de volgende secties worden enkele overlopen die gebruikt kunnen worden  
+om het onderzoek uit te voeren.
 
 \paragraph{Flutter}
 Flutter is een open-source framework ontwikkeld door Google dat de ontwikkeling toelaat 
@@ -455,7 +458,7 @@ veranderingen in de code \autocite{Sakovich22023}.
 React native is net zoals Flutter een open-source framework ontwikkeld door Facebook. 
 Het laat toe om IOS en Android applicaties te ontwikkelen \autocite{Terekhov2022}. 
 Het grootste voordeel van React native is de ontwikkeltijd waarmee applicaties ontwikkeld 
-kunnen worden \autocite{Terekhov2022}, de grote community die meehelpt aan het ontwikkelen 
+kunnen worden \autocite{Terekhov2022} en de grote community die meehelpt aan het ontwikkelen 
 van externe libraries \autocite{Okeke2022a}. Dankzij die externe libraries hebben ontwikkelaars 
 toegang tot native features die normaal voor cross-platform ontwikkeling niet toegankelijk is. 
 Deze externe libraries kunnen geschreven zijn in Objective-C, Swift of Java \autocite{Okeke2022a}. 
@@ -468,31 +471,31 @@ Microsoft. Het maakt gebruik van C\# als programmeertaal en het .NET framework v
 native libraries \autocite{Sakovich22023}. Net zoals bij Flutter en React native bezit 
 ook .NET MAUI over een hot reload functie om snel te kunnen ontwikkelen en debuggen. 
 Dankzij het gebruik van C\# bezit ook .NET MAUI net zoals Flutter en React native over 
-een hoge performantie \autocite{Okeke2022a}. Wel een groot nadeel is dat applicaties 
-niet altijd compatibel zijn met de laatste versies van Android of IOS \autocite{Terekhov2022}.
+een hoge performantie \autocite{Okeke2022a}. Een belangrijk nadeel is echter dat 
+applicaties niet altijd compatibel zijn met de nieuwste versies van 
+Android of iOS \autocite{Terekhov2022}.
 
 \paragraph{Samenvatting frameworks}
-Ze staan hier niet allemaal beschreven maar er zijn nog een heel wat frameworks die 
-gebruikt kunnen worden voor cross-platform ontwikkeling. Maar de drie frameworks die 
-hier beschreven zijn hebben allemaal een gelijkaardige performantie. React native en 
+%TODO sure
+Niet alle frameworks voor cross-platform ontwikkeling worden hier beschreven, maar de drie 
+frameworks die hier wel beschreven zijn hebben allemaal een gelijkaardige performantie. React native en 
 .NET MAUI hebben ook makkelijk toegang tot native features dankzij de native libraries. 
-Uit deze drie frameworks gaan we React native kiezen om cross-platform te ontwikkelen 
+Uit deze drie frameworks wordt React native gekozen om cross-platform te ontwikkelen 
 dankzij de performantie, native libraries en grote community er rond. React native 
-bevat voor deze bachelorproef de beste eigenschappen om het onderzoek uit te voeren.
+bevat voor dit onderzoek de beste eigenschappen om het onderzoek uit te voeren.
 
 \subsection{IDEs voor cross-platform ontwikkeling}
-
 \paragraph{Visual Studio Code}
 Er is maar één IDE die eruit springt en dat is Visual Studio Code. Het is een 
 universele IDE die gebruikt kan worden voor alle programmeertalen. Daarnaast is er een 
 groot aanbod van extensies die het mogelijk maken om de IDE aan te passen aan de 
-specifieke behoefte van de ontwikkelaar \autocite{Heller2022}. Daarom zullen we Visual 
-Studio Code gebruiken als IDE om cross-platform te ontwikkelen.
+specifieke behoefte van de ontwikkelaar \autocite{Heller2022}. Daarom wordt Visual 
+Studio Code gebruikt als IDE om cross-platform te ontwikkelen.
 
 \section{Functionaliteiten}
 \subsection{Keuze te onderzoeken functionaliteiten}
 Om een vergelijking te kunnen maken tussen native en cross-platform ontwikkeling, 
-hebben we een aantal functionaliteiten nodig om te onderzoeken. 
+zijn er een aantal functionaliteiten nodig om te onderzoeken. 
 
 \paragraph{Basisfunctionaliteiten}
 Dit omvat functionaliteiten die elke mobiele applicatie zou moeten hebben. Zoals 
@@ -531,10 +534,10 @@ dezelfde performantie niet gegarandeerd kan worden.
 
 \section{Samenvatting stand van zaken}
 Nu dat er een inzicht verkregen is in mobiele applicaties en de ontwikkeling ervan, 
-kunnen we van start gaan met het onderzoek. We zullen alle opgelijste functionaliteiten 
-voor zowel native als cross-platform ontwikkelen. Bij native ontwikkeling zullen we 
-Kotlin en Android Studio gebruiken om native applicaties voor Android te maken. 
-Bij cross-platform zullen we React-native en Visual Studio Code gebruiken om de 
+kan het onderzoek van start gaan. Alle functionaliteiten worden voor 
+zowel native als cross-platform ontwikkeld. Bij native ontwikkeling wordt 
+Kotlin en Android Studio gebruikt om native applicaties te maken. 
+Bij cross-platform wordt React-native en Visual Studio Code gebruikt om de 
 native applicaties te maken.
 
 
