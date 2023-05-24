@@ -1,45 +1,49 @@
 \subsection{Performantie}
-Hoe gaan we de performantie van applicaties doorheen het onderzoek meten?
+Hoe wordt de performantie van applicaties gemeten doorheen het onderzoek?
 
 \paragraph{Android Studio}
-De performantie van native applicaties kan worden gemeten met de Android profiler tool binnen Android Studio 
-\textit{View > Tool Windows > Profiler}. Deze tool stelt ons in staat om de performantie van applicaties 
-tijdens het uitvoeren te analyseren en meten. Het geeft ons gedetailleerde inzichten 
+Het is mogelijk om de performantie van native applicaties te meten met de Android profiler tool binnen Android Studio 
+\textit{View > Tool Windows > Profiler}. Deze tool wordt gebruikt om inzicht te verkrijgen 
 in verschillende prestatieaspecten, zoals CPU-gebruik, geheugengebruik, netwerkactiviteit en 
-energieverbruik. Met de Android Profiler kunnen we ook realtime grafieken genereren en de gegevens bekijken. 
+energieverbruik. De Android Profiler genereert realtime grafieken om de gegevens te bekijken. 
 
 \paragraph{React native}
-Om de performantie van de React native applicaties te meten kunnen we gebruik maken van de Performance Monitor tool. 
-Deze is beschikbaar via de React native Developer Tools en is geoptimaliseerd om de werking en performantie van React native 
+Om de performantie van de React native applicaties te meten kan de Performance 
+Monitor tool gebruikt worden. Deze is beschikbaar via de React native Developer 
+Tools en is geoptimaliseerd om de werking en performantie van React native 
 componenten te meten. Naast de Performance Monitor bieden de React native Developer 
-Tools ook nog andere tools aan zoals: Element Inspector, Network Inspector, Console Logging en Redux Debugger. De 
-Performance Monitor tool is specifiek ontworpen voor het meten en analyseren van de performantie
+Tools ook nog andere tools aan zoals: Element Inspector, Network Inspector, Console 
+Logging en Redux Debugger. De Performance Monitor tool is specifiek ontworpen 
+voor het meten en analyseren van de performantie
 
 \subparagraph{Probleem performantietools}
-Normaal gezien indien je de React native applicaties zou testen, zou je gebruik maken van de Performance Monitor tool.
+Normaal gezien worden React native applicaties getest met de Performance Monitor tool.
 Maar ondanks dat deze inzicht geeft in de performantie van de applicatie, 
-zijn er een aantal verschillen met de Android profiler. De Performance Monitor tool van React native is namelijk zodanig 
-ontworpen om enkel de performantie van de react applicaties te meten en analyseren.
-Op die manier kunnen eventuele \gls{bottlenecks} ontdekt worden binnen de applicatie om zo de performantie te verbeteren.
+zijn er een aantal verschillen met de Android profiler. De Performance Monitor tool 
+van React native is namelijk zodanig ontworpen om enkel de performantie van de 
+react applicaties te meten en analyseren. Op die manier kunnen eventuele 
+\gls{bottlenecks} ontdekt worden binnen de applicatie om zo de performantie te verbeteren.
 \\\\
-Het probleem voor dit onderzoek is dat de performantie van beide applicaties met elkaar vergeleken moet worden. 
-En met de Performance Monitor tool van React native is dit niet mogelijk. Daarom moeten we hiervoor kijken naar 
-een externe library die deze taak op zich kan nemen of een andere manier om toch de performantie op een eerlijke manier 
-te vergelijken. 
+Het probleem bij dit onderzoek is dat de performantie van beide applicaties met 
+elkaar vergeleken moet worden. En met de Performance Monitor tool van React 
+native is dit niet mogelijk. Daarom dient er gezocht te worden naar een externe 
+een alternatieve manier om de performantie op een eerlijke manier te vergelijken.
 
 \subparagraph{Firebase Performance Monitoring}
-Één manier om de performantie te meten is de Firebase Performance Monitoring tool \url{https://firebase.google.com/docs/perf-mon/}. 
-Deze is onwtikkeld door Google en stelt ons in staat om de duur van een stuk code van beide applicaties 
-onafhankelijk te meten en vergelijken met elkaar. Dankzij deze tool kunnen we bijvoorbeeld opstarttijd, HTTP requests, 
-schermlaadtijd, enz\dots meten. De implementatie van deze library voor beide ontwikkelmethodes wordt besproken 
+Één manier om de performantie te meten is de Firebase Performance Monitoring tool. 
+Deze is onwtikkeld door Google en kan de duur van een stuk code van beide applicaties 
+onafhankelijk meten. Dankzij deze tool kunnen we bijvoorbeeld opstarttijd, HTTP requests, 
+schermlaadtijd, enz... meten. De implementatie van deze library voor beide ontwikkelmethodes wordt besproken 
 in hoofdstuk \ref{ch:projecten}.
 
 \subparagraph{Android profiler}
-Ondanks dat we de Firebase Performance Monitoring kunnen gebruiken om de tijdsduur van een stuk code te meten, is dit 
-niet genoeg om een volwaardige vergelijking te doen. Daarom gaan we ook voor de React native applicaties de Android 
-profiler gebruiken. Dit is mogelijk als we de emulator binnen Android Studio eerst opstarten en daarna pas de React native 
-commandos om een applicatie te starten uitvoeren \ref{par:emulatorgebruiken}. Hierdoor wordt de applicatie in de emulator 
-binnen Android Studio opgestart en kunnen we terug gebruik maken van de Android profiler. 
+Ondanks dat de Firebase Performance Monitoring gebruikt kan worden om de tijdsduur 
+van een stuk code te meten, is dit niet genoeg om een volwaardige vergelijking te 
+doen. Daarom wordt de Android profiler ook voor de React native applicaties 
+gebruikt. Dit is mogelijk als de emulator binnen Android Studio eerst wordt opgestart 
+en daarna pas de React native commandos om een applicatie te starten worden uitgevoerd 
+\ref{par:emulatorgebruiken}. Hierdoor wordt de applicatie in de emulator 
+binnen Android Studio opgestart en kan de Android profiler gebruikt worden. 
 \\\\
-Door een combinatie van Android profiler en Firebase Performance Monitoring te gebruiken kunnen we op een eerlijke manier 
-de performantie tussen beide applicaties vergelijken met elkaar.
+Door het gebruik van zowel de Android Profiler als Firebase Performance Monitoring 
+kunnen de prestaties van applicaties op een eerlijke manier worden vergeleken
