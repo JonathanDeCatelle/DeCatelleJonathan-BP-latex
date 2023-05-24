@@ -1,21 +1,22 @@
 \subparagraph{1. Dependancy installeren}
-Daarna moeten we de React Native Firebase "app" module aan ons React Native project toevoegen. 
-Dit kunnen we doen met volgend commando.
+Eerst moet de React Native Firebase "app" module aan de root van het React Native project worden toegevoegd. 
+Dit wordt gedaan met volgend commando:
 \begin{minted}{bash}
 npm install --save @react-native-firebase/app
 \end{minted}
 
 \subparagraph{2. Configuratie bestanden toevoegen}
-Na dat de dependancy is toegevoegd maken we in het Firebase project opnieuw een Android applicatie aan. 
-Om deze aan te maken geven we de package naam dat te vinden is in \textit{android/app/build.gradle} als 
-applicationId en optioneel de naam van de applicatie mee.
+Nadat de dependancy is toegevoegd, moet er een nieuw Firebase project worden aangemaakt. 
+Om deze aan te maken moet de package naam worden meegegeven die te vinden is in het 
+\textit{android/app/build.gradle} bestand als 
+\textbf{applicationId}. Optioneel kan de naam van de applicatie mee worden gegeven.
 \\\\
-Na dat de Android applicatie is aangemaakt, moeten we het \textbf{google-services.json} bestand downloaden. 
-Deze plaatsen we dan in de \textit{android/app} folder.
+Nadat de Android applicatie is aangemaakt, moet het \textbf{google-services.json} bestand worden gedownload. 
+Deze wordt dan geplaatst in de \textit{android/app} folder.
 
 \subparagraph{3. Firebase configureren}
-Om Firebase het configuratiebestand nu te laten gebruiken moeten we de google-services plugin toevoegen aan 
-de dependancies binnen het \textit{/android/build.gradle} bestand. 
+Om Firebase het configuratiebestand nu te laten gebruiken, moet de google-services plugin worden toegevoegd aan 
+de dependancies binnen het \textit{android/build.gradle} bestand. 
 \begin{minted}{java}
 buildscript {
     dependencies {
@@ -24,11 +25,11 @@ buildscript {
     }
 }
 \end{minted}
-Tot slot moeten we de plugin uitvoeren door deze aan het \textit{/android/app/build.gradle} bestand toe te voegen.
+Tot slot moet de plugin aan het \textit{android/app/build.gradle} bestand worden toegevoegd.
 \begin{minted}{java}
 apply plugin: "com.google.gms.google-services"
 \end{minted}
-En voegen we deze ook toe aan de dependancies in hetzelfde \textit{/android/app/build.gradle} bestand.
+En worden deze ook aan de dependancies toegevoegd in hetzelfde \textit{android/app/build.gradle} bestand.
 \begin{minted}{java}
 dependencies {
     // andere dependancies

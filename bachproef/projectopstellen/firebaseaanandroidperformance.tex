@@ -1,35 +1,35 @@
 \subparagraph{1. Performance Monitoring SDK aan applicatie toevoegen}
-Als eerst voegen we de Performance Monitor SDK toe aan ons project in het \textbf{build.gradle(module)} bestand.
+Eerst moet de Performance Monitor SDK aan het project worden toegevoegd in het \textbf{build.gradle(module)} bestand.
 \begin{minted}{java}
 dependencies {
-    // ... andere dependancies
+    // andere dependancies
     implementation "com.google.firebase:firebase-perf-ktx"
 }
 \end{minted}
 
 \subparagraph{2. Performance Monitoring Gradle plugin toevoegen}
-Na het toevoegen van de SDK moeten we de Perormance Monitoring Gradle plugin toevoegen. 
-Dit doen we door de dependancies hiervan toe te voegen aan het \textbf{build.gradle(project)} bestand.
+Na het toevoegen van de SDK moet de Perormance Monitoring Gradle plugin worden toegevoegd 
+aan het \textbf{build.gradle(project)} bestand.
 \begin{minted}{java}
 dependencies {
-    // ... andere dependancies
+    // andere dependancies
     classpath "com.google.firebase:perf-plugin:1.4.2"
 }
 \end{minted}
-Tot slot voegen we de plugin toe. Dit doen we door deze in het \textbf{build.gradle(module)} bestand toe te voegen.
+Tot slot moet de plugin worden toegevoegd aan het \textbf{build.gradle(module)} bestand.
 \begin{minted}{java}
 plugins {
-    // ... andere plugins
+    // andere plugins
     id "com.google.firebase.firebase-perf"
 }
 \end{minted}
 Nu is het blanco project klaar om vanuit dit project alle functionaliteiten te 
-implementeren en onderzoeken, buiten de basisfunctionaliteiten. Hiervoor zullen we vanuit een ander project starten, 
-maar zullen we de Perormance Monitoring tool op dezelfde manier implementeren.
+implementeren en onderzoeken, buiten de basisfunctionaliteiten. Hiervoor wordt er vanuit een ander project gestart, 
+maar zal de Performance Monitoring tool op dezelfde manier worden geïmplementeerd.
 
 \subparagraph{3. Performance meten}
-Nu kunnen we een trace maken om de performantie te meten. Doorheen de applicaties zal dit er als 
-volgt uitzien.
+Om de performantie te meten doorheen de applicaties zal dit er als 
+volgt uitzien:
 \begin{minted}{java}
 val trace = FirebasePerformance.getInstance().newTrace("naam_trace")
 
@@ -37,6 +37,5 @@ trace.start()
 // uit te voeren code
 trace.stop()
 \end{minted}
-De trace wordt gestart voor de code die we willen meten en gestopt na de code die we willen meten.
-De trace wordt dan automatisch naar de Firebase console gestuurd. Hier kunnen we de trace terugvinden
-en de performantie analyseren.
+De trace wordt automatisch naar de Firebase console gestuurd, van waarop de 
+resultaten kunnen worden bekeken.

@@ -1,48 +1,41 @@
-Bij Android Studio kunnen we in de IDE zelf nieuwe projecten aanmaken om de 
-functionaliteiten te maken. Dit doen we met \textit{File > New > New Project\dots}. 
-Hierna krijgen we een overzicht van projecten die we als basis kunnen gebruiken. Ook 
+Android Studio kan als IDE zelf nieuwe projecten aanmaken met \textit{File > New > New Project\dots}. 
+Hierna wordt een overzicht getoond van projecten die als basis kunnen worden gebruikt. Ook 
 kan er op dit scherm gekozen worden voor welk apparaat de applicatie is.
 \begin{figure}[H]
     \centering
     \includegraphics[height=0.35\textheight]{OverzichtProjecten.png}
     \caption{Overzicht startprojecten Android Studio.}
 \end{figure}
-Afhankelijk van de functionaliteit dat we gaan implementeren zullen we dus andere 
-startprojecten kunnen kiezen. Na het kiezen van het startproject geven we een naam, 
-programmeertaal en de minimaal ondersteunde Android API. Voor dit onderzoek kiezen we 
-voor Kotlin. De naam en minimale ondersteunde Android API speelt hierbij geen rol.
+Afhankelijk van de functionaliteit die worden geïmplementeerd zal een ander 
+startprojecten gekozen worden. Na het kiezen van het startproject kan een naam, 
+programmeertaal en de minimaal ondersteunde Android API worden ingegeven. Voor dit onderzoek wordt er gekozen 
+voor Kotlin. De naam en minimale ondersteunde Android API spelen hierbij geen rol.
 
 \subsection{Basisfunctionaliteiten}
 \label{par:basisfunctionaliteiten}
-Bij de basisfunctionaliteiten zullen we als startproject 
-\textbf{Bottom Navigation Views Activity} gebruiken om te kunnen navigeren tussen 
-verschillende schermen. Daardoor moeten we zelf geen extra libraries gaan implementeren.
+Bij de basisfunctionaliteiten wordt
+\textbf{Bottom Navigation Views Activity} als startproject gebruikt om te kunnen navigeren tussen 
+verschillende schermen. Daardoor moeten er geen extra libraries worden geïmplementeerd.
 
 \subsection{Overige functionaliteiten}
 Voor de overige functionaliteiten (gebruik van sensoren, 
-push-notificaties en audio- en videospelers) zullen we als startproject 
-\textbf{Empty Views Activity} gebruiken. Op die manier hebben we de minste \gls{overhead} 
-dat de resultaten kan beïnvloeden.
+push-notificaties en audio- en videospelers) wordt
+\textbf{Empty Views Activity} als startproject gebruikt. Op die manier zal er zo weinig mogelijk 
+\gls{overhead} zijn die de resultaten kan beïnvloeden.
 
 \subsection{Firebase Performance Monitoring}
-Om de performantie van de applicaties te meten, meer specifiek de tijdsduur dat een stuk code nodig heeft om uit te voeren 
-gaan we de Firebase Performance Monitoring tool in het project implementeren. 
-
-\paragraph{Firebase project aanmaken}
-Om de Firebase Performance Monitoring tool te gebruiken hebben we als eerst een Firebase project nodig.
-Deze kan aangemaakt worden via volgende link \url{https://console.firebase.google.com/}.
+Om de performantie van de applicaties te meten, meer specifiek de tijdsduur 
+die een stuk code nodig heeft om uit te voeren, 
+wordt de Firebase Performance Monitoring tool in het project geïmplementeerd. 
 
 \paragraph{Firebase aan project toevoegen}
-Vooraleer we de Performance Monitoring tool kunnen implementeren moeten we eerst Firebase 
-aan ons project toevoegen. Hiervoor volgen we deze handleiding 
-\url{https://firebase.google.com/docs/android/setup}.
+Vooraleer de Performance Monitoring tool geïmplementeerd kan worden moet Firebase 
+aan het project worden toegevoegd.
 
 \input{./projectopstellen/firebaseaanandroid}
 
 \paragraph{Implementatie Performance Monitoring tool}
-Nu dat Firebase aan ons project is toegevoegd kunnen we de Performance Monitor 
-toevoegen door deze handleiding te volgen \url{https://firebase.google.com/docs/perf-mon/get-started-android}.
+Nu Firebase aan ons project is toegevoegd, kan de Performance Monitor 
+worden toegevoegd.
 
 \input{./projectopstellen/firebaseaanandroidperformance.tex}
-
-\input{./projectopstellen/projectenopstellenandroidprofiler.tex}

@@ -1,4 +1,6 @@
 \begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{import}\PYG{+w}{ }\PYG{n+nx}{perf}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}@react\PYGZhy{}native\PYGZhy{}firebase/perf\PYGZsq{}}\PYG{p}{;}
+
 \PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{trace}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{await}\PYG{+w}{ }\PYG{n+nx}{perf}\PYG{p}{().}\PYG{n+nx}{newTrace}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}naam\PYGZus{}trace\PYGZsq{}}\PYG{p}{);}
 
 \PYG{n+nx}{trace}\PYG{p}{.}\PYG{n+nx}{start}\PYG{p}{();}

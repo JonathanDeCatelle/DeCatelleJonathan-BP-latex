@@ -1,85 +1,80 @@
 Om cross-platform te ontwikkelen door gebruik te maken van React Native is er wat meer werk om 
-de omgeving op te stellen. Eerst zullen we Visual Studio Code downloaden. 
-Dit kan vanop de website \url{https://code.visualstudio.com/download} 
-
-Na het installeren van Visual Studio Code kunnen we de React Native ontwikkelomgeving opstellen. 
-Dit kan door de handleiding te volgen vanop de website \url{https://reactnative.dev/docs/environment-setup}.
+de omgeving op te stellen. Eerst moet Visual Studio Code worden gedownload. 
+Na het installeren van Visual Studio Code kan de React Native ontwikkelomgeving worden opgesteld. 
 
 \paragraph{1. React Native CLI Quickstart}
-Voor de React Native ontwikkelomgeving kunnen we ook gebruik maken van Expo. 
+Voor de React Native ontwikkelomgeving kan ook gebruik worden gemaakt van Expo. 
 Dit is een simpele manier om snel applicaties visueel werkend te krijgen. 
-Maar voor dit onderzoek zullen we de applicaties op dezelfde emulator runnen waarop de native 
-ontwikkelde applicaties runnen. Hiervoor volgen we de React Native CLI Quickstart handleiding. 
+Maar voor dit onderzoek moeten de applicaties op dezelfde emulator runnen waarop we de native 
+ontwikkelde applicaties runnen. Daarom wordt er niet gebruik gemaakt van Expo.
 
 \paragraph{2. Besturingssysteem en doelsysteem}
 Afhankelijk van het gebruikte besturingssysteem is er een andere handleiding. 
 Doorheen dit onderzoek zullen we werken op een Windows laptop en zullen we focussen op Android applicaties.
 
 \paragraph{3. Node \& JDK}
-Als eerste moeten we \Gls{Node} en \acrshort{jdk} installeren. Dit kunnen we gemakkelijk 
-doen met \Gls{Chocolatey}. Chocolatey indien niet geïnstalleerd kan worden gedownload 
-vanop de website \url{https://chocolatey.org/install}. Eerst openen we een 
-opdrachtprompt (powershell) als administrator waaraan we volgende commando meegeven.
+Om te beginnen moeten \Gls{Node} en \acrshort{jdk} geïnstalleerd worden. Dit kan gemakkelijk 
+worden gedaan met \Gls{Chocolatey}. Eerst wordt een 
+opdrachtprompt (powershell) als administrator geopend waaraan volgende commando wordt meegegeven.
 \begin{minted}{bash}
 choco install -y nodejs-lts microsoft-openjdk11
 \end{minted}
-Voor Node gebruiken we de laatste versie. De minimale versie waarmee React Native kan werken is 14. 
-Voor de JDK gebruiken we versie 11 aangezien hogere versies voor problemen kunnen zorgen.
+Voor Node wordt de laatste versie gebruikt. De minimale versie waarmee React Native kan werken is 14. 
+Voor de JDK wordt versie 11 gebruikt aangezien hogere versies voor problemen kunnen zorgen.
 
 \paragraph{4. Android ontwikkelomgeving}
-Net zoals bij native ontwikkeling hebben we voor React Native applicaties ook Android Studio nodig. 
-Dit is omdat we om de applicatie te runnen gebruik maken van de emulator binnenin Android Studio. 
-Android Studio zelf wordt niet direct gebruikt maar er wordt enkel gebruik gemaakt van de 
-emulator die Android Studio aanbied.
+Net zoals bij native ontwikkeling hebben de React Native applicaties ook Android Studio nodig. 
+Zo kan de emulator in Android Studio gebruikt worden. 
+Android Studio zelf wordt niet direct gebruikt maar er wordt wel gebruik gemaakt van de 
+emulator die Android Studio aanbiedt.
 \\\\
-Bij het opstellen van de React Native omgeving zijn er een paar instellingen waar we rekening 
-mee moeten houden. Maar hiermee is al rekening gehouden bij het installeren van Android Studio 
+Bij het opstellen van de React Native omgeving zijn er een paar instellingen waar er rekening 
+mee moeten worden gehouden. Hiermee is al rekening gehouden bij het installeren van Android Studio 
 in paragraaf \ref{par:sdk}.
 
 \paragraph{5. ANDROID\_HOME omgevingsvariabelen}
 De React Native tools hebben enkele omgevingsvariabelen nodig om native applicaties te bouwen. 
-Om deze omgevingsvariabelen in te stellen openen we eerst het configuratiescherm van Windows. 
-Daarna gaan we naar 
+Om deze omgevingsvariabelen in te stellen wordt het configuratiescherm van Windows geopend. 
+Daarna wordt er genavigeerd naar
 \textit{Gebruikersaccounts > Gebruikersaccounts > Mijn omgevingsvariabelen veranderen > Nieuw\dots}. 
-In het nieuwe verkregen scherm vullen we dan de naam van de omgevingsvariabel \textbf{ANDROID\_HOME} 
-en de path naar de Android SDK in. De standaard path naar de Android SDK is 
+In het nieuwe verkregen scherm wordt de naam van de omgevingsvariabel \textbf{ANDROID\_HOME} 
+en de path naar de Android SDK ingevuld. De standaard path naar de Android SDK is 
 \textbf{\%LOCALAPPDATA\%\backslash Android\backslash Sdk}. 
 De locatie van de Android SDK is ook te vinden via Android Studio via 
 \textit{File > Settings > Appearance \& Behavior > System Settings > Android SDK}.
 \\\\
-Om te controleren dat de omgevingsvariabel correct is toegevoegd openen we een nieuwe 
-opdrachtprompt (powershell) en geven we volgend commando in.
+Om te controleren of dat de omgevingsvariabel correct is toegevoegd wordt een nieuwe 
+opdrachtprompt (powershell) geopend en wordt volgend commando ingevoerd.
 \begin{minted}{bash}
 Get-ChildItem -Path Env:\
 \end{minted}
-In de teruggegeven lijst controleren we dan of dat ANDROID\_HOME effectief is toegevoegd.
+In de teruggegeven lijst kan dan gecontroleerd worden of dat \textbf{ANDROID\_HOME} effectief werd toegevoegd.
 \\\\
-Tot slot moeten we de \textbf{Path} omgevingsvariabel aanpassen. 
-Opnieuw navigeren we in het configuratiescherm naar het overzicht met alle omgevingsvariabelen 
+Tot slot moet de \textbf{Path} omgevingsvariabel aangepast worden. 
+Hiervoor wordt opnieuw genavigeerd naar het overzicht met alle omgevingsvariabelen in het configuratiescherm 
 \textit{Gebruikersaccounts > Gebruikersaccounts > Mijn omgevingsvariabelen veranderen}. 
-Hierin selecteren we de Path omgevingsvariabel en daarna drukken we op \textit{Bewerken...}. 
-Bij het nieuw verkregen scherm drukken we op \textit{Nieuw} en voegen we de path naar platform-tools 
-toe aan de lijst. Het path van de platform-tool is standaard 
+Daarna wordt wordt de Path omgevingsvariabel geselecteerd en wordt deze bewerkt met de \textit{Bewerken...} knop. 
+Bij het nieuw verkregen scherm wordt op \textit{Nieuw} gedrukt en wordt de path naar platform-tools 
+toegevoegd aan de lijst. Het path van de platform-tool is standaard 
 \textbf{\%LOCALAPPDATA\%\backslash Android\backslash Sdk\backslash platform-tools}.
 
 \paragraph{6. React Native Command Lin Interface (CLI)}
 React Native heeft een ingebouwde command line interface (CLI) om te werken met React naNativetive. 
-Deze kan gebruikt worden dankzij Node.js dat we daarnet installeerden.
+Deze kan gebruikt worden dankzij Node.js dat daarnet werd installeerden.
 \begin{minted}{bash}
 npx react native [commando]
 \end{minted}
 
 \paragraph{7. Emulator gebruiken} \label{par:emulatorgebruiken}
-Om nu effectief applicaties te laten runnen maken we gebruik van de emulator die Android Studio aanbied. 
-Aangezien deze al opgesteld is bij het opzetten van Android Studio \ref{se:native} 
-moeten we dit niet meer doen voor React Native. Om de applicatie starten hebben we twee terminals nodig 
+Om nu effectief applicaties te laten runnen, wordt de emulator die Android Studio aanbiedt gebruikt. 
+Aangezien deze al opgesteld is bij het opzetten van Android Studio \ref{se:native}, 
+moeten deze niet meer voor React Native worden opgezet. Om de applicatie te starten zijn er twee terminals nodig 
 binnen Visual Studio code, deze kunnen we openen via \textit{Terminal > New Terminal}. 
-In de eerste terminal starten we \Gls{Metro} met het volgende commando.
+In de eerste terminal wordt \Gls{Metro} gestart met volgende commando:
 \begin{minted}{bash}
 npx react-native start
 \end{minted}
-In de tweede terminal geven we het volgende commando dat de applicatie zal opbouwen en 
-deployen naar de emulator.
+In de tweede terminal wordt de applicatie opgebouwd en geïnstalleerd op de emulator met volgende commando:
 \begin{minted}{bash}
 npx react-native run-android
 \end{minted}

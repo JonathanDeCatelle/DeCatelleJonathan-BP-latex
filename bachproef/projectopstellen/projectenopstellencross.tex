@@ -1,46 +1,28 @@
-Om bij React Native een project op te starten gebruiken we volgend commando. 
-Deze voeren we uit in de terminal van Visual Studio Code in de gewenste map waar 
-het project aangemaakt moet worden.
+Om bij React Native een project op te starten, wordt volgend commando gebruikt: 
 \begin{minted}{bash}
 npx react-native init <projectnaam>
 // Of
 npx react-native@X.XX.X init <projectnaam> --version X.XX.X
 \end{minted}
-
-% komt bovenaan code, andere manier om caption bij code te zetten
-% \begin{listing}
-%     \begin{minted}{bash}
-%         npx react-native init <projectnaam>
-%         // Of voor een bepaalde versie Door X.XX.X te veranderen met de gewenste versie
-%         npx react-native@X.XX.X init <projectnaam> --version X.XX.X
-%     \end{minted}
-%     \caption{Nieuw React Native project aanmaken.}
-%     \label{code:reactnativeprojectopstarten}
-% \end{listing}
-
-Het eerste commando zal een blanco React Native project aanmaken met de laatste versie 
-waarmee we van start kunnen gaan om de functionalieiten te implementeren. Hier kan ook 
-een versie worden meegegeven, door \textbf{X.XX.X} in bovenstaande commando te vervangen 
-maken we een project aan met de gespecifieerde versie. In dit onderzoek maken we gebruik 
-van de laatste beschikbare versie namelijk \textbf{0.71.7}.
+Deze wordt uitgevoerd in de terminal van Visual Studio Code in de gewenste map waar 
+het project moet worden aangemaakt.
+\\\\
+Het eerste commando zal een blanco React Native project aanmaken met de laatste versie. Bij het tweede commando
+kan er een versie worden meegegeven door \textbf{X.XX.X} in bovenstaande commando te vervangen.
+In dit onderzoek wordt er gebruik gemaakt van de laatste beschikbare versie namelijk \textbf{0.71.7}.
 
 \subsection{Firebase Performance Monitoring}
-Om de performantie de applicaties te meten moeten we net zoals bij native applicaties de 
-Firebase Performance Monitoring tool in het project implementeren. Om deze te implementeren 
-volgen we deze handleiding \url{https://rnfirebase.io/}.
+Om de performantie van de applicaties te meten moeten de 
+Firebase Performance Monitoring tool in het project worden geïmplementeerd.
 
 \paragraph{Firebase project aanmaken}
-Om de Firebase Performance Monitoring tool te gebruiken hebben we net zoals bij native 
-als eerst een Firebase project nodig. Maar aangezien deze al is aangemaakt, moeten we dit 
-niet opnieuw doen.
+Vooraleer de Performance Monitoring tool geïmplementeerd kan worden moet Firebase 
+aan het project worden toegevoegd.
 
 \input{./projectopstellen/firebaseaanreactnative}
 
 \paragraph{Implementatie Performance Monitoring tool}
-Nu de React Native Firebase app module is geïmplementeerd zijn alle voorwaarden voldaan om de 
-Performance Monitoring tool verder te implementeren. Hiervoor volgen we deze handleiding 
-\url{https://rnfirebase.io/perf/usage}.
+Nu de React Native Firebase app module is geïmplementeerd, zijn alle voorwaarden voldaan om de 
+Performance Monitoring tool verder te implementeren.
 
 \input{./projectopstellen/firebaseaanreactnativeperformance.tex}
-
-\input{./projectopstellen/projectenopstellenandroidprofiler.tex}
