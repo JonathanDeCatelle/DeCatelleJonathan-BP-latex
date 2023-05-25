@@ -12,7 +12,7 @@ private lateinit var sensorManager: SensorManager
 private var accelerometer: Sensor? = null
 private var gyroscope: Sensor? = null
 \end{minted}
-Daarna initialiseren we de sensorManager en de sensoren in de onCreate methode.
+Daarna worden de variabelen met behulp van de sensorManager gelinkt aan een sensor met de onCreate methode.
 \begin{minted}{kotlin}
 override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -25,7 +25,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 \end{minted}
 
 \paragraph{3. SensorEventListener initialiseren}
-Daarna initialiseren we de SensorEventListener en implementeren we de onSensorChanged methode.
+Daarna de SensorEventListener worden aangemaakt hiervoor wordt de onSensorChanged methode gebruikt.
 \begin{minted}{kotlin}
 private val sensorEventListener = object : SensorEventListener {
     override fun onSensorChanged(event: SensorEvent) {
@@ -47,7 +47,7 @@ private val sensorEventListener = object : SensorEventListener {
     }
 }
 \end{minted}
-Nu kunnen we de data van de sensoren uitlezen in de onSensorChanged methode.
+Nu kan de data van de sensoren worden uitgelezen in de onSensorChanged methode.
 \begin{minted}{kotlin}
 fetchButton.setOnClickListener {
     sensorManager.registerListener(
@@ -59,7 +59,7 @@ fetchButton.setOnClickListener {
 \end{minted}
 
 \paragraph{4. Applicatie maken}
-Met deze informatie kunnen we nu een applicatie opbouwen die data van de sensoren 
+Met deze informatie wordt een applicatie ogebouwd die de data van sensoren 
 ophaald. De applicatie bestaat uit twee \textbf{TextView} componenten voor de data van de 
 accelerometer en gyroscoop en tot slot twee \textbf{Button} componenten om de data op te halen. 
 Als de knoppen ingedrukt worden, dan worden de setOnClickListener methodes aangeroepen.
