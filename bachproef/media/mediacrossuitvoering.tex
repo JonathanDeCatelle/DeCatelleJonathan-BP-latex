@@ -1,35 +1,32 @@
 \paragraph{1. Library toevoegen}
-Als eerst moeten we de libraries aan de root van ons project toevoegen. Dit doen we door de 
-volgende commando's uit te voeren.
+Eerst moetenen de libraries aan de root van ons project worden toegevoegd. 
+Deze worden toegevoegd met volgende commandos:
 \begin{minted}{bash}
 npm install --save react-native-track-player
 npm install --save react-native-video
 \end{minted}
 
 \paragraph{2. Package teruggeven}
-Normaal gezien moeten we de package dan toevoegen aan het 
+Normaal gezien moet de package dan worden toegevoegd aan het 
 \textit{android/app/src/} \textit{main/java/com/project/MainApplication.java} bestand.
 Maar dit is niet meer nodig bij React Native 0.60+.
 
 \paragraph{3. Audio library initialiseren}
-Om de audio speler te kunnen gebruiken moeten we een service bestand registreren in de main 
-component van de applicatie, meestal is dit het \textit{index.js} bestand. Dit doen we door de volgende
-regels toe te voegen.
+Om de audio speler te kunnen gebruiken moet een service bestand worden geregistreerd in de main 
+component van de applicatie, meestal is dit het \textit{index.js} bestand.
 \begin{minted}{javascript}
 import TrackPlayer from 'react-native-track-player';
 // AppRegistry.registerComponent(...);
 TrackPlayer.registerPlaybackService(() => require('./service.js'));
 \end{minted}
-Daarna moeten we nog een service aanmaken in een apart bestand. Dit doen we door de volgende regels
-toe te voegen aan een \textit{service.js} bestand. 
+Daarna moet er een service worden aangemaakt in een apart \textit{service.js} bestand.
 \begin{minted}{javascript}
 module.exports = async function() {
     // ...
 }
 \end{minted}
-Tot slot moeten we dan de TrackPlayer opzetten met de \textbf{setupPlayer()} methode. Deze methode
-moet aangeroepen worden voor de \textbf{TrackPlayer} gebruikt kan worden. Dit doen we door de volgende
-regels toe te voegen aan het \textit{App.tsx} bestand.
+Tot slot moet de TrackPlayer worden opgezet met de \textbf{setupPlayer()} methode. Deze methode
+moet worden aangeroepen voor de \textbf{TrackPlayer} kan worden gebruikt.
 \begin{minted}{javascript}
 import TrackPlayer from 'react-native-track-player';
 
@@ -38,7 +35,7 @@ await TrackPlayer.setupPlayer()
 
 \paragraph{4. Audio en video speler gebruiken}
 \subparagraph{4.1. Audio}
-Om de audio speler te gebruiken moeten we eerst een \textbf{Track} object aanmaken.
+Om de audio speler te gebruiken moet ereerst een \textbf{Track} object worden aangemaakt.
 \begin{minted}{typescript}
 const track = {
     url: require(''),
@@ -48,11 +45,12 @@ const track = {
     duration: 100
 };
 \end{minted}
-Daarna voegen we deze toe aan het \textbf{TrackPlayer} object.
+Daarna wordt deze aan het \textbf{TrackPlayer} object toegevoegd.
 \begin{minted}{typescript}
 await TrackPlayer.add(track);
 \end{minted}
-Nu kunnen we het objecten controleren met behulp van een aantal \textbf{<Button>} componenten.
+Nu is het mogelijk om de audio te starten, pauzeren en stoppen met behulp 
+van een aantal \textbf{<Button>} componenten.
 \begin{minted}{typescript}
 <Button title="Play" onPress={() => TrackPlayer.play()} />
 <Button title="Pause" onPress={() => TrackPlayer.pause()} />
@@ -60,11 +58,12 @@ Nu kunnen we het objecten controleren met behulp van een aantal \textbf{<Button>
 \end{minted}
 
 \subparagraph{4.2. Video}
-Om de video speler te gebruiken moeten we eerst een \textbf{<Video>} component aanmaken.
+Om de video speler te gebruiken moet eerst een \textbf{<Video>} component worden aangemaakt.
 \begin{minted}{typescript}
 <Video source={require('')} />
 \end{minted}
-Daarna kunnen we het objecten controleren met behulp van een aantal \textbf{<Button>} componenten.
+Nu is het mogelijk om de video te starten, pauzeren en stoppen met behulp
+van een aantal \textbf{<Button>} componenten.
 \begin{minted}{typescript}
 <Button title="Play" onPress={() => this.video.play()} />
 <Button title="Pause" onPress={() => this.video.pause()} />
@@ -73,7 +72,7 @@ Daarna kunnen we het objecten controleren met behulp van een aantal \textbf{<But
 
 \paragraph{5. Applicatie maken}
 De applicatie bestaat net zoals bij native voor elk de audio en video speler uit een \textbf{<View>}
-component met daarin dire \textbf{<Button>} componenten voor de audio of video te starten, te pauzeren
+component met daarin de \textbf{<Button>} componenten voor de audio of video te starten, te pauzeren
 of te stoppen. Daarnaast bevat de applicatie ook een \textbf{<View>} component met daarin een
 \textbf{<Video>} component voor het afspelen van de video.
 \begin{figure}[H]
