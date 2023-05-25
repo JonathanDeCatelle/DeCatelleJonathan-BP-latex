@@ -2,7 +2,7 @@ Voor de navigatie is het voldoende om het nieuwe project aan te maken.
 Hierbij zit de navigatie al geïmplemnteerd.
 
 \paragraph{1. Gradle instellingen aanpassen}
-Om de SplashScreen API te gebruiken, moeten deze aan de dependacies worden toegevoegd. Dit wordt gedaan in
+Om de SplashScreen API te gebruiken, moeten deze aan de dependancies worden toegevoegd. Dit wordt gedaan in
 het \textbf{build.gradle(module)} bestand.
 \begin{minted}{kotlin}
 dependencies {
@@ -14,7 +14,7 @@ dependencies {
 \paragraph{2. SplashScreen instellen}
 Na het toevoegen van de dependancy kan het laadscherm aangepast worden. 
 Hiervoor wordt een nieuw \textbf{splash.xml} bestand in de \textbf{res/values} map aangemaakt. In dit 
-bestand kan het laadscherm gecustomized worden. Ook wordt hier de icon toegevoegd dat wordt
+bestand kan het laadscherm gecustomized worden. Ook wordt hier de icoon toegevoegd die wordt
 getoond tijdens het laden. Dit icoon wordt in de \textbf{res/drawable} map geplaatst.
 \begin{minted}{xml}
 <?xml version="1.0" encoding="utf-8"?>
@@ -29,8 +29,8 @@ getoond tijdens het laden. Dit icoon wordt in de \textbf{res/drawable} map gepla
 \end{minted}
 
 \paragraph{3. Applicatie maken}
-Dankzij deze informatie wordt een applicatie opgezet dat een laadscherm toont dat zal verdwijnen 
-van zodra de applicatie zijn eerste frame tekent. Daarna is er een navigatiebar te zien onderaan die ervoor zorgt dat 
+Dankzij deze informatie wordt een applicatie opgezet die een laadscherm toont dat weer zal verdwijnen 
+van zodra de applicatie zijn eerste frame tekent. Daarna is er onderaan een navigatiebar te zien die ervoor zorgt dat 
 er genavigeerd kan worden tussen de verschillende schermen.
 \begin{figure}[H]
     \centering

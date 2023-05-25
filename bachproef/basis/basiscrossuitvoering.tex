@@ -1,6 +1,6 @@
 \paragraph{1. Library toevoegen}
-Om de navigatie en het laadscherm te kunnen gebruiken moeten de juiste libraries aan 
-de root van het project worden toegevoegd. Deze worden toegevoegd met volgende commandos:
+Om de navigatie en het laadscherm te kunnen gebruiken, moeten de juiste libraries aan 
+de root van het project worden toegevoegd. Deze worden toegevoegd met volgende commando's:
 \begin{minted}{bash}
 npm install @react-navigation/native
 npm install react-native-screens
@@ -9,7 +9,7 @@ npm install @react-navigation/bottom-tabs
 \end{minted}
 
 \paragraph{2. onCreate methode toevoegen}
-Om de navigatie te gebruiken moeten een \textbf{onCreate} methode worden toegevoegd aan het
+Om de navigatie te gebruiken, moet een \textbf{onCreate} methode worden toegevoegd aan het
 \textit{android/app/src/main/java/com/project/MainActivity.java} bestand.
 \begin{minted}{java}
 import android.os.Bundle;
@@ -25,7 +25,7 @@ public class MainActivity extends ReactActivity {
 \end{minted}
 
 \paragraph{3. Dependencies toevoegen}
-Om het laadscherm te gebruiken moeten de juiste dependencies worden toegevoegd aan het
+Om het laadscherm te gebruiken, moeten de juiste dependencies worden toegevoegd aan het
 \textit{android/app/build.gradle} bestand.
 \begin{minted}{java}
 dependencies {
@@ -35,7 +35,7 @@ dependencies {
 \end{minted}
 
 \paragraph{4. Laadscherm toevoegen}
-Om een eerste laadscherm te genereren kan volgend commando worden gebruikt:
+Om een eerste laadscherm te genereren, kan volgend commando worden gebruikt:
 \begin{minted}{bash}
 npx react-native generate-bootsplash path/to/icon.png
     --background-color "#000000" 
@@ -53,7 +53,7 @@ het \textit{android/app/src/main/res/values/styles.xml} bestand.
     <item name="postSplashScreenTheme">@style/AppTheme</item>
 </style>
 \end{minted}
-Om dan bij het opstarten van de applicatie het laadscherm eerst te tonen moet de volgende 
+Om bij het opstarten van de applicatie het laadscherm eerst te tonen, moet de volgende 
 lijn in het \textit{android/app/src/main/AndroidManifest.xml} bestand worden aangepast.
 \begin{minted}{xml}
 <application
@@ -66,7 +66,7 @@ lijn in het \textit{android/app/src/main/AndroidManifest.xml} bestand worden aan
   <!-- ... -->
 </application>
 \end{minted}
-Tot slot kan het laadscherm geïnitaliseerd worden door volgende regels toe te voegen aan het
+Tot slot kan het laadscherm geïnitialiseerd worden door volgende regels toe te voegen aan het
 \textit{android/app/src/main/java/com/project/MainApplication.java} bestand.
 \begin{minted}{java}
 import com.zoontek.rnbootsplash.RNBootSplash;
@@ -83,7 +83,7 @@ public class MainApplication extends Application implements ReactApplication {
 \end{minted}
 
 \paragraph{5. Navigatie toevoegen}
-Om de navigatie te gebruiken moeten alle componenten in een 
+Om de navigatie te gebruiken, moeten alle componenten in een 
 \textbf{NavigationContainer} component worden gestoken. Dit wordt gedaan door volgende regels toe te voegen
 aan het \textit{App.tsx} bestand:
 \begin{minted}{javascript}
@@ -99,7 +99,7 @@ export default function App() {
 \end{minted}
 
 \paragraph{6. Bottom Tab navigatie toevoegen}
-Om de bottom tab navigatie te gebruiken moet een \textbf{createBottomTabNavigator}
+Om de bottom tab navigatie te gebruiken, moet een \textbf{createBottomTabNavigator}
 functie worden aangemaakt. Dit wordt gedaan door de volgende regels toe te voegen aan het \textit{App.tsx} bestand:
 \begin{minted}{javascript}
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -127,8 +127,8 @@ Daarna kunnen de verschillende schermen worden toegevoegd aan de \textbf{Tab.Nav
 
 \paragraph{7. Applicatie maken}
 Met deze informatie wordt een applicatie met een laadscherm aangemaakt.
-Het laadscherm zal verdwijnen vanaf de 
-applicatie gerenderd is. Daarna is er een bottom tab navigatie dat navigeert tussen 
+Het laadscherm zal verdwijnen zodra de 
+applicatie gerenderd is. Daarna is er een bottom tab navigatie die navigeert tussen 
 de drie verschillende schermen. 
 \begin{figure}[H]
     \centering

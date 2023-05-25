@@ -9,10 +9,10 @@ In dit hoofdstuk worden de basisfunctionaliteiten van native en cross-platform v
 Met de resultaten kan dan een gepaste conclusie worden gevormd.
 
 \section{Native}
-\subsubsection{Wat hebben we nodig}
+\subsubsection{Wat is er nodig}
 Normaal gezien wordt er voor de functionaliteiten altijd een of andere library of API gebruikt. 
 Enkel bij de navigatie is dit niet nodig. Voor de navigatie wordt het 
-startproject dat Android Studio aanbiedt gebruikt, hierin zit de navigatie al geïmplementeerd 
+startproject gebruikt dat Android Studio aanbiedt, hierin zit de navigatie al geïmplementeerd 
 \ref{par:basisfunctionaliteiten}. Voor het laadscherm dat getoond wordt bij het opstarten van 
 de applicatie zal de SplashScreen API gebruikt worden die wordt aangeboden door Android Studio.
 
@@ -34,7 +34,7 @@ de applicatie zal de SplashScreen API gebruikt worden die wordt aangeboden door 
 
 
 \section{Cross-platform}
-\subsubsection{Wat hebben we nodig}
+\subsubsection{Wat is er nodig}
 Bij React Native is er voor de navigatie een library nodig. Hiervoor wordt
 React Navigation gebruikt. Voor het laadscherm wordt react-native-bootsplash library gebruikt. 
 Met behulp van deze libraries kan er genavigeerd worden in de applicatie en kan er een laadscherm
@@ -63,11 +63,11 @@ performantie heeft dan cross-platform ontwikkeling voor de basisfunctionaliteite
 opstarttijd van de native applicatie is sneller, met een gemiddelde van 2,58 seconden 
 in vergelijking met 2,84 seconden bij cross-platform. Daarnaast heeft de native 
 applicatie een lager gemiddeld geheugengebruik van ongeveer 81MB, terwijl de cross-platform 
-applicatie gemiddeld 202MB aan geheugen vereist. Desondanks beide applicaties
+applicatie gemiddeld 202MB aan geheugen vereist. Desondanks dat beide applicaties een
 vergelijkbaar CPU-gebruik hebben, toont dit onderzoek aan dat native applicaties voor
 basisfunctionaliteiten beter zijn op vlak van opstartsnelheid en geheugenverbruik.
 \\\\
-\begin{tabular}{ |p{3cm}||p{6cm}|p{6cm}| }
+\begin{tabular}{ |p{3cm}||p{5cm}|p{5cm}| }
     \hline
      & Native (Android) & Cross-platform (React Native) \\
     \hline
@@ -90,19 +90,19 @@ basisfunctionaliteiten beter zijn op vlak van opstartsnelheid en geheugenverbrui
     \hline
 \end{tabular}
 \\\\
-Met het behulp van Android Studio en het startproject dat Android Studio aanbied, 
+Met behulp van Android Studio en het startproject dat Android Studio aanbiedt, 
 kunnen de basisfunctionaliteiten sneller worden geïmplementeerd bij 
-native applicaties dan bij cross-patform. Dit komt omdat installatieproces van 
+native applicaties dan bij cross-platform. Dit komt omdat het installatieproces van 
 de gebruikte libraries bij cross-platform meer werk vraagt dan bij native applicaties. 
-Daarnaast moet de naviagtie bij cross-platform zelf worden opgebouwd wat opnieuw meer tijd vraagt.
+Daarnaast moet de navigatie bij cross-platform zelf worden opgebouwd wat opnieuw meer tijd vraagt.
 \\\\
 Op het gebied van schaalbaarheid zijn beide ontwikkelmethodes een goede keuze aangezien 
 het bij beide ontwikkelmethodes gemakkelijk is om de navigatiecomponenten uit te breiden met extra schermen. 
 Daarnaast is het ook gemakkelijk om bestaande schermen te hergebruiken.
 \\\\
-Op vlak van performantie gaat de voorkeur naar native. Daarnaast als er rekening wordt gehouden met het feit dat 
-native enkel Android bevat gaat de voorkeur op vlak van ontwikkeltijd naar cross-platform.
-Op het vlak van schaalbaarheid is er geen voorkeur tussen beide ontwikkelmethodes.
+Op vlak van performantie gaat de voorkeur naar native. Op vlak van ontwikkeltijd gaat de voorkeur naar cross-platform
+als er rekening wordt gehouden met het feit dat native enkel Android bevat. Op vlak van schaalbaarheid 
+is er geen voorkeur tussen beide ontwikkelmethodes.
 
 
 

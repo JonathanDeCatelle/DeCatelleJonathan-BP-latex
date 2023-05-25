@@ -1,5 +1,5 @@
 \subparagraph{1. Dependancy installeren}
-Eerst moet de React Native Firebase "app" module aan de root van het React Native project worden toegevoegd. 
+Eerst moet de React Native Firebase app module aan de root van het React Native project worden toegevoegd. 
 Dit wordt gedaan met volgend commando:
 \begin{minted}{bash}
 npm install --save @react-native-firebase/app
@@ -7,12 +7,12 @@ npm install --save @react-native-firebase/app
 
 \subparagraph{2. Configuratie bestanden toevoegen}
 Nadat de dependancy is toegevoegd, moet er een nieuw Firebase project worden aangemaakt. 
-Om deze aan te maken moet de package naam worden meegegeven die te vinden is in het 
+Om deze aan te maken, moet de package naam worden meegegeven die te vinden is in het 
 \textit{android/app/build.gradle} bestand als 
-\textbf{applicationId}. Optioneel kan de naam van de applicatie mee worden gegeven.
+\textbf{applicationId}. Optioneel kan de naam van de applicatie worden meegegeven.
 \\\\
 Nadat de Android applicatie is aangemaakt, moet het \textbf{google-services.json} bestand worden gedownload. 
-Deze wordt dan geplaatst in de \textit{android/app} folder.
+Dit wordt dan geplaatst in de \textit{android/app} folder.
 
 \subparagraph{3. Firebase configureren}
 Om Firebase het configuratiebestand nu te laten gebruiken, moet de google-services plugin worden toegevoegd aan 
@@ -25,11 +25,11 @@ buildscript {
     }
 }
 \end{minted}
-Tot slot moet de plugin aan het \textit{android/app/build.gradle} bestand worden toegevoegd.
+Daarna moet de plugin aan het \textit{android/app/build.gradle} bestand worden toegevoegd.
 \begin{minted}{java}
 apply plugin: "com.google.gms.google-services"
 \end{minted}
-En worden deze ook aan de dependancies toegevoegd in hetzelfde \textit{android/app/build.gradle} bestand.
+Tot slot wordt deze ook aan de dependancies toegevoegd in hetzelfde \textit{android/app/build.gradle} bestand.
 \begin{minted}{java}
 dependencies {
     // andere dependancies

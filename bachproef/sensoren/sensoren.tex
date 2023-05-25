@@ -9,7 +9,7 @@ In dit hoofdstuk wordt het gebruik van sensoren bij native en cross-platform ver
 Met de resultaten kan dan een gepaste conclusie worden gevormd.
 
 \section{Native}
-\subsubsection{Wat hebben we nodig}
+\subsubsection{Wat is er nodig}
 Om toegang te krijgen tot de sensoren bij native ontwikkeling moeten er geen extra libraries of tools worden gebruikt.
 Android studio bied een aantal klassen aan die gebruikt kunnen worden. Deze klassen zijn SensorManager, 
 SensorEventListener en SensorEvent. Dankzij deze klassen kan de data van sensoren zoals accelerometer en 
@@ -33,7 +33,7 @@ gyroscoop worden opgevraagd.
 
 
 \section{Cross-platform}
-\subsubsection{Wat hebben we nodig}
+\subsubsection{Wat is er nodig}
 Om bij React Native toegang te krijgen tot de sensoren moet er gebruik worden gemaakt van de react-native-sensors library.
 Deze library biedt onder andere toegang tot de accelerometer en gyroscoop. Het is een wrapper voor de
 native sensoren van Android en iOS. 
@@ -57,16 +57,16 @@ native sensoren van Android en iOS.
 
 \section{Conclusie}
 De tijdsduur van het ophalen van de data van de sensoren is bij native veel sneller dan bij cross-platform.
-Dit komt omdat de library die we gebruiken bij cross-platform een wrapper is voor de native sensoren.
+Dit komt omdat de library die gebruikt wordt bij cross-platform een wrapper is voor de native sensoren.
 Hierdoor moet de data van de sensoren eerst naar de wrapper gestuurd worden en dan pas naar de applicatie.
 Bij native is dit niet het geval. De data van de sensoren wordt rechtstreeks naar de applicatie gestuurd.
 Het ophalen van data is daardoor gemiddeld 10ms trager bij cross-platform dan bij native.
 \\\\
-Bij het geheugengebruik is er geen verschil tussen het ophalen van sensoren data en wanneer er 
-niks gebeurd in de applicatie. Desondanks dat er geen invloed is om het ophalen van data bij 
-Android en React Native zien we wel dat er 121.59\% meer geheugen wordt gebruikt bij React Native dan 
-bij Android (88MB in vergelijking met gemiddeld 195MB). Dit komt omdat we bij cross-platform een extra 
-library moeten implementeren. Deze library neemt ook geheugen in beslag.
+Bij het geheugengebruik is er geen verschil tussen het ophalen van sensoren data en evenmin wanneer er 
+niks gebeurt in de applicatie. Desondanks dat er geen invloed is bij het ophalen van data bij 
+Android en React Native wordt er 121.59\% meer geheugen gebruikt bij React Native dan 
+bij Android (88MB in vergelijking met gemiddeld 195MB). Dit komt omdat cross-platform een extra 
+library moet implementeren. Deze library neemt ook geheugen in beslag.
 \\\\
 Bij het CPU gebruik zijn er onderling tussen de accelerometer en gyroscoop ook verschillen. Bij native 
 heeft de accelerometer geen piek maar blijft deze constant op gemiddeld 23\% CPU gebruik. Bij cross-platform heeft
