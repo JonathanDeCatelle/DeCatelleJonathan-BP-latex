@@ -1,6 +1,6 @@
 \paragraph{1. Library toevoegen}
-Om de navigatie en het laadscherm te kunnen gebruiken moeten we de juiste libraries aan 
-de root van ons project toevoegen.
+Om de navigatie en het laadscherm te kunnen gebruiken moeten de juiste libraries aan 
+de root van het project worden toegevoegd. Deze worden toegevoegd met volgende commandos:
 \begin{minted}{bash}
 npm install @react-navigation/native
 npm install react-native-screens
@@ -9,9 +9,8 @@ npm install @react-navigation/bottom-tabs
 \end{minted}
 
 \paragraph{2. onCreate methode toevoegen}
-Om de navigatie te kunnen gebruiken moeten we een \textbf{onCreate} methode toevoegen aan het
-\textit{android/app/src/main/java/com/project/MainActivity.java} bestand. Dit doen we door de 
-volgende regels toe te voegen.
+Om de navigatie te gebruiken moeten een \textbf{onCreate} methode worden toegevoegd aan het
+\textit{android/app/src/main/java/com/project/MainActivity.java} bestand.
 \begin{minted}{java}
 import android.os.Bundle;
 // ...
@@ -26,8 +25,8 @@ public class MainActivity extends ReactActivity {
 \end{minted}
 
 \paragraph{3. Dependencies toevoegen}
-Om het laadscherm te kunnen gebruiken moeten we de juiste dependencies toevoegen aan het
-\textit{android/app/build.gradle} bestand. Dit doen we door de volgende regels toe te voegen.
+Om het laadscherm te gebruiken moeten de juiste dependencies worden toegevoegd aan het
+\textit{android/app/build.gradle} bestand.
 \begin{minted}{java}
 dependencies {
   // Andere dependencies
@@ -36,7 +35,7 @@ dependencies {
 \end{minted}
 
 \paragraph{4. Laadscherm toevoegen}
-Eerst genereren we een Laadscherm met behulp van een commando aangeboden door de library.
+Om een eerste laadscherm te genereren kan volgend commando worden gebruikt:
 \begin{minted}{bash}
 npx react-native generate-bootsplash path/to/icon.png
     --background-color "#000000" 
@@ -45,8 +44,8 @@ npx react-native generate-bootsplash path/to/icon.png
     --flavor=main 
     --platforms=android,ios
 \end{minted}
-Daarna maken we een stijl om het laadschem te tonen. Dit doen we door de volgende regels toe te
-voegen aan het \textit{android/app/src/main/res/values/styles.xml} bestand.
+Daarna moet er een stijl worden aangemaakt om het laadschem te tonen. Dit gebeurt in 
+het \textit{android/app/src/main/res/values/styles.xml} bestand.
 \begin{minted}{xml}
 <style name="BootTheme" parent="Theme.SplashScreen">
     <item name="windowSplashScreenBackground">@color/bootsplash_background</item>
@@ -54,8 +53,8 @@ voegen aan het \textit{android/app/src/main/res/values/styles.xml} bestand.
     <item name="postSplashScreenTheme">@style/AppTheme</item>
 </style>
 \end{minted}
-Om het laadscherm dan als eerste te tonen moeten we de volgende regels toevoegen aan het
-\textit{android/app/src/main/AndroidManifest.xml} bestand.
+Om dan bij het opstarten van de applicatie het laadscherm eerst te tonen moet de volgende 
+lijn in het \textit{android/app/src/main/AndroidManifest.xml} bestand worden aangepast.
 \begin{minted}{xml}
 <application
   android:name=".MainApplication"
@@ -67,7 +66,7 @@ Om het laadscherm dan als eerste te tonen moeten we de volgende regels toevoegen
   <!-- ... -->
 </application>
 \end{minted}
-Tot slot initialiseren we het laadscherm door de volgende regels toe te voegen aan het
+Tot slot kan het laadscherm geïnitaliseerd worden door volgende regels toe te voegen aan het
 \textit{android/app/src/main/java/com/project/MainApplication.java} bestand.
 \begin{minted}{java}
 import com.zoontek.rnbootsplash.RNBootSplash;
@@ -84,9 +83,9 @@ public class MainApplication extends Application implements ReactApplication {
 \end{minted}
 
 \paragraph{5. Navigatie toevoegen}
-Om de navigatie te kunnen gebruiken moeten we alle alle componenten in een 
-\textbf{NavigationContainer} component steken. Dit doen we door de volgende regels toe te voegen
-aan het \textit{App.tsx} bestand.
+Om de navigatie te gebruiken moeten alle componenten in een 
+\textbf{NavigationContainer} component worden gestoken. Dit wordt gedaan door volgende regels toe te voegen
+aan het \textit{App.tsx} bestand:
 \begin{minted}{typescript}
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -100,8 +99,8 @@ export default function App() {
 \end{minted}
 
 \paragraph{6. Bottom Tab navigatie toevoegen}
-Om de bottom tab navigatie te kunnen gebruiken moeten we een \textbf{createBottomTabNavigator}
-functie aanmaken. Dit doen we door de volgende regels toe te voegen aan het \textit{App.tsx} bestand.
+Om de bottom tab navigatie te gebruiken moet een \textbf{createBottomTabNavigator}
+functie worden aangemaakt. Dit wordt gedaan door de volgende regels toe te voegen aan het \textit{App.tsx} bestand:
 \begin{minted}{typescript}
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -117,7 +116,7 @@ export default function App() {
   );
 }
 \end{minted}
-Daarna kunnen we nog de verschillende schermen toevoegen aan de \textbf{Tab.Navigator} component.
+Daarna kunnen de verschillende schermen worden toegevoegd aan de \textbf{Tab.Navigator} component.
 \begin{minted}{typescript}
 <Tab.Navigator>
     <Tab.Screen name="Home" component={HomeScreen} />
@@ -127,7 +126,8 @@ Daarna kunnen we nog de verschillende schermen toevoegen aan de \textbf{Tab.Navi
 \end{minted}
 
 \paragraph{7. Applicatie maken}
-Met deze informatie maken we een applicatie met een laadscherm dat zal verdwijnen vanaf de 
+Met deze informatie wordt een applicatie met een laadscherm aangemaakt.
+Het laadscherm zal verdwijnen vanaf de 
 applicatie gerenderd is. Daarna is er een bottom tab navigatie dat navigeert tussen 
 de drie verschillende schermen. 
 \begin{figure}[H]
