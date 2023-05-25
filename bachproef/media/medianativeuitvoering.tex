@@ -1,14 +1,14 @@
 \paragraph{1. Permissions toevoegen}
-Indien de applicatie ervoor moet zorgen dat het scherm niet uitvalt als er 
-audio of video afspeelt, dan voegen we volgende permission toe aan het 
+Indien het scherm van de applicatie niet mag uitvallen als er 
+audio of video afspeelt, dan moet volgende permission worden toegevoegd aan het 
 \textbf{AndroidManifest.xml} bestand.
 \begin{minted}{xml}
 <uses-permission android:name="android.permission.WAKE_LOCK" />
 \end{minted}
 
 \paragraph{2. Variabelen initialiseren, vinden en linken}
-Daarna maken we een variabele aan voor de MediaPlayer en de VideoView. Deze 
-variabelen worden dan gelinkt aan de juiste elementen in de layout.
+Om de MediaPlayer en VideoView te gebruiken, moeten er eerst variabelen voor 
+worden aangemaakt. Daarna moeten de variabelen gelinkt worden met het juiste element in de layout.
 \begin{minted}{kotlin}
 private var mediaPlayer: MediaPlayer? = null
 private var videoView: VideoView? = null
@@ -24,9 +24,9 @@ override fun onCreate(savedInstanceState: Bundle?) {
 \end{minted}
 
 \paragraph{3. Audio en video afspelen, pauzeren en stoppen}
-Om audio en video af te spelen, pauzeren en stoppen maken we gebruik van de
+Om audio en video af te spelen, pauzeren en stoppen worden de 
 \textbf{start()}, \textbf{pause()} en \textbf{stop()} methodes van de
-MediaPlayer en de VideoView.
+MediaPlayer en de VideoView gebruikt.
 \begin{minted}{kotlin}
 // Audio
 mediaPlayer?.start()
@@ -38,7 +38,7 @@ videoView?.start()
 videoView?.pause()
 videoView?.stopPlayback()
 \end{minted}
-Deze kunnen we dan koppelen aan een knoppen in de layout om de audio en video
+Deze worden dan gekoppeld aan een knop in de layout om de audio en video
 af te spelen, pauzeren en stoppen.
 \begin{minted}{kotlin}
 val playButton = findViewById<Button>(R.id.playButton)
@@ -49,8 +49,8 @@ playButton.setOnClickListener {
 \end{minted}
 
 \paragraph{4. Applicatie maken}
-Nu kunnen we een applicatie maken die audio en video afspeelt, pauzeert en
-stopt. Deze bestaat uit een layout met telkens drie \textbf{Button} componenten 
+Nu wordt de applicatie aangemaakt om audio en video af te spelen, pauzeren en
+stoppen. Deze bestaat uit een layout met telkens drie \textbf{Button} componenten 
 voor het starten, pauzeren en stoppen voor zowel de audio en video. De video 
 wordt afgespeeld in een \textbf{VideoView} component. De audio wordt afgespeeld
 met een \textbf{MediaPlayer} object.
