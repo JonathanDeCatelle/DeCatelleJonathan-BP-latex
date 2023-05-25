@@ -1,5 +1,5 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{export}\PYG{+w}{ }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{createNotification}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{async}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nx}{title}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{string}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{body}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{string}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{k}{export}\PYG{+w}{ }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{createNotification}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{async}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nx}{title}\PYG{o}{:}\PYG{+w}{ }\PYG{n+nx}{string}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{body}\PYG{o}{:}\PYG{+w}{ }\PYG{n+nx}{string}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
 \PYG{+w}{  }\PYG{k}{await}\PYG{+w}{ }\PYG{n+nx}{notifee}\PYG{p}{.}\PYG{n+nx}{displayNotification}\PYG{p}{(\PYGZob{}}
 \PYG{+w}{    }\PYG{n+nx}{title}\PYG{p}{,}
 \PYG{+w}{    }\PYG{n+nx}{body}\PYG{p}{,}

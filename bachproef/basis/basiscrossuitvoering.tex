@@ -86,7 +86,7 @@ public class MainApplication extends Application implements ReactApplication {
 Om de navigatie te gebruiken moeten alle componenten in een 
 \textbf{NavigationContainer} component worden gestoken. Dit wordt gedaan door volgende regels toe te voegen
 aan het \textit{App.tsx} bestand:
-\begin{minted}{typescript}
+\begin{minted}{javascript}
 import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
@@ -101,7 +101,7 @@ export default function App() {
 \paragraph{6. Bottom Tab navigatie toevoegen}
 Om de bottom tab navigatie te gebruiken moet een \textbf{createBottomTabNavigator}
 functie worden aangemaakt. Dit wordt gedaan door de volgende regels toe te voegen aan het \textit{App.tsx} bestand:
-\begin{minted}{typescript}
+\begin{minted}{javascript}
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
@@ -117,7 +117,7 @@ export default function App() {
 }
 \end{minted}
 Daarna kunnen de verschillende schermen worden toegevoegd aan de \textbf{Tab.Navigator} component.
-\begin{minted}{typescript}
+\begin{minted}{javascript}
 <Tab.Navigator>
     <Tab.Screen name="Home" component={HomeScreen} />
     <Tab.Screen name="Second" component={SecondScreen} />

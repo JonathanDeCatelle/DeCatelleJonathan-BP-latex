@@ -1,9 +1,9 @@
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{track}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{    }\PYG{n+nx}{url}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{require}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZsq{}}\PYG{p}{),}
+\PYG{+w}{    }\PYG{n+nx}{url}\PYG{o}{:}\PYG{+w}{ }\PYG{n+nx}{require}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZsq{}}\PYG{p}{),}
 \PYG{+w}{    }\PYG{n+nx}{title}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Title\PYGZsq{}}\PYG{p}{,}
 \PYG{+w}{    }\PYG{n+nx}{artist}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Artist\PYGZsq{}}\PYG{p}{,}
-\PYG{+w}{    }\PYG{n+nx}{artwork}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{require}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZsq{}}\PYG{p}{),}
-\PYG{+w}{    }\PYG{n+nx}{duration}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{100}
+\PYG{+w}{    }\PYG{n+nx}{artwork}\PYG{o}{:}\PYG{+w}{ }\PYG{n+nx}{require}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZsq{}}\PYG{p}{),}
+\PYG{+w}{    }\PYG{n+nx}{duration}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{100}
 \PYG{p}{\PYGZcb{};}
 \end{Verbatim}

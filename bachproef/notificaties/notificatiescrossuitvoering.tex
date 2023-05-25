@@ -1,19 +1,17 @@
 \paragraph{1. Library toevoegen}
-Als eerst voegen we Notifee toe aan de root van ons project.
+Eerst moet de Notifee library aan de root van ons project worden toegevoegd. 
+Deze wordt toegevoegd met volgende commando:
 \begin{minted}{bash}
-  npm install --save @notifee/react-native
-\end{minted}
-Nu kunnen we de library importeren in de bestanden waar we deze nodig hebben.
-\begin{minted}{typescript}
-  import notifee from '@notifee/react-native';
+npm install --save @notifee/react-native
 \end{minted}
 
 \paragraph{2. Toestemming vragen \& channel aanmaken}
-Nog voor we een notificatie kunnen tonen moeten we eerst de toestemming vragen aangezien dit bij React Native 
-niet automatisch gebeurt zoals bij Android Studio. Ook moeten we net zoals bij Android Studio 
-een channel aanmaken om de notificaties te groeperen. Het maakt niet uit wanneer dit gebeurt, maar 
-het moet wel gebeuren voor er een notificatie wordt getoond. Dus best zo vroeg mogelijk in de applicatie.
-\begin{minted}{typescript}
+Nog voor een notificatie kan getoond worden moet er eerst toestemming worden gevraagd. 
+Aangezien dit bij React Native niet automatisch gebeurt zoals bij Android moet de 
+toestemming programmatisch gevraagd worden. Daarnaast zal ook een channel moeten aangemaakt worden.
+Net zoals bij Android maakt het niet uit wanneer dit gebeurt maar het moet wel gebeuren 
+voor dat er notificaties worden gestuurd. Dus best zo vroeg mogelijk in de applicatie.
+\begin{minted}{javascript}
 export const notificationsSetup = async () => {
   const PERMISSION = await notifee.requestPermission();
 
@@ -30,9 +28,9 @@ export const notificationsSetup = async () => {
 \end{minted}
 
 \paragraph{3. Notificatie aanmaken}
-Bij React Native wordt de notificatie ook direct getoond bij het maken ervan. Net zoals bij Android Studio 
-geven we de naam, description, channelId en optioneel een icon (default ic\_launcher). 
-\begin{minted}{typescript}
+Bij React Native worden notificaties direct getoond bij het maken ervan. Net zoals bij Android 
+wordt er een naam, description, channelId en optioneel een icon (default ic\_launcher) meegegeven. 
+\begin{minted}{javascript}
 export const createNotification = async (title: string, body: string) => {
   await notifee.displayNotification({
     title,

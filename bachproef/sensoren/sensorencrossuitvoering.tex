@@ -26,16 +26,16 @@ De package is nu volledig geïnstalleerd en klaar voor gebruik.
 
 \paragraph{4. Sensor gebruiken}
 Eerst wordt de library in het bestand waar we deze nodig hebben geïmporteerd.
-\begin{minted}{typescript}
+\begin{minted}{javascript}
 import { accelerometer, gyroscope } from "react-native-sensors";
 \end{minted}
 Daarna worden twee variabelen die de data van de sensoren zal bewaren aangemaakt.
-\begin{minted}{typescript}
+\begin{minted}{javascript}
 const [accelerometerData, setAccelerometerData] = useState({});
 const [gyroscopeData, setGyroscopeData] = useState({});
 \end{minted}
 Tot slot kunnen deze variabelen gebruikt worden om de data van de sensoren op te vangen.
-\begin{minted}{typescript}
+\begin{minted}{javascript}
 const getData = () => {
     setIsFetchingData(true);
 

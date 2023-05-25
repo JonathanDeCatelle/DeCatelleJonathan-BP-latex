@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{+w}{  }\PYG{k}{import}\PYG{+w}{ }\PYG{n+nx}{notifee}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}@notifee/react\PYGZhy{}native\PYGZsq{}}\PYG{p}{;}
-\end{Verbatim}

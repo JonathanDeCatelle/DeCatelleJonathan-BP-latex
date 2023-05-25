@@ -8,13 +8,13 @@
 \PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{startFetchingData}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{()}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
 \PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nx}{isFetchingData}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
 \PYG{+w}{        }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{accelerometerSubscription}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{o+ow}{new}\PYG{+w}{ }\PYG{n+nx}{Accelerometer}\PYG{p}{(\PYGZob{}}
-\PYG{+w}{            }\PYG{n+nx}{updateInterval}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{100}\PYG{p}{,}\PYG{+w}{ }\PYG{c+c1}{// Verander dit indien nodig}
+\PYG{+w}{            }\PYG{n+nx}{updateInterval}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{100}\PYG{p}{,}\PYG{+w}{ }\PYG{c+c1}{// Verander dit indien nodig}
 \PYG{+w}{        }\PYG{p}{\PYGZcb{}).}\PYG{n+nx}{subscribe}\PYG{p}{((\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{y}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{z}\PYG{+w}{ }\PYG{p}{\PYGZcb{})}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
 \PYG{+w}{            }\PYG{c+c1}{// Doe iets met de accelerometerwaarden (x, y, z)}
 \PYG{+w}{        }\PYG{p}{\PYGZcb{});}
 
 \PYG{+w}{        }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{gyroscopeSubscription}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{o+ow}{new}\PYG{+w}{ }\PYG{n+nx}{Gyroscope}\PYG{p}{(\PYGZob{}}
-\PYG{+w}{        }\PYG{n+nx}{updateInterval}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{100}\PYG{p}{,}\PYG{+w}{ }\PYG{c+c1}{// Verander dit indien nodig}
+\PYG{+w}{        }\PYG{n+nx}{updateInterval}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{100}\PYG{p}{,}\PYG{+w}{ }\PYG{c+c1}{// Verander dit indien nodig}
 \PYG{+w}{        }\PYG{p}{\PYGZcb{}).}\PYG{n+nx}{subscribe}\PYG{p}{((\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{y}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{z}\PYG{+w}{ }\PYG{p}{\PYGZcb{})}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
 \PYG{+w}{            }\PYG{c+c1}{// Doe iets met de accelerometerwaarden (x, y, z)}
 \PYG{+w}{        }\PYG{p}{\PYGZcb{});}

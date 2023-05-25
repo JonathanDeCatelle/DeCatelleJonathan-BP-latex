@@ -36,7 +36,7 @@ await TrackPlayer.setupPlayer()
 \paragraph{4. Audio en video speler gebruiken}
 \subparagraph{4.1. Audio}
 Om de audio speler te gebruiken moet ereerst een \textbf{Track} object worden aangemaakt.
-\begin{minted}{typescript}
+\begin{minted}{javascript}
 const track = {
     url: require(''),
     title: 'Title',
@@ -46,12 +46,12 @@ const track = {
 };
 \end{minted}
 Daarna wordt deze aan het \textbf{TrackPlayer} object toegevoegd.
-\begin{minted}{typescript}
+\begin{minted}{javascript}
 await TrackPlayer.add(track);
 \end{minted}
 Nu is het mogelijk om de audio te starten, pauzeren en stoppen met behulp 
 van een aantal \textbf{<Button>} componenten.
-\begin{minted}{typescript}
+\begin{minted}{javascript}
 <Button title="Play" onPress={() => TrackPlayer.play()} />
 <Button title="Pause" onPress={() => TrackPlayer.pause()} />
 <Button title="Stop" onPress={() => TrackPlayer.stop()} />
@@ -59,12 +59,12 @@ van een aantal \textbf{<Button>} componenten.
 
 \subparagraph{4.2. Video}
 Om de video speler te gebruiken moet eerst een \textbf{<Video>} component worden aangemaakt.
-\begin{minted}{typescript}
+\begin{minted}{javascript}
 <Video source={require('')} />
 \end{minted}
 Nu is het mogelijk om de video te starten, pauzeren en stoppen met behulp
 van een aantal \textbf{<Button>} componenten.
-\begin{minted}{typescript}
+\begin{minted}{javascript}
 <Button title="Play" onPress={() => this.video.play()} />
 <Button title="Pause" onPress={() => this.video.pause()} />
 <Button title="Stop" onPress={() => this.video.stop()} />
