@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{\PYGZlt{}uses\PYGZhy{}permission}\PYG{+w}{ }\PYG{n+na}{android:name=}
+\PYG{+w}{    }\PYG{l+s}{\PYGZdq{}android.permission.ACCESS\PYGZus{}FINE\PYGZus{}LOCATION\PYGZdq{}}\PYG{+w}{ }\PYG{n+nt}{/\PYGZgt{}}
+\end{Verbatim}

@@ -15,7 +15,7 @@
 %onderzoek?
 
 \section{Hoofdonderzoeksvraag}
-In dit onderzoek werd er gezocht naar een antwoord op de hoofdonderzoeksvraag 
+In dit onderzoek werd er gezocht naar een antwoord op de hoofdonderzoeksvraag:
 \begin{itemize}
     \item Hoe verschillen de prestaties, schaalbaarheid en ontwikkeltijd van functionaliteiten tussen native en cross-platform ontwikkeling van mobiele applicaties?
 \end{itemize}
@@ -29,18 +29,18 @@ Over het algemeen is de ontwikkeltijd bij cross-platform langer dan bij native.
 Dit komt door de libraries die geïnstalleerd moeten worden, wat extra tijd in beslag neemt en meer 
 ruimte geeft voor fouten. Deze fouten moeten dan ook nog eens opgelost worden, wat ook weer extra tijd in beslag neemt.
 \\\\
-Daarnaast komt het ook omdat de React Native libraries de bestaande implementatie van de 
+De ontwikkeltijd is ook langer omdat de React Native libraries de bestaande implementatie van de 
 native platformen gebruiken en op verder bouwen. Hierdoor is er soms meer code nodig bij 
 cross-platform om dezelfde functionaliteit te krijgen.
 
 \subsubsection{Compiletijd}
 De compiletijd bij cross-platform is altijd langer dan bij native. Dit komt omdat er bij cross-platform
-een extra stap is bij het compileren. De code wordt eerst gecompileerd naar Javascript, en dan pas naar native.
+een extra stap is bij het compileren. De code wordt eerst gecompileerd naar Javascript, dan pas naar native.
 Bij native is er maar één stap, de code wordt gecompileerd naar native.
 \\\\
-Ondanks dat de compiletijd bij cross-platform langer is, is het niet altijd nodig om de applicatie te compileren.
+Ondanks het feit dat de compiletijd langer is bij cross-platform, is het niet altijd nodig om de applicatie te compileren.
 React Native heeft een hot reload functie, waardoor de applicatie niet gecompileerd moet worden bij het testen.
-Eenmaal de applicatie gecompileerd is, kunnen er veranderingen worden gedaan aan de code en deze worden dan
+Eenmaal de applicatie gecompileerd is, kunnen er veranderingen worden aangebracht aan de code en deze worden dan
 automatisch doorgevoerd in de applicatie. Dit is een groot voordeel bij het ontwikkelen van de applicatie,
 omdat er geen tijd verloren gaat aan het compileren van de applicatie.
 
@@ -49,8 +49,8 @@ omdat er geen tijd verloren gaat aan het compileren van de applicatie.
 Op het vlak van tijdsduur is er enkel een groot verschil bij het aanmaken van notificaties.
 Bij cross-platform duurt het aanmaken van een notificatie 24 keer langer dan bij native.
 Ook al is dit een groot verschil, het aanmaken van een notificatie duurt bij cross-platform 
-nog steeds maar 297ms seconden. Dit is nog steeds snel genoeg om de gebruiker niet te storen 
-aangezien dit gebeurt op de achtergrond. Daarnaast bij de andere functionaliteiten is er wel een verschil
+nog steeds maar 297ms. Dit is nog steeds snel genoeg om de gebruiker niet te storen 
+aangezien dit gebeurt op de achtergrond. Bij de andere functionaliteiten is er wel een verschil
 in tijdsduur, maar dit verschil is niet zo groot dat het storend is voor de gebruiker of dat het een 
 reden is om cross-platform niet te gebruiken.
 
@@ -59,16 +59,16 @@ Bij het CPU gebruik zijn de resultaten wisselvallig. Over het algemeen is het CP
 hoger dan bij native, maar dit is niet altijd het geval. Bij het gebruik van sensoren bijvoorbeeld is het CPU gebruik
 bij cross-platform lager dan bij native. Maar als we dan kijken naar het CPU gebruik bij het afspelen van audio en 
 video, dan is het CPU gebruik bij cross-platform hoger dan bij native. Bij het kiezen van een ontwikkelmethode is het 
-dus belangrijk om te kijken naar de functionaliteiten die gebruikt zullen worden in de applicatie. Afhankelijk 
-daarvan zal er een keuze gemaakt worden tussen native en cross-platform.
+dus belangrijk om te kijken naar de functionaliteiten die gebruikt zullen worden in de applicatie. 
+Deze zullen bepalend zijn voor de uiteindelijke keuze van de ontwikkelmethode.
 
 \subsubsection{Geheugengebruik}
 Op het vlak van geheugengebruik is nooit een merkbaar verschil geweest bij het uitvoeren van functionaliteiten 
 of wanneer de applicatie inactief is. Daarnaast was het gemiddelde geheugengebruik bij alle functionaliteiten 
 bij cross-platform veel hoger dan bij native. Het geheugengebruik bij cross-platform is gemiddeld 2,5 keer hoger
-dan bij native. Dit is een groot verschil, te danken aan de libraries die gebruikt worden bij cross-platform.
+dan bij native. Dit is een groot verschil, als gevolg van de libraries die gebruikt worden bij cross-platform.
 Alle extra libraries die gebruikt worden bij cross-platform nemen extra geheugen in beslag. Ook de React 
-Native library die altijd standaard is geïnstalleerd neemt extra geheugen in beslag. Dit is een nadeel bij
+Native library die altijd standaard is geïnstalleerd, neemt extra geheugen in beslag. Dit is een nadeel bij
 cross-platform, maar het is niet zo groot dat het een reden is om cross-platform niet te gebruiken aangezien 
 de meeste smartphones tegenwoordig genoeg geheugen hebben om cross-platform applicatie te runnen zonder dat
 de gebruiker hier iets van merkt.
@@ -76,7 +76,7 @@ de gebruiker hier iets van merkt.
 \subsection{Schaalbaarheid}
 \subsubsection{Complexiteit}
 Over het algemeen is de complexiteit gelijkaardig bij native en cross-platform. Bij cross-platform is er wel
-meer complexiteit bij het opzetten van de applicatie, maar dit is een eenmalige complexiteit. Er bestaan wel ook 
+meer complexiteit bij het opzetten van de applicatie, maar dit is een eenmalige complexiteit. Er bestaan wel 
 complexe libraries bij cross-platform, maar deze zijn niet verplicht om te gebruiken.
 
 \subsubsection{Herbruikbaarheid}
@@ -86,40 +86,40 @@ gecentraliseerde plaats de code op te schalen. Het is ook mogelijk om de code te
 andere applicaties.
 
 \section{Deelonderzoeksvragen}
-Naast de hoofdonderzoeksvraag zijn er ook aantal deelonderzoeksvragen waar er een antwoord op proberen 
-geven dankzij het uitvoeren van dit onderzoek. 
+Naast de hoofdonderzoeksvraag zijn er twee deelonderzoeksvragen waar er een antwoord op gezocht werd 
+bij het uitvoeren van dit onderzoek. 
 \begin{itemize}
     \item Zijn er functionaliteiten die cross-platform niet ondersteunen?
     \item Zijn er functionaliteiten bij cross-platform waarbij de performantie de functionaliteit onbruikbaar maakt?
 \end{itemize}
-Bij de vraag of dat er functionaliteiten zijn die cross-platform niet ondersteund, 
+Bij de vraag of er functionaliteiten zijn die cross-platform niet ondersteunt, 
 is er gebleken dat dit niet het geval is. Alle functionaliteiten die in dit onderzoek zijn geïmplementeerd
 waren mogelijk bij cross-platform. Bij sommige functionaliteiten had cross-platform meerdere libraries 
-die de functionaliteit ondersteunden, terwijl er bij native altijd maar één implementatie mogelijk is.
+die de functionaliteit ondersteunden, terwijl er bij native altijd maar één implementatie mogelijk was.
 \\\\
 Bij de vraag of er functionaliteiten onbruikbaar zijn bij cross-platform ontwikkeling vanwege de performantie, 
-is de conclusie getrokken dat dit niet het geval is. Alle functionaliteiten die in dit onderzoek zijn geïmplementeerd
+is de conclusie getrokken dat dit niet het geval is. Alle functionaliteiten die in dit onderzoek zijn geïmplementeerd,
 waren bruikbaar bij cross-platform. Er was wel altijd een verschil in performantie tussen native en cross-platform,
 maar dit verschil was nooit zo groot dat de functionaliteit onbruikbaar was.
 
 \section{Wat nu?}
 Op vlak van performantie is er duidelijk een verschil tussen native en cross-platform. 
 Dit roept de vraag op of dit bij alle functionaliteiten het geval zal zijn, 
-en of dat er zelf functionaliteiten zijn die beter presteren bij cross-platform. 
+en of er zelfs functionaliteiten zijn die beter presteren bij cross-platform. 
 Het kan ook zijn dat cross-platform frameworks altijd met een achterstand zullen zitten op native frameworks.
 Daarom zijn dit soort onderzoeken belangrijk, om een inzicht te krijgen in de vooruitgang van cross-platform frameworks.
 \\\\
 Het onderzoek kan ook uitgebreid worden naar andere cross-platform frameworks zoals Flutter of 
 .NET MAUI. Het kan zijn dat deze frameworks beter presteren op vlak van performantie zonder te 
 comprimeren op de ontwikkeltijd en schaalbaarheid. Het onderzoek kan ook uitgebreid worden 
-naar andere native frameworks zoals Java of zelf andere native platformen zoals IOS. 
-De mogelijkheden om dit onderzoek uit te breiden of voort te zetten zijn eindeloos.
+naar andere native frameworks zoals Java of zelfs andere native platformen zoals IOS. 
+Eigenlijk zin de mogelijkheden om dit onderzoek uit te breiden of voort te zetten zijn eindeloos.
 \\\\
 Het debat over native en cross-platform zal altijd blijven bestaan. Er komen steeds nieuwe frameworks
 en technologieën bij die het debat weer doen oplaaien. Een antwoord op de vraag welke 
-ontwikkelingsmethode/framework het beste is, zal er nooit komen. Dit soort onderzoeken 
-kan een ontwikkelaar alleen maar helpen om een doordachte keuze te maken 
-bij het kiezen van een technologie voor zijn project.
+ontwikkelingsmethode/framework uiteindelijk het beste is, zal er nooit komen. Dit soort onderzoeken 
+echter kan een ontwikkelaar wel helpen om een doordachte keuze te maken 
+bij het kiezen van een technologie voor zijn eigen specifieke project.
 
 
 

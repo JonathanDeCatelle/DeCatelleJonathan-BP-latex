@@ -15,7 +15,7 @@
 \PYG{+w}{    }\PYG{p}{\PYGZcb{}}
 
 \PYG{+w}{    }\PYG{k+kd}{override}\PYG{+w}{ }\PYG{k+kd}{fun}\PYG{+w}{ }\PYG{n+nf}{onAccuracyChanged}\PYG{p}{(}\PYG{n}{sensor}\PYG{p}{:}\PYG{+w}{ }\PYG{n}{Sensor?,}\PYG{+w}{ }\PYG{n}{accuracy}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kt}{Int}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{c+c1}{// Niet nodig voor deze demo}
+\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{c+c1}{// Niet nodig bij dit onderzoek}
 \PYG{+w}{    }\PYG{p}{\PYGZcb{}}
 \PYG{p}{\PYGZcb{}}
 \end{Verbatim}

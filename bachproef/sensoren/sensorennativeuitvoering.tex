@@ -1,8 +1,9 @@
-\paragraph{1. Permissions toevoegen}
+\paragraph{1. Permission toevoegen}
 Om toegang te krijgen tot de sensoren moet er een user-permission toegevoegd worden aan het 
-AndroidManifest.xml bestand. Deze permission gaat over de algemene betrekking tot de sensoren.
+AndroidManifest.xml bestand.
 \begin{minted}{xml}
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name=
+    "android.permission.ACCESS_FINE_LOCATION" />
 \end{minted}
 
 \paragraph{2. SensorManager initialiseren}
@@ -25,7 +26,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 \end{minted}
 
 \paragraph{3. SensorEventListener initialiseren}
-Daarna de SensorEventListener worden aangemaakt hiervoor wordt de onSensorChanged methode gebruikt.
+Daarna wordt de SensorEventListener aangemaakt, hiervoor wordt de onSensorChanged methode gebruikt.
 \begin{minted}{kotlin}
 private val sensorEventListener = object : SensorEventListener {
     override fun onSensorChanged(event: SensorEvent) {
@@ -43,7 +44,7 @@ private val sensorEventListener = object : SensorEventListener {
     }
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-        return // Niet nodig voor deze demo
+        return // Niet nodig bij dit onderzoek
     }
 }
 \end{minted}
@@ -59,8 +60,8 @@ fetchButton.setOnClickListener {
 \end{minted}
 
 \paragraph{4. Applicatie maken}
-Met deze informatie wordt een applicatie ogebouwd die de data van sensoren 
-ophaald. De applicatie bestaat uit twee \textbf{TextView} componenten voor de data van de 
+Met deze informatie wordt een applicatie opgebouwd die de data van sensoren 
+ophaalt. De applicatie bestaat uit twee \textbf{TextView} componenten voor de data van de 
 accelerometer en gyroscoop en tot slot twee \textbf{Button} componenten om de data op te halen. 
 Als de knoppen ingedrukt worden, dan worden de setOnClickListener methodes aangeroepen.
 In de onSensorChanged methode wordt de data van de sensoren opgehaald en in de TextViews

@@ -1,5 +1,5 @@
 \paragraph{1. Dependancy toevoegen}
-Om de NotificationCompat API te kunnen gebruiken moeten er normaal gezien geen extra dependancies worden toegevoegd.
+Om de NotificationCompat API te kunnen gebruiken, moeten er normaal gezien geen extra dependancies worden toegevoegd.
 Maar er moet wel gecontroleerd worden of de volgende dependancy aanwezig is.
 \begin{minted}{java}
   val core_version = "1.6.0"
@@ -9,7 +9,7 @@ Maar er moet wel gecontroleerd worden of de volgende dependancy aanwezig is.
 \end{minted}
 
 \paragraph{2. Notificatie aanmaken}
-Om een notificatie aan te maken moet de NotificationCompat.Builder object worden gebruikt. 
+Om een notificatie aan te maken, moet de NotificationCompat.Builder object worden gebruikt. 
 \begin{minted}{kotlin}
   private fun createNotification(title: String, body: String) {
     val builder = NotificationCompat.Builder(this, CHANNEL_ID)
@@ -30,8 +30,8 @@ Om een notificatie aan te maken moet de NotificationCompat.Builder object worden
 \end{figure}
 
 \paragraph{3. Channel aanmaken}
-Het laatste dat nodig is vooraleer de notificatie getoond kan worden is een channel. Deze worden 
-gebruikt om notificaties te groeperen volgens hun belang. Om een channel aan te maken wordt  
+Het laatste dat nodig is vooraleer de notificatie getoond kan worden, is een channel. Deze wordt 
+gebruikt om notificaties te groeperen volgens hun belang. Om een channel aan te maken, wordt  
 de .createNotificationChannel() methode gebruikt. Het maakt niet uit wanneer of waar deze wordt uitgevoerd. 
 Het is enkel belangrijk dat de channel wordt aangemaakt vooraleer notificaties 
 worden getoond. Dus best zo vroeg mogelijk in de applicatie.

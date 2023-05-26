@@ -1,16 +1,16 @@
 \paragraph{1. Library toevoegen}
 Eerst moet de Notifee library aan de root van ons project worden toegevoegd. 
-Deze wordt toegevoegd met volgende commando:
+Deze wordt toegevoegd met volgend commando:
 \begin{minted}{bash}
 npm install --save @notifee/react-native
 \end{minted}
 
 \paragraph{2. Toestemming vragen \& channel aanmaken}
-Nog voor een notificatie kan getoond worden moet er eerst toestemming worden gevraagd. 
+Nog voor een notificatie kan getoond worden, moet er eerst toestemming worden gevraagd. 
 Aangezien dit bij React Native niet automatisch gebeurt zoals bij Android moet de 
 toestemming programmatisch gevraagd worden. Daarnaast zal ook een channel moeten aangemaakt worden.
 Net zoals bij Android maakt het niet uit wanneer dit gebeurt maar het moet wel gebeuren 
-voor dat er notificaties worden gestuurd. Dus best zo vroeg mogelijk in de applicatie.
+voordat er notificaties worden gestuurd. Dus best zo vroeg mogelijk in de applicatie.
 \begin{minted}{javascript}
 export const notificationsSetup = async () => {
   const PERMISSION = await notifee.requestPermission();

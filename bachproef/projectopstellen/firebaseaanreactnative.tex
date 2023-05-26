@@ -8,7 +8,7 @@ npm install --save @react-native-firebase/app
 \subparagraph{2. Configuratie bestanden toevoegen}
 Nadat de dependancy is toegevoegd, moet er een nieuw Firebase project worden aangemaakt. 
 Om deze aan te maken, moet de package naam worden meegegeven die te vinden is in het 
-\textit{android/app/build.gradle} bestand als 
+\textit{android/app/-} \textit{build.gradle} bestand als 
 \textbf{applicationId}. Optioneel kan de naam van de applicatie worden meegegeven.
 \\\\
 Nadat de Android applicatie is aangemaakt, moet het \textbf{google-services.json} bestand worden gedownload. 
@@ -29,7 +29,7 @@ Daarna moet de plugin aan het \textit{android/app/build.gradle} bestand worden t
 \begin{minted}{java}
 apply plugin: "com.google.gms.google-services"
 \end{minted}
-Tot slot wordt deze ook aan de dependancies toegevoegd in hetzelfde \textit{android/app/build.gradle} bestand.
+Tot slot wordt deze ook aan de dependancies toegevoegd in hetzelfde \textit{android/app/} \textit{build.gradle} bestand.
 \begin{minted}{java}
 dependencies {
     // andere dependancies

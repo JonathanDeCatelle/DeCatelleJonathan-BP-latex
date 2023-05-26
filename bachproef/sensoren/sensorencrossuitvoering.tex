@@ -1,6 +1,6 @@
 \paragraph{1. Library toevoegen}
 Eerst moet de React Native Sensors library worden toegevoegd aan de root van ons project.
-Deze wordt toegevoegd met volgende commando:
+Deze wordt toegevoegd met volgend commando:
 \begin{minted}{bash}
 npm install react-native-sensors --save
 \end{minted}
@@ -10,12 +10,12 @@ Normaal gezien moet de package dan worden toegevoegd aan het
 \textit{android/app/src/} \textbf{main/java/com/project/MainApplication.java} bestand.
 Maar dit is niet meer nodig bij React Native 0.60+.
 
-\paragraph{3. gradle instellingen aanpassen}
-Tot slot moet volgende regel worden toegevoegd aan het \textit{android/app/build.gradle} bestand.
+\paragraph{3. Gradle instellingen aanpassen}
+Eerst moet volgende regel worden toegevoegd aan het \textit{android/app/build.gradle} bestand.
 \begin{minted}{groovy}
 implementation project(':react-native-sensors')
 \end{minted}
-En moet volgende regel worden toegevoegd aan het \textit{android/settings.gradle} bestand.
+Daarna moet volgende regel worden toegevoegd aan het \textit{android/settings.gradle} bestand.
 \begin{minted}{groovy}
 include ':react-native-sensors'
 project(':react-native-sensors').projectDir = 
@@ -29,12 +29,12 @@ Eerst wordt de library in het bestand geïmporteerd.
 \begin{minted}{javascript}
 import { accelerometer, gyroscope } from "react-native-sensors";
 \end{minted}
-Daarna worden twee variabelen die de data van de sensoren zal bewaren aangemaakt.
+Daarna worden twee variabelen die de data van de sensoren zullen bewaren aangemaakt.
 \begin{minted}{javascript}
 const [accelerometerData, setAccelerometerData] = useState({});
 const [gyroscopeData, setGyroscopeData] = useState({});
 \end{minted}
-Tot slot kunnen deze variabelen gebruikt worden om de data van de sensoren op te vangen.
+Tot slot kunnen deze variabelen gebruikt worden om de data van de sensoren op te slaan.
 \begin{minted}{javascript}
 const getData = () => {
     setIsFetchingData(true);
@@ -68,7 +68,7 @@ const startFetchingData = () => {
 
 \paragraph{4. Applicatie maken}
 Net zoals bij de native applicatie wordt een applicatie gemaakt die de accelerometer en gyroscoop data 
-opvraagt en weergeeft. Deze bestaat uit twee \textbf{<Text>} componenten voor de data van de
+opvraagt en weergeeft. Deze bestaat uit twee \textbf{<Text>} componenten om de data van de
 accelerometer en gyroscoop weer te geven en tot slot twee \textbf{<Button>} componenten om de 
 data op te halen. Als de knoppen ingedrukt worden, dan wordt ofwel de
 \textbf{getAccelerometerData} of \textbf{getGyroscopeData} methode aangeroepen. In deze methodes wordt de data 

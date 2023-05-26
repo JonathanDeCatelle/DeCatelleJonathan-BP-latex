@@ -48,8 +48,10 @@ Daarna moet er een stijl worden aangemaakt om het laadschem te tonen. Dit gebeur
 het \textit{android/app/src/main/res/values/styles.xml} bestand.
 \begin{minted}{xml}
 <style name="BootTheme" parent="Theme.SplashScreen">
-    <item name="windowSplashScreenBackground">@color/bootsplash_background</item>
-    <item name="windowSplashScreenAnimatedIcon">@mipmap/bootsplash_logo</item>
+    <item name="windowSplashScreenBackground">
+      @color/bootsplash_background</item>
+    <item name="windowSplashScreenAnimatedIcon">
+      @mipmap/bootsplash_logo</item>
     <item name="postSplashScreenTheme">@style/AppTheme</item>
 </style>
 \end{minted}
@@ -132,6 +134,6 @@ applicatie gerenderd is. Daarna is er een bottom tab navigatie die navigeert tus
 de drie verschillende schermen. 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=0.4\textheight]{basis_layoutcross.png}
+    \includegraphics[height=0.3\textheight]{basis_layoutcross.png}
     \caption{Layout van applicatie voor de basisfunctionaliteiten bij React Native.}
 \end{figure}

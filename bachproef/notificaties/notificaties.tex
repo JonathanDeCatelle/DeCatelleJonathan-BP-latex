@@ -10,10 +10,10 @@ Met de resultaten kan dan een gepaste conclusie worden gevormd.
 
 \section{Native}
 \subsubsection{Wat is er nodig}
-Om lokale notificaties aan te kunnen maken bij Android wordt de NotificationCompat API aangeboden 
-door de Android support library. Deze stelt ons in staat om de titel, tekst, pictogram en andere inhoud van de 
-notificatie in te stellen. Notificaties kunnen ook worden ingesteld om speciale acties te ondernemen bij het openen 
-van de applicatie via de notificatie. Er kan ook een eventueel een prioriteit worden meegegeven.
+Om lokale notificaties bij Android te kunnen aanmaken, wordt de NotificationCompat API aangeboden 
+door de Android support library. Hierdoor kunnen titel, tekst, pictogram en andere inhoud van de 
+notificatie ingesteld worden. Notificaties kunnen ook worden ingesteld om speciale acties te ondernemen bij het openen 
+van de applicatie via de notificatie. Er kan eventueel ook een prioriteit worden meegegeven.
 
 \subsubsection{Uitvoering}
 
@@ -34,9 +34,9 @@ van de applicatie via de notificatie. Er kan ook een eventueel een prioriteit wo
 \clearpage
 \section{Cross-platform}
 \subsubsection{Wat is er nodig}
-Om lokale notificaties bij React Native te tonen wordt de library Notifee gebruikt.
-Deze library geeft ons toegang om net zoals bij Android de titel, tekst, pictogram en 
-andere inhoud van de notificatie in te stellen. Daarnaast kunnen er ook speciale acties 
+Om lokale notificaties bij React Native te tonen, wordt de library Notifee gebruikt.
+Deze library geeft toegang om titel, tekst, pictogram en 
+andere inhoud van de notificatie in te stellen, net zoals bij Android. Daarnaast kunnen er ook speciale acties 
 of prioriteiten worden ingesteld.
 
 \subsubsection{Uitvoering}
@@ -56,21 +56,21 @@ of prioriteiten worden ingesteld.
 \input{./notificaties/notificatiescrossschaalbaarheid.tex}
 
 \section{Conclusie}
-Bij de tijdsduur dat nodig is om een notificatie aan te maken is er een duidelijk 
+Bij de tijdsduur die nodig is om een notificatie aan te maken, is er een duidelijk 
 verschil tussen Android en React Native. Gemiddeld is het aanmaken van een notificatie bij Android
 154ms sneller dan bij React Native. Bij React Native duurt het gemiddeld 166ms om een notificatie 
 aan te maken terwijl dit bij Android maar 12ms duurt. Dit kan liggen aan het feit dat de externe 
 library de code moet omzetten naar platformspecifieke code waardoor er veel tijd wordt verloren.
 \\\\
 Bij het geheugen is er geen verschil tussen het aanmaken van een notificatie en wanneer er 
-niks gebeurd in de appplicatie. Desondanks dat er geen invloed is bij het aanmaken van een notificatie 
-Gebruikt React Native 112,35\% meer geheugen dan Android (81MB in vergelijking met 172MB). 
+niks gebeurt in de applicatie. Ondanks het feit dat er geen invloed is bij het aanmaken van een notificatie, 
+gebruikt React Native 112,35\% meer geheugen dan Android (81MB in vergelijking met 172MB). 
 Dit kan opnieuw liggen aan het feit dat de externe library
 de code moet omzetten naar platformspecifieke code waardoor er veel geheugen wordt gebruikt.
 \\\\
-Bij het CPU gebruik is wel een verschil tijdens het aanmaken van een notificatie en wanneer de 
-applicatie inactief is. Daarnaast is er ook een verschil tussen Android en React-native. Bij React Native 
-springt het CPU gebruik gemiddeld naar 28\% terwijl dat het bij Android naar 21\% springt.
+Bij het CPU gebruik is er wel een verschil tussen het aanmaken van een notificatie en wanneer de 
+applicatie inactief is. Daarnaast is er ook een verschil tussen Android en React Native: bij React Native 
+springt het CPU gebruik gemiddeld naar 28\% terwijl dit bij Android naar 21\% springt.
 \\\\
 \begin{tabular}{ |p{3cm}||p{4cm}|p{4cm}| }
     \hline
@@ -95,19 +95,19 @@ springt het CPU gebruik gemiddeld naar 28\% terwijl dat het bij Android naar 21\
     \hline
 \end{tabular}
 \\\\
-De ontwikkeltijd van notificaties met beide ontwikkelmethodes blijft relatief gelijk. 
-Bij beide applicaties moet er toestemming gevraagd worden. 
-Door bij Android dit aan het \textbf{AndroidManifest.xml} bestand toe te voegen, en bij React Native door 
+De ontwikkeltijd van notificaties met beide ontwikkelmethodes blijft relatief gelijk, 
+bij beide applicaties moet er toestemming gevraagd worden. 
+Bij Android gebeurt dit door de permission aan het \textbf{AndroidManifest.xml} bestand toe te voegen, en bij React Native door 
 de \textbf{notifee.requestPermission()} methode aan te roepen. Hierna moet er bij beide applicaties een 
-channel worden aangemaakt en tot slot dan de notificatie.
+channel worden aangemaakt en tot slot de notificatie.
 \\\\
-Op vlak van schaalbaarheid zijn beide ontwikkelmethodes net zoals bij de ontwikkelingstijd 
+Op vlak van schaalbaarheid zijn beide ontwikkelmethodes net zoals bij de ontwikkeltijd 
 gelijk. Allebei geven ze de mogelijkheid om de logica weg te steken, 
 waardoor deze later opnieuw gebruikt of opgeschaald kan worden.
 \\\\
 Over het algemeen is het aanmaken van notificaties bij Android sneller dan bij
-React Native. Dat wil niet zeggen dat het de betere keuze is. Aangezien dat de schaalbaarheid
-en ontwikkeltijd vergelijkbaar is en dat de performantie niet zoveel verschilt is het 
+React Native. Dat wil niet zeggen dat het de betere keuze is. Aangezien de schaalbaarheid
+en ontwikkeltijd vergelijkbaar zijn en de performantie niet zoveel verschilt, is het 
 aangeraden om cross-platform te gebruiken voor het aanmaken van notificaties.
 
 
