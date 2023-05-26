@@ -12,7 +12,7 @@ Normaal gezien moet de package dan worden toegevoegd aan het
 Maar dit is niet meer nodig bij React Native 0.60+.
 
 \paragraph{3. Audio library initialiseren}
-Om de audio speler te kunnen gebruiken, moet een service bestand worden geregistreerd in de main 
+Om de audiospeler te kunnen gebruiken, moet een service bestand worden geregistreerd in de main 
 component van de applicatie, meestal is dit het \textit{index.js} bestand.
 \begin{minted}{javascript}
 import TrackPlayer from 'react-native-track-player';
@@ -33,9 +33,9 @@ import TrackPlayer from 'react-native-track-player';
 await TrackPlayer.setupPlayer()
 \end{minted}
 
-\paragraph{4. Audio en video speler gebruiken}
+\paragraph{4. Audio- en videospeler gebruiken}
 \subparagraph{4.1. Audio}
-Om de audio speler te gebruiken moet eerst een \textbf{Track} object worden aangemaakt.
+Om de audiospeler te gebruiken moet eerst een \textbf{Track} object worden aangemaakt.
 \begin{minted}{javascript}
 const track = {
     url: require(''),
@@ -58,7 +58,7 @@ van een aantal \textbf{<Button>} componenten.
 \end{minted}
 
 \subparagraph{4.2. Video}
-Om de video speler te gebruiken, moet eerst een \textbf{<Video>} component worden aangemaakt.
+Om de videospeler te gebruiken, moet eerst een \textbf{<Video>} component worden aangemaakt.
 \begin{minted}{javascript}
 <Video source={require('')} />
 \end{minted}
@@ -71,7 +71,7 @@ van een aantal \textbf{<Button>} componenten.
 \end{minted}
 
 \paragraph{5. Applicatie maken}
-Net zoals bij native bestaat de applicatie voor elke audio en video speler uit een \textbf{<View>}
+Net zoals bij native bestaat de applicatie voor elke audio- en videospeler uit een \textbf{<View>}
 component met daarin de \textbf{<Button>} componenten om de audio of video te starten, te pauzeren
 of te stoppen. Daarnaast bevat de applicatie ook een \textbf{<View>} component met daarin een
 \textbf{<Video>} component voor het afspelen van de video.
