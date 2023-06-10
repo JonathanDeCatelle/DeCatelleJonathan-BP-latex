@@ -13,74 +13,117 @@
 \institution{Hogeschool Gent, Valentin Vaerwyckweg 1, 9000 Gent}
 
 % Info over de bachelorproef
-\title{Titel van uw bachelorproef}
-\subtitle{Ondertitel (eventueel)}
-\author{Voornaam Naam}
-\email{voornaam.familienaam@student.hogent.be}
-\supervisor{Voornaam Naam}
-\cosupervisor{Voornaam Naam (Bedrijf)}
+\title{Criteria waarop native applicaties ontwikkelen interessanter wordt dan 
+het ontwikkelen van cross-platform applicaties}
+%\subtitle{Ondertitel (eventueel)}
+\author{Jonathan De Catelle}
+\email{jonathan.decatelle@student.hogent.be}
+\supervisor{Gilles Blondeel}
+\cosupervisor{Arno Boel (Delaware)}
 
 % Indien ingevuld, wordt deze informatie toegevoegd aan het einde van de
-% abstract. Zet in commentaar als je dit niet wilt.
-\specialisation{Systeem- en Netwerkbeheer}
-\keywords{Lambda-calculus, Scheme}
-\projectrepo{https://github.com/user/repo}
+% abstract. Zet in commentaar als je dit niet wilt. 
+\specialisation{Mobile \& Enterprise developer}
+\keywords{Mobiele applicatieontwikkeling, Kotlin, Android Studio, React native, Cross-platform, Native}
+\projectrepo{https://github.com/JonathanDeCatelle/DeCatelleJonathan-BP-latex}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-It's only a model.
-You don't vote for kings. Who's that then? We found them. Ni! Ni! Ni! Ni!
-The nose? On second thoughts, let's not go there. It is a silly place. Bloody Peasant! And the hat. She's a witch! Where'd you get the coconuts?
+De keuze tussen cross-platform en native ontwikkeling is cruciaal bij het ontwikkelen 
+van mobiele apps. Deze studie vergelijkt ontwikkeltijden, prestaties en schaalbaarheid 
+van verschillende functionaliteiten tussen beide methoden. Resultaten tonen aan dat 
+native ontwikkeling betere prestaties heeft voor basisfunctionaliteiten en audio-/videospelers, 
+vergelijkbare prestaties bij het gebruik van sensoren, en een groot verschil in 
+notificatiecreatie tussen Android en React Native, waarbij Android beter presteert. 
+Het onderzoek biedt inzicht voor ontwikkelaars om een weloverwogen keuze te maken bij 
+het kiezen van de ontwikkelmethode.
 \end{abstract}
 
 \begin{multicols}{2} % This is how many columns your poster will be broken into, a portrait poster is generally split into 2 columns
 
 \section{Introductie}
+Bij het ontwikkelen van mobiele applicaties is de keuze tussen native en cross-platform 
+ontwikkeling van groot belang. Deze keuze wordt beïnvloed door factoren zoals tijd, budget, 
+performantie, schaalbaarheid en functionaliteiten. 
 
-Be quiet! Found them? In Mercia?! The coconut's tropical! But you are dressed as one… Well, what do you want? Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods.
+Dit onderzoek vergelijkt de ontwikkeltijden, prestaties en schaalbaarheid van 
+functionaliteiten tussen native en cross-platform 
+ontwikkeling. Het doel is om inzicht te bieden aan ontwikkelaars en andere belanghebbenden, 
+zodat zij een weloverwogen beslissing kunnen nemen bij het kiezen van de ontwikkelmethode.
 
-Well, what do you want? It's only a model. Camelot! We found them. We shall say `Ni' again to you, if you do not appease us.
+Het onderzoek richt zich op individuele functionaliteiten en wordt uitgevoerd op één 
+platform om de focus te behouden tot native en cross-platform, niet de platformen zelf. 
 
-The nose? Shut up! Burn her! I am your king. You don't vote for kings.
+De conclusies en antwoorden op de 
+onderzoeksvragen zullen helpen bij het maken van keuzes en het begrijpen 
+van de ontwikkeltijd, performantie en schaalbaarheid van functionaliteiten.
 
-You can't expect to wield supreme power just `cause some watery tart threw a sword at you! Well, we did do the nose. I don't want to talk to you no more, you empty-headed animal food trough water! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Now leave before I am forced to taunt you a second time!
+\section{Onderzoek}
+Om de functionaliteiten van native en cross-platform applicaties te testen en 
+te vergelijken wordt er gekeken naar de ontwikkeltijd, performantie en schaalbaarheid.
 
-Why do you think that she is a witch? We want a shrubbery!! I don't want to talk to you no more, you empty-headed animal food trough water! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Now leave before I am forced to taunt you a second time!
+Voor het meten van de ontwikkeltijd wordt gekeken naar de tijd die nodig is om elke 
+functionaliteit te implementeren, alsook eventuele bugs of problemen, wordt gedocumenteerd.
 
-\section{Experimenten}
-
-A newt? Camelot! Why? No, no, no! Yes, yes. A bit. But she's got a wart.
-
-Shut up! I dunno. Must be a king. Who's that then? Look, my liege! On second thoughts, let's not go there. It is a silly place.
-
-Shut up! Will you shut up?! No, no, no! Yes, yes. A bit. But she's got a wart. He hasn't got shit all over him. It's only a model. It's only a model.
-
-Bring her forward! I don't want to talk to you no more, you empty-headed animal food trough water! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Now leave 
-
-\section{Sectie met figuur}
-
-De {\LaTeX} figure-omgeving bepaalt zelf waar een afbeelding komt en dat is meestal niet op de plek in de tekst waar de figure-omgeving gedefinieerd wordt. Als je wilt forceren dat afbeeldingen toch in de flow van de tekst blijven, dan kan je dat zoals hieronder:
+De performantie van zowel de native als de cross-platform applicaties wordt gemeten 
+met behulp van de Android profiler in Android Studio en de Firebase Performance
+Monitoring tool. Op die manier kan de performantie van beide applicaties eerlijk worden vergeleken 
+omdat er geen platform specifieke tools worden gebruikt.
 
 \begin{center}
   \captionsetup{type=figure}
-  \includegraphics[width=1.0\linewidth]{grail}
-  \captionof{figure}{He hasn't got shit all over him. The nose? Where'd you get the coconuts? What do you mean? We shall say `Ni' again to you, if you do not appease us}
+  \includegraphics[width=1.0\linewidth]{notificaties1.png}
+  \captionof{figure}{Overzicht CPU en geheugen gebruik tijdens aanmaken notificaties bij Android(bovenste schermafbeelding) en React Native(onderste schermafbeelding).}
 \end{center}
 
-Let er wel op dat dit tot problemen met bladschikking kan leiden.
+\begin{center}
+  \captionsetup{type=figure}
+  \includegraphics[width=1.0\linewidth]{notificaties2.png}
+  \captionof{figure}{Overzicht tijdsduur aanmaken notificaties bij Android(bovenste schermafbeelding) en React Native(onderste schermafbeelding).}
+\end{center}
+
+Om de schaalbaarheid van de applicaties en libraries te testen wordt de complexiteit van
+de code geanalyseerd en wordt er gekeken naar de mogelijkheid om de code op te delen in
+herbruikbare componenten. Dit bevordert de schaalbaarheid van de applicatie.
+
+Door deze factoren te testen, kan een gedetailleerde vergelijking worden gemaakt tussen 
+native en cross-platform applicaties.
 
 \section{Conclusies}
+De ontwikkeltijd bij cross-platform is over het algemeen langer vanwege de extra 
+installatie van libraries en de noodzaak om meer code te schrijven voor dezelfde 
+functionaliteit. De compiletijd is ook langer bij cross-platform, maar de hot 
+reload-functie van React Native compenseert dit en bespaart tijd tijdens het ontwikkelen. 
 
-Don't underestimate the Force. Oh God, my uncle. How am I ever gonna explain this? I suggest you try it again, Luke. This time, let go your conscious self and act on instinct. Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force.
+Qua performantie is er een groot verschil bij het aanmaken van notificaties, waarbij 
+cross-platform veel langer duurt. Daarnaast zijn de verschillen in tijdsduur, 
+CPU-gebruik en geheugengebruik wel merkbaar vanuit de resultaten maar niet storend 
+voor de gebruiker. Het geheugengebruik is echter gemiddeld 2,5 keer hoger bij 
+cross-platform vanwege de extra libraries. Wat betreft schaalbaarheid zijn zowel 
+native als cross-platform methoden vergelijkbaar in complexiteit en hebben ze een 
+hoge herbruikbaarheid van code. 
+
+Uit het onderzoek is ook gebleken dat er geen functionaliteiten zijn die cross-platform 
+niet ondersteunt en dat alle geïmplementeerde functionaliteiten bruikbaar waren, ondanks de 
+verschillen in performantie tussen native en cross-platform.
 
 \section{Toekomstig onderzoek}
+Dit onderzoek toont aan dat er een duidelijk verschil is in performantie tussen native en 
+cross-platform frameworks. Dit roept de vraag op of dit verschil bij alle functionaliteiten 
+aanwezig zal zijn, en of er zelfs functionaliteiten zijn die beter presteren bij cross-platform. 
 
-I care. So, what do you think of her, Han? No! Alderaan is peaceful. We have no weapons. You can't possibly… I have traced the Rebel spies to her. Now she is my only link to finding their secret base.
+Verder onderzoek kan worden uitgebreid naar andere cross-platform frameworks zoals Flutter of 
+.NET MAUI om te zien of deze betere prestaties leveren zonder in te boeten op ontwikkeltijd en 
+schaalbaarheid. Ook kan het onderzoek worden uitgebreid naar andere native frameworks zoals 
+Java of andere native platformen zoals iOS. Het debat over native versus cross-platform zal 
+altijd blijven bestaan, aangezien er voortdurend nieuwe frameworks en technologieën opduiken. 
 
-Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one all-powerful Force controlling everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks and nonsense. You are a part of the Rebel Alliance and a traitor! Take her away! 
+Hoewel er geen definitief antwoord is op welke ontwikkelingsmethode/framework uiteindelijk 
+de beste is, kunnen dergelijke onderzoeken ontwikkelaars helpen om weloverwogen keuzes te 
+maken bij het selecteren van een technologie voor hun specifieke project.
 
 \end{multicols}
 \end{document}
